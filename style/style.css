@@ -20,7 +20,7 @@
   border-color: var(--color-border);
   border-radius: 100px;
   color: var(--color-white);
-  background-color: rgba(10, 10, 10, 0.45);
+  background-color: rgba(10, 10, 10, 0.6);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   
@@ -37,6 +37,7 @@
 
 .header-logo-wrap {
   padding-top: 12px;
+  margin-left: 8px;
 }
 
 .header-logo {
@@ -66,8 +67,27 @@
   gap: 16px;
 }
 
-.localisation > .download-button {
-  margin-left: 16px;
+.localisation-langs {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.localisation-langs .localisation-item[data-lang="ua"] {
+  position: relative;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.localisation-langs .localisation-item[data-lang="ua"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -1px;
+  width: 1px;
+  height: 12px;
+  transform: translateY(-37%);
+  background-color: var(--color-gray-1);
 }
 
 .localisation-item {
@@ -135,9 +155,9 @@
 }
 
 .card {
-  width: 212px;
-  height: 212px;
-  padding: 14px;
+  width: 226px;
+  height: 226px;
+  padding: 16px;
   border: 1px solid var(--color-card-border);
   background-color: rgba(255, 255, 255, 0.06);
   -webkit-backdrop-filter: blur(12px);
@@ -196,8 +216,8 @@
 
 .card-device {
   color: var(--color-text-primary);
-  font-size: 10px;
-  font-weight: 800;
+  font-size: 12px;
+  font-weight: 700;
   line-height: 16px;
   padding: 2px 6px;
   background-color: rgba(80, 55, 200, 0.15);
@@ -335,7 +355,7 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 24px;
 }
 
@@ -409,7 +429,7 @@
     max-width: 480px;
     position: -webkit-sticky;
     position: sticky;
-    top: 140px;
+    top: 30%;
     align-self: flex-start;
     z-index: 2;
   }
@@ -420,21 +440,12 @@
   }
 }
 
-.content-left {
-  max-width: 480px;
-  flex-shrink: 0;
-  position: sticky;
-  top: 100px;
-  align-self: flex-start;
-  z-index: 1;
-}
-
 .content-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 80px;
+  gap: 180px;
 }
 
 .content-right-image-wrp {
@@ -472,7 +483,7 @@
 
 .f-slider-description-text {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
   color: var(--color-gray-1);
 }
@@ -1543,8 +1554,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 28px;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -1559,7 +1569,7 @@
 }
 
 .download-app-description {
-  margin: 0;
+  margin: 16px 0 40px 0;
   text-align: center;
   width: 100%;
   min-height: 56px;

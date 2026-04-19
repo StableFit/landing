@@ -21,6 +21,7 @@ html {
   --font-family-primary: 'Urbanist', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --color-gradient-cl-1: #7926B6;
   --color-gradient-cl-2: #A241E9;
+  --color-gradient-cl-3: #7926B9;
   --color-red: #9B3131;
   --color-red-1: #FF2F00;
   --color-purple: #755AE9;
@@ -159,20 +160,15 @@ main > section:not(.hero) {
   );
 }
 
-.sf-landing-bg::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  z-index: 0;
-  transform: translate(-50%, -50%);
-  width: min(90vw, 640px);
-  height: min(90vw, 640px);
-  border-radius: 50%;
-  background: radial-gradient(circle, #6341e138 0%, transparent 65%);
-  filter: blur(60px);
-  opacity: 0.9;
+.page-client .sf-landing-bg {
+  background: radial-gradient(
+    ellipse 1351px 738px at 50% 0%,
+    color-mix(in srgb, var(--color-gradient-cl-3) 38%, transparent) 0%,
+    color-mix(in srgb, var(--color-gradient-cl-3) 12%, transparent) 42%,
+    transparent 70%
+  );
 }
+
 
 .sf-fallback {
   position: relative;
@@ -260,6 +256,15 @@ ul, li {
     #6341E161 0%,
     #6341E11F 42%,
     #00000000 100%
+  );
+}
+
+.page-client .hero::before {
+  background: radial-gradient(
+    ellipse 1351px 738px at 50% 0%,
+    color-mix(in srgb, var(--color-gradient-cl-3) 38%, transparent) 0%,
+    color-mix(in srgb, var(--color-gradient-cl-3) 12%, transparent) 42%,
+    transparent 100%
   );
 }
 
@@ -473,7 +478,7 @@ ul, li {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .section-name {

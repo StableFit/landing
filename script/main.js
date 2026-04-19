@@ -227,29 +227,18 @@
     }
 
     function computeActiveSlideIndex() {
-      const vh = window.innerHeight;
-
-      const bandMid = vh * 0.3;
-      const halfBand = Math.min(120, vh * 0.11);
-      const bandTop = bandMid - halfBand;
-      const bandBottom = bandMid + halfBand;
-
       let bestIdx = 0;
-      let bestOverlap = -1;
-
+      let bestVis = -1;
       wraps.forEach((wrap, i) => {
         const r = wrap.getBoundingClientRect();
-        const overlap = Math.max(
-          0,
-          Math.min(r.bottom, bandBottom) - Math.max(r.top, bandTop)
-        );
-        if (overlap > bestOverlap) {
-          bestOverlap = overlap;
+        const vis = visibleHeightInViewport(r);
+        if (vis > bestVis || (vis === bestVis && i > bestIdx)) {
+          bestVis = vis;
           bestIdx = i;
         }
       });
-
-      if (bestOverlap <= 1) {
+      if (bestVis <= 0) {
+        const bandMid = getLeftColumnViewportCenterY();
         let bestDist = Infinity;
         wraps.forEach((wrap, i) => {
           const r = wrap.getBoundingClientRect();
@@ -261,18 +250,6 @@
           }
         });
       }
-
-
-      const maxTopBeforeAdvance = vh * 0.3;
-      while (bestIdx > 0) {
-        const r = wraps[bestIdx].getBoundingClientRect();
-        if (r.top > maxTopBeforeAdvance) {
-          bestIdx -= 1;
-        } else {
-          break;
-        }
-      }
-
       return bestIdx;
     }
 
@@ -342,7 +319,7 @@
 
       const r0 = wraps[0].getBoundingClientRect();
       const h0 = r0.height > 0 ? visibleHeightInViewport(r0) / r0.height : 0;
-      if (h0 > 0.38) {
+      if (h0 > 0.52) {
         bestIdx = 0;
       }
 

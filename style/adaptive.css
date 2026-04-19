@@ -259,7 +259,7 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
 }
 
 .header-drawer-lang .localisation-item {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.3;
 }
 
@@ -378,6 +378,10 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
     font-size: 15px;
     line-height: 24px;
     margin: 16px 0 24px 0;
+  }
+
+  .localisation-langs .localisation-item[data-lang="ua"]::after {
+    transform: translateY(-52%);
   }
 
   
