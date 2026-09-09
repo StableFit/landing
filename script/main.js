@@ -134,6 +134,14 @@
       if (typeof translatedText !== "string") return;
       node.setAttribute("content", translatedText);
     });
+
+    document.querySelectorAll("[data-i18n-html]").forEach((node) => {
+      const key = node.dataset.i18nHtml;
+      if (!key) return;
+      const translatedHtml = getNestedValue(dictionary, key);
+      if (typeof translatedHtml !== "string") return;
+      node.innerHTML = translatedHtml;
+    });
   }
 
   async function setLanguage(lang) {

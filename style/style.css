@@ -1841,3 +1841,26 @@ main.doc-page {
   font-weight: 400;
   color: var(--color-gray-1);
 }
+
+.doc-list {
+  margin: 0;
+  padding-left: 22px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doc-list .doc-block-text {
+  display: list-item;
+}
+
+.doc-content a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.doc-content strong {
+  color: var(--color-white);
+  font-weight: 700;
+}
