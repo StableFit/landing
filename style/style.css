@@ -230,6 +230,10 @@
   background-color: color-mix(in srgb, var(--color-sc-name) 12%, transparent);
 }
 
+.page-client .functionality .section-title {
+  white-space: normal;
+}
+
 .card-image-container {
   padding: 9px;
   background-color: var(--color-white);
@@ -1403,6 +1407,7 @@
 
 .pricing-cards {
   width: 780px;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -1427,6 +1432,7 @@
 
 .pricing-card-badge {
   margin-top: 0;
+  margin-bottom: 16px;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -1609,63 +1615,85 @@
 
 footer {
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-top: 1px solid #FFFFFF0D;
   padding: 40px 0 24px 0;
+  overflow-x: hidden;
 }
 
 .footer-wrp {
   max-width: 1224px;
+  width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
 .footer-container {
   max-width: 1224px;
   width: 100%;
+  min-width: 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-left: var(--sf-header-pad-x, 24px);
+  padding-right: var(--sf-header-pad-x, 24px);
 }
 
 .footer-content {
-  max-width: 1224px;
   width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 173px;
+  gap: 40px 48px;
   border-bottom: 1px solid #FFFFFF0D;
   padding-bottom: 40px;
+  text-align: left;
 }
 
 .footer-content-group {
   display: flex;
   flex-direction: row;
-  gap: 96px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px 48px;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .content-item {
   width: 100%;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  text-align: left;
 }
 
 .footer-content > .content-item {
-  width: 338px;
+  width: auto;
+  flex: 1 1 240px;
+  max-width: 338px;
 }
 
 .footer-content-group > .content-item {
-  width: 180px;
+  width: auto;
+  flex: 1 1 160px;
+  max-width: 240px;
 }
 .footer-logo {
   display: flex;
@@ -1690,26 +1718,33 @@ footer {
 
 .footer-list {
   gap: 12px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  text-align: left;
 }
 
 .footer-description {
   line-height: 23px;
   margin-bottom: 11.5px;
+  overflow-wrap: anywhere;
 }
 
 .footer-list-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 12px;
+  width: 100%;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: var(--color-gray-1);
+  text-align: left;
+  overflow-wrap: anywhere;
 }
 
 .footer-list-item a {
@@ -1720,16 +1755,20 @@ footer {
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px 24px;
   padding: 14px 0;
+  text-align: left;
 }
 
 .underfooter-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 16px;
 }
 

@@ -100,6 +100,10 @@
     text-align: center;
   }
 
+  .pricing-card-button.try-button.btn.btn-hover-transparent {
+    margin-top: 20px;
+  }
+
   .section-name--nowrap {
     white-space: normal;
     max-width: 100%;
@@ -968,7 +972,8 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
 
   .footer-content .content-item {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+    flex: 0 0 auto;
     align-items: flex-start;
   }
 
@@ -1367,76 +1372,30 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
     line-height: 24px;
   }
 
-  .footer-container {
-    padding-left: var(--sf-header-pad-x);
-    padding-right: var(--sf-header-pad-x);
-    box-sizing: border-box;
-  }
-
-  .footer-wrp {
-    width: 100%;
+  .footer-container,
+  .footer-wrp,
+  .footer-content,
+  .footer-content-group {
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
+    min-width: 0;
   }
 
-  .footer-content {
-    display: flex;
-    flex-direction: row;
-    column-gap: 0;
-    row-gap: 0;
-    gap: 173px;
+  .footer-content,
+  .footer-content-group,
+  .footer-list,
+  .underfooter,
+  .underfooter-content {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: left;
   }
 
-  .footer-content > .content-item:first-child {
-    width: 338px;
-    flex: 0 0 338px;
-    max-width: 338px;
-    align-items: flex-start;
-  }
-
-  .footer-content-group {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 96px;
-    flex: 1 1 auto;
-  }
-
-  .footer-content-group .content-item {
-    width: 180px;
-    flex: 0 0 180px;
-    max-width: 180px;
-    align-items: flex-start;
-  }
-
+  .footer-content > .content-item:first-child,
+  .footer-content-group .content-item,
   .footer-content-group .content-item:last-child {
-    width: 163px;
-    flex: 0 0 163px;
-    max-width: 163px;
-  }
-
-  .footer-list {
-    align-items: center;
-  }
-
-  .underfooter {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 16px;
-    width: 100%;
-  }
-
-  .underfooter-content {
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    width: auto;
+    flex: 1 1 160px;
+    max-width: 100%;
   }
 
   .f-slider-wrp {

@@ -6,7 +6,7 @@
   },
   "nav": {
     "coaches": "For coaches",
-    "clients": "For clients",
+    "clients": "Client experience",
     "support": "Support"
   },
   "buttons": {
@@ -35,14 +35,14 @@
   },
   "coach": {
     "meta": {
-      "title": "StableFit — platform for fitness coaches and their clients",
-      "description": "StableFit — a service for personal trainers: manage clients, track progress, and grow your business in one place.",
+      "title": "StableFit - platform for fitness coaches and their clients",
+      "description": "StableFit - a service for personal trainers: manage clients, track progress, and grow your business in one place.",
       "keywords": "fitness trainer app, coach client management, online workout programs, fitness platform Ukraine, client progress tracker",
-      "ogTitle": "StableFit — platform for fitness coaches",
-      "ogDescription": "Manage clients, send workout programs, and track results. Everything a coach needs — in one app.",
-      "ogImageAlt": "StableFit — app for personal trainers",
-      "twitterTitle": "StableFit — platform for fitness coaches",
-      "twitterDescription": "Manage clients, send workout programs, and track results. Everything a coach needs — in one app."
+      "ogTitle": "StableFit - platform for fitness coaches",
+      "ogDescription": "Manage clients, send workout programs, and track results. Everything a coach needs - in one app.",
+      "ogImageAlt": "StableFit - app for personal trainers",
+      "twitterTitle": "StableFit - platform for fitness coaches",
+      "twitterDescription": "Manage clients, send workout programs, and track results. Everything a coach needs - in one app."
     },
     "hero": {
       "sectionTitle": "Manage your clients.",
@@ -127,7 +127,7 @@
         },
         "communication": {
           "title": "Easy communication",
-          "description": "Chat with clients directly in the app. All communication is in one place — without switching between different messengers.",
+          "description": "Chat with clients directly in the app. All communication is in one place - without switching between different messengers.",
           "points": {
             "item1": "Chat with clients in one app",
             "item2": "Fast and convenient communication",
@@ -163,7 +163,7 @@
     },
     "automatisation": {
       "sectionName": "Automation and efficiency",
-      "sectionTitle": "Less routine —",
+      "sectionTitle": "Less routine -",
       "gradientTitle": "more results",
       "description": "StableFit takes over administrative work so you can focus on coaching, not spreadsheets.",
       "cards": {
@@ -288,18 +288,18 @@
   },
   "client": {
     "meta": {
-      "title": "StableFit — your training platform",
-      "description": "StableFit for clients: personalized training, progress tracking, nutrition, and connection with your coach — in one app.",
+      "title": "StableFit - your training platform",
+      "description": "StableFit for clients: personalized training, progress tracking, nutrition, and connection with your coach - in one app.",
       "keywords": "StableFit, fitness client, personal training, progress, nutrition, body measurements, fitness app",
-      "ogTitle": "StableFit — for clients",
+      "ogTitle": "StableFit - for clients",
       "ogDescription": "Train with structure, track progress and nutrition with your coach in StableFit.",
-      "twitterTitle": "StableFit — your training platform",
+      "twitterTitle": "StableFit - your training platform",
       "twitterDescription": "Train with structure, track progress and nutrition with your coach in StableFit."
     },
     "hero": {
-      "sectionTitle": "Train with structure.",
-      "gradientTitle": "Track your progress.",
-      "description": "Follow a personalized training plan from your coach, track nutrition with AI, measure body changes, and stay connected — all in one app.",
+      "sectionTitle": "Progress faster.",
+      "gradientTitle": "Achieve results.",
+      "description": "Training according to your programs, nutrition tracking with AI, progress visualization, and constant connection with you - everything for your clients in one app.",
       "contentText": "Download the client app:",
       "store": {
         "apple": "App Store",
@@ -310,41 +310,40 @@
     },
     "functionality": {
       "sectionName": "Key features",
-      "headlineLine1": "Everything you need for",
-      "headlineLine2": "effective training",
+      "headlineLine1": "Everything for effective training",
+      "headlineLine2": "of your clients",
       "description": "StableFit combines the features of several apps in one place, simplifying your whole training flow and helping you reach results faster.",
       "items": {
         "program": {
           "title": "Training program",
-          "description": "Get personalized plans and follow them with ease. Log exercises, track results, and stay on track toward your goals.",
+          "description": "Training according to individual programs, logging of results, and a clear process without extra effort.",
           "points": {
-            "item1": "Individual plans from your coach",
-            "item2": "Easy exercise logging",
-            "item3": "Record videos and add notes"
+            "item1": "Personalized plans for every client",
+            "item2": "Simple and clear exercise execution",
+            "item3": "Ability to add exercise videos and notes to workouts"
           }
         },
         "feedback": {
           "title": "Feedback",
-          "description": "Talk to your coach quickly and easily. Send videos of your exercises and get comments so every session counts.",
+          "description": "Exercise video recording, feedback, and training adjustments for faster and safer client progress.",
           "points": {
-            "item1": "Ready-made workouts in the app",
-            "item2": "Difficulty ratings for exercises",
-            "item3": "Training videos",
-            "item4": "Program adjustments in real time"
+            "item1": "Difficulty ratings for exercises",
+            "item2": "Training videos",
+            "item3": "Program adjustments in real time"
           }
         },
         "nutrition": {
           "title": "Nutrition monitoring",
-          "description": "Log meals and track your diet. Your coach sees your entries and gives recommendations to maximize results.",
+          "description": "Meal logging, diet tracking, and recommendations from the coach to achieve maximum results.",
           "points": {
             "item1": "Easy logging with AI",
             "item2": "Calorie and macro tracking",
-            "item3": "Recommendations from your coach"
+            "item3": "Recommendations from the coach"
           }
         },
         "progressTracking": {
           "title": "Progress tracking",
-          "description": "Follow changes in weight and body measurements. Clear charts help you see results and stay motivated.",
+          "description": "Control of weight and measurement changes, analysis of client progress, and visualization of results.",
           "points": {
             "item1": "Measurement and weight charts",
             "item2": "Before/after comparisons",
@@ -354,11 +353,11 @@
         },
         "communication": {
           "title": "Easy communication",
-          "description": "Stay in touch with your coach anytime. Get important messages, tips, and support without messy threads.",
+          "description": "Constant connection with the coach, messaging, and support without extra communication channels.",
           "points": {
             "item1": "Instant messages",
-            "item2": "Support and tips from your coach",
-            "item3": "Everything in one app"
+            "item2": "Support and tips from the coach",
+            "item3": "All communication in one app"
           }
         }
       }
@@ -435,7 +434,7 @@
         },
         "second": {
           "title": "Train on your plan",
-          "description": "Train with a program built by your coach. Log exercise videos, rate difficulty, and track nutrition — your coach sees it and adjusts your plan."
+          "description": "Train with a program built by your coach. Log exercise videos, rate difficulty, and track nutrition - your coach sees it and adjusts your plan."
         },
         "third": {
           "title": "Track your progress",
@@ -446,7 +445,7 @@
     "testimonials": {
       "sectionName": "Client reviews",
       "sectionTitle": "Why clients",
-      "gradientTitle": "choose StableFit",
+      "gradientTitle": "value StableFit",
       "description": "Built for people who want to train effectively, track progress, and get results without extra hassle.",
       "marqueeAria": "Scrolling row of client testimonial cards",
       "cards": {
@@ -456,7 +455,7 @@
           "role": "Odesa"
         },
         "second": {
-          "text": "I like logging exercises and meals — my coach sees my results right away.",
+          "text": "I like logging exercises and meals - my coach sees my results right away.",
           "name": "Oleksandra Koval",
           "role": "Lviv"
         },
@@ -479,8 +478,8 @@
         "line2": "StableFit today"
       },
       "description": {
-        "line1": "Download the client app. Try it for free.",
-        "line2": "Your entire fitness workflow in one place."
+        "line1": "Download the app for coaches. Try it for free.",
+        "line2": "Your entire fitness process in one place."
       }
     }
   },
@@ -489,9 +488,9 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy — StableFit",
+      "title": "Privacy Policy - StableFit",
       "description": "Privacy Policy for StableFit users.",
-      "ogTitle": "Privacy Policy — StableFit",
+      "ogTitle": "Privacy Policy - StableFit",
       "ogDescription": "Privacy Policy for StableFit users."
     },
     "title": "Privacy Policy",
@@ -514,7 +513,7 @@
         "title": "3. Information We Collect",
         "items": {
           "account": "<strong>Account data:</strong> name, email address, role (Coach or Client), authentication identifiers. You may sign in with Apple or Google; those providers share the identifiers you authorize.",
-          "health": "<strong>Health and fitness data (special category):</strong> if you choose to provide it — body measurements (for example weight and circumferences), progress photos, workout logs, nutrition and water logs, and survey answers about training or diet. Processing this data requires your explicit consent. Some features will not work if you do not provide it.",
+          "health": "<strong>Health and fitness data (special category):</strong> if you choose to provide it - body measurements (for example weight and circumferences), progress photos, workout logs, nutrition and water logs, and survey answers about training or diet. Processing this data requires your explicit consent. Some features will not work if you do not provide it.",
           "communications": "<strong>Communications:</strong> in-app chat and similar messages between Coach and Client.",
           "device": "<strong>Device and usage data:</strong> app logs, device type, OS version, performance data, crash reports, and approximate diagnostics needed to run the Service.",
           "push": "<strong>Push notifications:</strong> a device push token (Apple Push Notification service or Firebase Cloud Messaging) if you allow notifications.",
@@ -547,12 +546,12 @@
         "lead": "We share data only as needed to run the Service:",
         "items": {
           "coach": "<strong>With your Coach:</strong> the assigned Coach can access your progress data and photos in the app. Our app does not provide a dedicated \"Download\" button, but a Coach using a web browser may still save images with standard browser functions.",
-          "supabase": "<strong>Supabase</strong> — database, authentication, and file storage. Data location: EU (North).",
-          "firebase": "<strong>Google Firebase</strong> (Google Ireland Limited / Google LLC) — Analytics, Crashlytics, Performance, Remote Config, Cloud Messaging.",
-          "posthog": "<strong>PostHog</strong> — product analytics.",
-          "revenuecat": "<strong>RevenueCat</strong> — subscription status and App Store / Google Play receipt validation. Apple and Google process the purchase itself.",
-          "appleGoogle": "<strong>Apple / Google</strong> — Sign in with Apple, Google Sign-In, push delivery, and in-app purchases where you use those services.",
-          "cloudflare": "<strong>Cloudflare</strong> — hosting and security for this website.",
+          "supabase": "<strong>Supabase</strong> - database, authentication, and file storage. Data location: EU (North).",
+          "firebase": "<strong>Google Firebase</strong> (Google Ireland Limited / Google LLC) - Analytics, Crashlytics, Performance, Remote Config, Cloud Messaging.",
+          "posthog": "<strong>PostHog</strong> - product analytics.",
+          "revenuecat": "<strong>RevenueCat</strong> - subscription status and App Store / Google Play receipt validation. Apple and Google process the purchase itself.",
+          "appleGoogle": "<strong>Apple / Google</strong> - Sign in with Apple, Google Sign-In, push delivery, and in-app purchases where you use those services.",
+          "cloudflare": "<strong>Cloudflare</strong> - hosting and security for this website.",
           "legal": "<strong>Legal requirements:</strong> we may disclose data if required by Polish or other applicable law or valid public-authority requests."
         }
       },
@@ -597,9 +596,9 @@
   },
   "terms": {
     "meta": {
-      "title": "Terms of Use — StableFit",
+      "title": "Terms of Use - StableFit",
       "description": "Terms of Use for StableFit users.",
-      "ogTitle": "Terms of Use — StableFit",
+      "ogTitle": "Terms of Use - StableFit",
       "ogDescription": "Terms of Use for StableFit users."
     },
     "title": "Terms of Use",
@@ -703,13 +702,13 @@
   },
   "support": {
     "meta": {
-      "title": "Support — StableFit",
+      "title": "Support - StableFit",
       "description": "StableFit support page.",
-      "ogTitle": "Support — StableFit",
+      "ogTitle": "Support - StableFit",
       "ogDescription": "Need help with StableFit? Contact us."
     },
     "title": "Support",
-    "lead": "Welcome! We are here to help you get the most out of StableFit — the app for tracking progress, transformation photos, and working with your coach.",
+    "lead": "Welcome! We are here to help you get the most out of StableFit - the app for tracking progress, transformation photos, and working with your coach.",
     "cards": {
       "how": {
         "title": "How does StableFit work?",
