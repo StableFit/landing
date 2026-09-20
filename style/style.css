@@ -791,7 +791,7 @@ a.localisation-item:focus-visible {
 .automatisation-card-image {
   height: auto;
   flex: 0 1 auto;
-  max-width: 220px;
+  max-width: min(320px, 48%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -803,7 +803,7 @@ a.localisation-item:focus-visible {
 }
 
 .automatisation-card-image .automation-efficiency-image {
-  width: 218px;
+  width: 280px;
   height: auto;
   max-width: 100%;
 }
@@ -1922,6 +1922,83 @@ main.doc-page {
 .doc-content a {
   color: var(--color-white);
   text-decoration: underline;
+}
+
+.page-404 .doc-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 48px 24px;
+}
+
+.page-404-inner {
+  text-align: center;
+}
+
+.page-404-logo {
+  display: inline-flex;
+  margin-bottom: 32px;
+}
+
+.page-404-logo img {
+  height: 28px;
+  width: auto;
+}
+
+.page-404-code {
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-gray-1);
+}
+
+.page-404 .doc-title {
+  font-size: clamp(32px, 6vw, 47px);
+  line-height: 1.15;
+}
+
+.page-404 .doc-lead {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-404-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.page-404-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-404-lang,
+.page-404-links a {
+  color: var(--color-gray-1);
+  text-decoration: none;
+}
+
+.page-404-lang:hover,
+.page-404-links a:hover {
+  color: var(--color-white);
+}
+
+.page-404-links {
+  margin-top: 40px;
+  font-size: 14px;
+  color: var(--color-gray-1);
 }
 
 .doc-content strong {

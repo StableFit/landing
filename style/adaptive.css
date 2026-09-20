@@ -529,9 +529,14 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
     text-align: left;
   }
 
-  .section-content .section-name {
+  .section-content .section-name,
+  .section-content .section-name-cl {
     width: auto;
-    justify-content: flex-start;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .section-description.description-functionality {
@@ -727,8 +732,10 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
 
   .automatisation-carts {
     grid-template-columns: 1fr;
+    grid-auto-rows: auto;
     gap: 32px;
-    min-height: min-content;
+    min-height: 0;
+    height: auto;
   }
 
   .automatisation-card {
@@ -817,9 +824,11 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
 
   .automatisation-card-image {
     width: 100%;
+    max-width: 100%;
     min-width: 0;
     height: auto;
     min-height: 0;
+    justify-content: flex-start;
   }
 
   .automatisation-card-image .automation-efficiency-image {
@@ -1146,46 +1155,57 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
 
   section.progress .progress-wrp > .progress-carts > .progress-carts,
   section.progress .progress-wrp > .progress-carts > .progress-r {
+    display: flex;
+    flex-direction: column;
     flex: 1 1 0;
     min-width: 0;
     max-width: none;
     width: auto;
+    align-self: stretch;
+    height: auto;
   }
 
   section.progress .progress-l,
   section.progress .progress-r {
-    height: auto !important;
+    height: auto;
     min-height: 0;
+    align-self: stretch;
   }
 
   section.progress .progress-r {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    flex: 1 1 0;
   }
 
   section.progress .progress-cart {
     width: 100% !important;
     max-width: none !important;
-    height: auto !important;
+    height: auto;
     min-height: 0;
     padding: 26px;
     box-sizing: border-box;
   }
 
   section.progress .progress-r .progress-cart {
-    flex: 1 1 auto;
+    flex: 1 1 0;
   }
 
   section.progress .progress-l.progress-cart {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
     gap: 10px;
+    height: 100%;
   }
 
   section.progress .progress-l .progress-cart-image-wrp {
     flex: 1 1 auto;
-    min-height: 200px;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   section.progress .progress-cart-wrp {
@@ -1240,9 +1260,9 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
   }
 
   section.progress .progress-cart-image-wrp > img {
-    width: 100%;
-    max-width: 50%;
-    margin-top: 24px;
+    width: min(72%, 280px);
+    max-width: 100%;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     height: auto;
@@ -1454,7 +1474,7 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
   .automatisation-carts .automatisation-card {
     width: 100%;
     min-width: 0;
-    min-height: 240px;
+    min-height: 0;
     aspect-ratio: auto;
     gap: 16px;
     padding: 28px 24px;
@@ -1479,8 +1499,13 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
     min-width: 0;
   }
 
+  .automatisation-card-image {
+    max-width: min(280px, 46%);
+  }
+
   .automatisation-card-image .automation-efficiency-image {
-    width: 160px;
+    width: 100%;
+    max-width: 280px;
     height: auto;
   }
 }
