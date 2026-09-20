@@ -1,0 +1,767 @@
+{
+  "meta": {
+    "title": "StableFit",
+    "brand": "StableFit",
+    "logoAlt": "Logo StableFit",
+    "heroCoachAlt": "Ekrany aplikacji StableFit dla trenera",
+    "heroClientAlt": "Ekrany StableFit z doświadczeniem klienta",
+    "appStoreQr": "Kod QR do pobrania StableFit z App Store",
+    "playQr": "Kod QR do pobrania StableFit z Google Play",
+    "screenshotAlt": "Zrzut ekranu aplikacji StableFit"
+  },
+  "nav": {
+    "coaches": "Dla trenerów",
+    "clients": "Doświadczenie klientów",
+    "support": "Wsparcie"
+  },
+  "buttons": {
+    "download": "Pobierz",
+    "tryFree": "Wypróbuj za darmo",
+    "tryNow": "Wypróbuj teraz"
+  },
+  "aria": {
+    "langUa": "Przełącz język na ukraiński",
+    "langEn": "Przełącz język na angielski",
+    "langPl": "Przełącz język na polski",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu"
+  },
+  "root": {
+    "modal": {
+      "title": "Wybierz swoje doświadczenie",
+      "lead": "Platforma dla trenerów i klientów. Dokąd chcesz przejść?",
+      "coachBtn": "Dla trenerów",
+      "clientBtn": "Dla klientów"
+    },
+    "noscript": {
+      "lead": "Włącz JavaScript lub otwórz:",
+      "coach": "dla trenerów",
+      "client": "dla klientów"
+    }
+  },
+  "coach": {
+    "meta": {
+      "title": "StableFit - platforma dla trenerów fitness",
+      "description": "StableFit - usługa dla trenerów personalnych: zarządzaj klientami, śledź postępy i rozwijaj biznes w jednym miejscu.",
+      "keywords": "aplikacja dla trenera fitness, zarządzanie klientami trenera, programy treningowe online, platforma fitness Polska, tracker postępów klientów",
+      "ogTitle": "StableFit - platforma dla trenerów fitness",
+      "ogDescription": "Zarządzaj klientami, wysyłaj programy treningowe i śledź wyniki. Wszystko, czego potrzebuje trener - w jednej aplikacji.",
+      "ogImageAlt": "StableFit - aplikacja dla trenerów personalnych",
+      "twitterTitle": "StableFit - platforma dla trenerów fitness",
+      "twitterDescription": "Zarządzaj klientami, wysyłaj programy treningowe i śledź wyniki. Wszystko, czego potrzebuje trener - w jednej aplikacji."
+    },
+    "hero": {
+      "sectionTitle": "Zarządzaj klientami.",
+      "gradientTitle": "Rozwijaj się w porządku.",
+      "description": "StableFit daje trenerom fitness jedną platformę do zarządzania klientami, tworzenia programów treningowych, śledzenia żywienia i monitorowania postępów.",
+      "contentText": "Pobierz aplikację dla trenerów:",
+      "store": {
+        "apple": "App Store",
+        "ios": "iOS",
+        "google": "Google Play",
+        "android": "Android"
+      }
+    },
+    "features": {
+      "sectionName": "Problemy i rozwiązania",
+      "sectionTitle": "Coaching fitness",
+      "gradientTitle": "wymaga zmian",
+      "description": "Większość trenerów spędza godziny na administracji. Arkusze, komunikatory i ręczne śledzenie zamiast pracy z klientami. StableFit to zmienia.",
+      "without": "Bez StableFit",
+      "withoutTitle": "Chaos w pracy",
+      "withoutItems": {
+        "item1": "Godziny spędzone na administracji",
+        "item2": "Dane klientów rozproszone po różnych aplikacjach",
+        "item3": "Niewygodne plany treningowe w Excel / Doc",
+        "item4": "Śledzenie postępów na papierze lub w notatkach",
+        "item5": "Komunikacja w wielu komunikatorach"
+      },
+      "withTitle": "Ze StableFit",
+      "withSubtitle": "Wszystko pod kontrolą",
+      "withItems": {
+        "item1": "Automatyzacja rutynowych zadań",
+        "item2": "Wszystkie potrzebne dane klienta w jednym miejscu",
+        "item3": "Spersonalizowane plany dla klientów",
+        "item4": "Śledzenie postępów z czytelnymi wykresami",
+        "item5": "Wbudowany czat"
+      }
+    },
+    "functionality": {
+      "sectionName": "Kluczowe funkcje",
+      "gradientTitle": "Wszystko, czego potrzeba",
+      "sectionTitle": "trenerowi personalnemu",
+      "description": "StableFit łączy funkcje kilku aplikacji i znacząco przyspiesza oraz upraszcza pracę trenerów.",
+      "items": {
+        "clients": {
+          "title": "Zarządzanie klientami",
+          "description": "Przechowuj wszystkie informacje o klientach w jednym miejscu i łatwo nimi zarządzaj. Dodawaj nowych klientów, zapisuj kluczowe dane i prowadź osobiste notatki.",
+          "points": {
+            "item1": "Pełna lista klientów",
+            "item2": "Dane osobowe i cele",
+            "item3": "Dane o zdrowiu i kontuzjach",
+            "item4": "Indywidualne notatki"
+          }
+        },
+        "workouts": {
+          "title": "Biblioteka treningów",
+          "description": "Korzystaj z gotowych treningów z aplikacji, dostosowuj je do swoich celów lub twórz własne od zera. Buduj indywidualne plany dla klientów i śledź ich realizację.",
+          "points": {
+            "item1": "Gotowe treningi w aplikacji",
+            "item2": "Edycja i tworzenie własnych programów",
+            "item3": "Indywidualne plany dla klientów",
+            "item4": "Podgląd ukończonych treningów"
+          }
+        },
+        "nutrition": {
+          "title": "Śledzenie postępów",
+          "description": "Śledź wyniki klientów w czasie. Przeglądaj zmiany wagi i pomiarów, które wpisują w aplikacji, a system przypomnień pomoże im regularnie aktualizować dane.",
+          "points": {
+            "item1": "Trendy wagi i pomiarów",
+            "item2": "Zdjęcia przed/po do wizualnego śledzenia postępów",
+            "item3": "Automatyczne przypomnienia o pomiarach"
+          }
+        },
+        "analytics": {
+          "title": "Monitorowanie żywienia",
+          "description": "Monitoruj dietę klientów bez dodatkowych zgłoszeń. Przeglądaj posiłki, analizuj kalorie i bilans makroskładników.",
+          "points": {
+            "item1": "Automatyczne cele kalorii i makro na podstawie danych i celów klienta",
+            "item2": "Klienci łatwo śledzą posiłki (ręcznie, ze zdjęcia lub kodu kreskowego)",
+            "item3": "Obliczanie kalorii i makro produktów z pomocą AI",
+            "item4": "Monitorowanie makroskładników"
+          }
+        },
+        "communication": {
+          "title": "Łatwa komunikacja",
+          "description": "Rozmawiaj z klientami bezpośrednio w aplikacji. Cała komunikacja jest w jednym miejscu - bez przełączania się między komunikatorami.",
+          "points": {
+            "item1": "Czat z klientami w jednej aplikacji",
+            "item2": "Szybka i wygodna komunikacja",
+            "item3": "Wszystkie rozmowy pod ręką"
+          }
+        }
+      }
+    },
+    "progress": {
+      "sectionName": "Prawdziwy postęp",
+      "sectionTitle": "Śledź każdą zmianę.",
+      "gradientTitle": "Pokazuj wyniki.",
+      "description": {
+        "line1": "Wizualne wykresy pomiarów, porównania przed/po i pełna historia zmian.",
+        "line2": "Pokaż klientom, jak daleko zaszli, i motywuj ich do dalszej pracy."
+      },
+      "cards": {
+        "measurements": {
+          "title": "Pomiary ciała",
+          "description": "Śledź zmiany obwodów we wszystkich strefach"
+        },
+        "numbers": {
+          "title": "Postęp w liczbach",
+          "description": "Analizuj dynamikę wagi"
+        },
+        "photos": {
+          "title": "Zdjęcia postępów",
+          "description": "Obserwuj realne zmiany i motywuj",
+          "before": "Przed",
+          "after": "Po"
+        }
+      }
+    },
+    "automatisation": {
+      "sectionName": "Automatyzacja i efektywność",
+      "sectionTitle": "Mniej rutyny -",
+      "gradientTitle": "więcej wyników",
+      "description": "StableFit przejmuje pracę administracyjną, żebyś mógł skupić się na treningu, a nie na arkuszach.",
+      "cards": {
+        "first": {
+          "title": "Sprawny proces treningowy",
+          "description": "Twórz indywidualne programy w kilka minut, a aplikacja zbiera informację zwrotną po treningach i pomaga korygować obciążenie bez dodatkowych wiadomości.",
+          "mini": {
+            "first": {
+              "title": "Bieg na bieżni x1",
+              "status": "Łatwo"
+            },
+            "second": {
+              "title": "Książeczka x3",
+              "status": "Normalnie"
+            }
+          }
+        },
+        "second": {
+          "title": "Wsparcie motywacji klientów",
+          "description": "System pomaga śledzić pomiary i wyniki treningów, budując jasny obraz postępów.\nKlienci widzą zmiany i pozostają zaangażowani bez dodatkowych przypomnień.",
+          "feature": {
+            "title": "Trening ukończony!",
+            "subtitle": "Barki, ramiona, brzuch",
+            "point1": "10/11 ćwiczeń ukończonych",
+            "point2": "30/33 serii ukończonych"
+          }
+        },
+        "third": {
+          "title": "Automatyczne przypomnienia o pomiarach i wskaźnikach",
+          "description": {
+            "line1": "Aplikacja przypomina klientom o pomiarach we właściwym czasie.",
+            "line2": "Automatyzacja zmniejsza Twoją ręczną kontrolę i pomaga klientom regularnie śledzić postępy."
+          },
+          "noteTitle": "Czas dodać pomiary!",
+          "noteDescription": "Zaktualizuj wskaźniki, aby zobaczyć postęp."
+        },
+        "fourth": {
+          "title": "Narzędzia, które robią z Ciebie profesjonalistę",
+          "description": "Wszystkie procesy działają systemowo. To wzmacnia Twój wizerunek eksperta, zwiększa zaufanie klientów i poprawia wyniki pracy."
+        }
+      }
+    },
+    "testimonials": {
+      "sectionName": "Opinie trenerów",
+      "sectionTitle": "Dlaczego trenerzy",
+      "gradientTitle": "wybierają StableFit",
+      "description": "Stworzone dla nowoczesnego trenera fitness, który chce skalować biznes bez żonglowania dodatkowymi narzędziami.",
+      "marqueeAria": "Przewijany rząd kart z opiniami trenerów",
+      "cards": {
+        "first": {
+          "text": "Wreszcie jedna aplikacja zamiast Telegram, Excel i papierowego zeszytu. Polecam wszystkim kolegom.",
+          "name": "Vadym Prytula",
+          "role": "Trener fitness, Warszawa"
+        },
+        "second": {
+          "text": "Klienci sami śledzą postępy i piszą z pytaniami. Ich motywacja wzrosła, a odpływ spadł o połowę.",
+          "name": "Kateryna Sydorenko",
+          "role": "Trenerka fitness, Kraków"
+        },
+        "third": {
+          "text": "Wcześniej spędzałem 3 godziny dziennie na arkuszach. Teraz to 20 minut. Wziąłem 4 kolejnych klientów i zarabiam więcej.",
+          "name": "Oleksii Melnyk",
+          "role": "Trener personalny, Wrocław"
+        }
+      }
+    },
+    "pricing": {
+      "sectionName": "Cennik",
+      "sectionTitle": "Uczciwa cena,",
+      "gradientTitle": "bez ukrytych opłat",
+      "description": "Zacznij za darmo. Przejdź na płatny plan później.",
+      "disclaimer": "Płatność przez zakupy w aplikacji w App Store lub Google Play. Cena może się różnić w zależności od kraju i jest pobierana w walucie lokalnej.",
+      "cards": {
+        "monthly": {
+          "badge": "Optymalny",
+          "term": "miesięcznie",
+          "price": "$20",
+          "suffix": "/mies",
+          "noteLine1": "Do 3 klientów za darmo",
+          "noteLine2": "rozliczenie miesięczne"
+        },
+        "yearly": {
+          "badge": "Najkorzystniejszy",
+          "term": "rocznie",
+          "price": "$100",
+          "suffix": "/rok",
+          "noteLine1": "Do 3 klientów za darmo",
+          "noteLine2": "płatność $100 raz w roku"
+        }
+      }
+    },
+    "downloadApp": {
+      "sectionName": "Pobierz aplikację",
+      "headline": {
+        "line1": "Zacznij korzystać ze",
+        "line2": "StableFit już dziś"
+      },
+      "description": {
+        "line1": "Pobierz aplikację dla trenerów. Wypróbuj za darmo.",
+        "line2": "Cały proces fitness w jednym miejscu."
+      }
+    },
+    "howToStart": {
+      "sectionName": "Jak to działa",
+      "sectionTitle": "Zacznij w ",
+      "gradientTitle": "3 prostych krokach",
+      "description": "Bez długiej konfiguracji. Dodaj pierwszego klienta już teraz.",
+      "steps": {
+        "first": {
+          "title": "Zarejestruj się i dodaj klientów",
+          "description": "Pobierz aplikację, utwórz profil i dodaj klientów. Otrzymają zaproszenie do rejestracji, a obie aplikacje pozostaną zsynchronizowane."
+        },
+        "second": {
+          "title": "Dodaj programy treningowe",
+          "description": "Korzystaj z wbudowanej biblioteki treningów lub dodawaj własne. Zbuduj spersonalizowany program dla każdego klienta."
+        },
+        "third": {
+          "title": "Trenuj i motywuj",
+          "description": "Klienci zapisują treningi i posiłki. Śledźcie postępy razem i utrzymuj ich motywację."
+        }
+      }
+    }
+  },
+  "client": {
+    "meta": {
+      "title": "StableFit - doświadczenie klienta w aplikacji trenera",
+      "description": "Daj klientom treningi z Twoich programów, śledzenie żywienia z AI i postępy w jednej aplikacji StableFit.",
+      "keywords": "doświadczenie klienta dla trenerów, aplikacja fitness dla klientów, programy treningowe, postępy klientów, StableFit Polska",
+      "ogTitle": "StableFit - doświadczenie klienta",
+      "ogDescription": "Treningi, żywienie z AI, postępy i czat z trenerem - tak klienci trenują w StableFit.",
+      "ogImageAlt": "StableFit - doświadczenie klienta w aplikacji trenera",
+      "twitterTitle": "StableFit - doświadczenie klienta",
+      "twitterDescription": "Treningi, żywienie z AI, postępy i czat z trenerem - tak klienci trenują w StableFit."
+    },
+    "hero": {
+      "sectionTitle": "Szybszy postęp.",
+      "gradientTitle": "Osiągaj wyniki.",
+      "description": "Trening według Twoich programów, śledzenie żywienia z AI, wizualizacja postępów i stały kontakt z Tobą - wszystko dla Twoich klientów w jednej aplikacji.",
+      "contentText": "Pobierz aplikację dla klientów:",
+      "store": {
+        "apple": "App Store",
+        "ios": "iOS",
+        "google": "Google Play",
+        "android": "Android"
+      }
+    },
+    "functionality": {
+      "sectionName": "Kluczowe funkcje",
+      "headlineLine1": "Wszystko do skutecznego treningu",
+      "headlineLine2": "Twoich klientów",
+      "description": "StableFit łączy funkcje kilku aplikacji w jednym miejscu, upraszczając cały proces treningowy i pomagając szybciej osiągać wyniki.",
+      "items": {
+        "program": {
+          "title": "Program treningowy",
+          "description": "Trening według indywidualnych programów, zapisywanie wyników i jasny proces bez zbędnego wysiłku.",
+          "points": {
+            "item1": "Spersonalizowane plany dla każdego klienta",
+            "item2": "Proste i zrozumiałe wykonywanie ćwiczeń",
+            "item3": "Możliwość dodawania filmów z ćwiczeń i notatek do treningów"
+          }
+        },
+        "feedback": {
+          "title": "Informacja zwrotna",
+          "description": "Nagrywanie filmów z ćwiczeń, informacja zwrotna i korekta treningów dla szybszego i bezpieczniejszego postępu klientów.",
+          "points": {
+            "item1": "Ocena trudności ćwiczeń",
+            "item2": "Filmy treningowe",
+            "item3": "Korekta programu w czasie rzeczywistym"
+          }
+        },
+        "nutrition": {
+          "title": "Monitorowanie żywienia",
+          "description": "Zapisywanie posiłków, śledzenie diety i rekomendacje od trenera, aby osiągać maksymalne wyniki.",
+          "points": {
+            "item1": "Łatwe zapisywanie z pomocą AI",
+            "item2": "Śledzenie kalorii i makroskładników",
+            "item3": "Rekomendacje od trenera"
+          }
+        },
+        "progressTracking": {
+          "title": "Śledzenie postępów",
+          "description": "Kontrola zmian wagi i pomiarów, analiza postępów klienta i wizualizacja wyników.",
+          "points": {
+            "item1": "Wykresy pomiarów i wagi",
+            "item2": "Porównania przed/po",
+            "item3": "Pełna historia zmian",
+            "item4": "Przypomnienia o aktualizacji danych"
+          }
+        },
+        "communication": {
+          "title": "Łatwa komunikacja",
+          "description": "Stały kontakt z trenerem, wiadomości i wsparcie bez dodatkowych kanałów komunikacji.",
+          "points": {
+            "item1": "Natychmiastowe wiadomości",
+            "item2": "Wsparcie i wskazówki od trenera",
+            "item3": "Cała komunikacja w jednej aplikacji"
+          }
+        }
+      }
+    },
+    "progress": {
+      "sectionName": "Prawdziwy postęp",
+      "sectionTitle": "Śledź każdą zmianę.",
+      "gradientTitle": "Pokazuj wyniki.",
+      "description": {
+        "line1": "Wizualne wykresy pomiarów, porównania przed/po i pełna historia zmian.",
+        "line2": "Widzisz swój postęp w czasie i pozostajesz zmotywowany każdego dnia."
+      },
+      "body": {
+        "startLabel": "pocz.",
+        "chest": {
+          "title": "Klatka",
+          "delta": "+ 6.1 cm ↑"
+        },
+        "neck": {
+          "title": "Szyja",
+          "delta": "+ 3.1 cm ↑"
+        },
+        "bicep": {
+          "title": "Biceps",
+          "delta": "+ 6.2 cm ↑"
+        },
+        "abdomen": {
+          "title": "Brzuch",
+          "delta": "− 10.0 cm ↓"
+        },
+        "glutes": {
+          "title": "Pośladki",
+          "delta": "+ 4.2 cm ↑"
+        },
+        "thigh": {
+          "title": "Uda",
+          "delta": "+ 3.2 cm ↑"
+        },
+        "calf": {
+          "title": "Łydki",
+          "delta": "+ 2.2 cm ↑"
+        },
+        "weight": {
+          "title": "Masa ciała",
+          "delta": "− 4.0 kg ↓"
+        }
+      },
+      "cards": {
+        "measurements": {
+          "title": "Pomiary ciała",
+          "description": "Śledź zmiany obwodów we wszystkich strefach"
+        },
+        "numbers": {
+          "title": "Postęp w liczbach",
+          "description": "Analizuj dynamikę wagi"
+        },
+        "photos": {
+          "title": "Zdjęcia postępów",
+          "description": "Zobacz realne zmiany i pozostań zmotywowany",
+          "before": "Przed",
+          "after": "Po"
+        }
+      }
+    },
+    "howToStart": {
+      "sectionName": "Jak to działa",
+      "sectionTitle": "Zacznij w ",
+      "gradientTitle": "3 prostych krokach",
+      "description": "Bez długiej konfiguracji. Połącz się z trenerem i zacznij trenować już teraz.",
+      "steps": {
+        "first": {
+          "title": "Otrzymaj zaproszenie i zarejestruj się",
+          "description": "Otrzymaj zaproszenie, utwórz profil i połącz się z trenerem. Dane synchronizują się automatycznie, więc możesz zacząć od razu."
+        },
+        "second": {
+          "title": "Trenuj według planu",
+          "description": "Trenuj z programem przygotowanym przez trenera. Nagrywaj filmy z ćwiczeń, oceniaj trudność i śledź żywienie - trener to widzi i koryguje plan."
+        },
+        "third": {
+          "title": "Śledź swoje postępy",
+          "description": "Zapisuj treningi, pomiary i wagę w czasie. Aplikacja przypomina, kiedy zaktualizować dane, żebyś pozostał zmotywowany."
+        }
+      }
+    },
+    "testimonials": {
+      "sectionName": "Opinie klientów",
+      "sectionTitle": "Dlaczego klienci",
+      "gradientTitle": "cenią StableFit",
+      "description": "Stworzone dla osób, które chcą trenować skutecznie, śledzić postępy i osiągać wyniki bez zbędnego zamieszania.",
+      "marqueeAria": "Przewijany rząd kart z opiniami klientów",
+      "cards": {
+        "first": {
+          "text": "Wszystko w jednej aplikacji: treningi, pomiary, żywienie. Oszczędza czas i pomaga mi pozostać zmotywowanym.",
+          "name": "Dmytro Kravets",
+          "role": "Warszawa"
+        },
+        "second": {
+          "text": "Lubię zapisywać ćwiczenia i posiłki - mój trener od razu widzi wyniki.",
+          "name": "Oleksandra Koval",
+          "role": "Kraków"
+        },
+        "third": {
+          "text": "Bardzo wygodnie! Treningi i pomiary zawsze pod kontrolą, a postęp widać każdego dnia.",
+          "name": "Ihor Shevchenko",
+          "role": "Gdańsk"
+        },
+        "fourth": {
+          "text": "Dzięki StableFit naprawdę widzę swój postęp na wykresach. To motywuje, żeby nie opuszczać treningów!",
+          "name": "Marko Lytvyn",
+          "role": "Wrocław"
+        }
+      }
+    },
+    "downloadApp": {
+      "sectionName": "Pobierz aplikację",
+      "headline": {
+        "line1": "Zacznij korzystać ze",
+        "line2": "StableFit już dziś"
+      },
+      "description": {
+        "line1": "Pobierz aplikację dla trenerów. Wypróbuj za darmo.",
+        "line2": "Cały proces fitness w jednym miejscu."
+      }
+    }
+  },
+  "card": {
+    "footerScan": "zeskanuj, aby pobrać"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Polityka prywatności - StableFit",
+      "description": "Jak StableFit zbiera, wykorzystuje i chroni dane osobowe trenerów i klientów.",
+      "ogTitle": "Polityka prywatności - StableFit",
+      "ogDescription": "Jak StableFit zbiera, wykorzystuje i chroni dane osobowe trenerów i klientów.",
+      "twitterTitle": "Polityka prywatności - StableFit",
+      "twitterDescription": "Jak StableFit zbiera, wykorzystuje i chroni dane osobowe trenerów i klientów."
+    },
+    "title": "Polityka prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: 9 września 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Wstęp",
+        "text": "StableFit szanuje Twoją prywatność. Niniejsza Polityka prywatności wyjaśnia, jak zbieramy, wykorzystujemy i udostępniamy informacje o Tobie, gdy korzystasz z naszych aplikacji mobilnych dla Trenera i Klienta oraz ze strony internetowej.",
+        "controller": "<strong>Administrator danych:</strong> Ihor Savva, prowadzący działalność jako <strong>SavvaDev - Ihor Savva</strong>, jednoosobowa działalność gospodarcza zarejestrowana w Polsce. Kontakt: <a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a>. Siedziba: <em>Poland, woj. MAZOWIECKIE, pow. Warszawa, gm. Warszawa, miejsc. Warszawa, ul. Bobrowiecka, nr 10, lok. 67, 00-728</em>. Numer identyfikacji podatkowej (NIP): <em>5214103415</em>."
+      },
+      "roles": {
+        "title": "2. Role (Trener i Klient)",
+        "items": {
+          "item1": "<strong>StableFit</strong> jest administratorem Twojego konta, uwierzytelniania, danych urządzenia i użytkowania, tokenów push, analityki i danych o awariach oraz statusu subskrypcji Trenera (zapisy billingowe, które przechowujemy na naszych serwerach).",
+          "item2": "<strong>Twój Trener</strong> jest niezależnym administratorem danych osobowych, które przetwarza w ramach działalności trenerskiej (plany treningowe, notatki, ankiety, które wysyła, oraz dane postępów, które przegląda). Przetwarzamy te treści, aby świadczyć platformę.",
+          "item3": "Akceptując zaproszenie Trenera, Klient rozumie, że przypisany Trener może widzieć dane postępów Klienta i zdjęcia w Serwisie. Trenerzy nie mogą usuwać Klientów; Klient, który chce usunąć dane, powinien skontaktować się z nami (i może też poprosić Trenera o zaprzestanie korzystania z danych we własnych zapisach)."
+        }
+      },
+      "info": {
+        "title": "3. Informacje, które zbieramy",
+        "items": {
+          "account": "<strong>Dane konta:</strong> imię i nazwisko, adres e-mail, rola (Trener lub Klient), identyfikatory uwierzytelniania. Możesz logować się przez Apple lub Google; ci dostawcy udostępniają identyfikatory, na które wyrażasz zgodę.",
+          "health": "<strong>Dane o zdrowiu i fitness (szczególna kategoria):</strong> jeśli zdecydujesz się je podać - pomiary ciała (na przykład waga i obwody), zdjęcia postępów, dzienniki treningów, dzienniki żywienia i wody oraz odpowiedzi z ankiet o treningu lub diecie. Przetwarzanie tych danych wymaga Twojej wyraźnej zgody. Niektóre funkcje nie będą działać, jeśli ich nie podasz.",
+          "communications": "<strong>Komunikacja:</strong> czat w aplikacji i podobne wiadomości między Trenerem a Klientem.",
+          "device": "<strong>Dane urządzenia i użytkowania:</strong> logi aplikacji, typ urządzenia, wersja systemu, dane wydajności, raporty o awariach oraz przybliżone dane diagnostyczne potrzebne do działania Serwisu.",
+          "push": "<strong>Powiadomienia push:</strong> token push urządzenia (Apple Push Notification service lub Firebase Cloud Messaging), jeśli zezwolisz na powiadomienia.",
+          "analytics": "<strong>Analityka:</strong> zdarzenia dotyczące sposobu korzystania z aplikacji, zbierane przez Google Firebase (Analytics, Crashlytics, Performance, Remote Config) oraz PostHog (analityka produktowa).",
+          "subscription": "<strong>Dane subskrypcji (Trenerzy):</strong> identyfikator produktu, sklep (App Store lub Google Play), okres rozliczeniowy, identyfikatory transakcji, status subskrypcji i powiązane znaczniki czasu. Ten status jest przechowywany na Twoim koncie StableFit, żeby dostęp Pro szedł za kontem, a nie za jednym urządzeniem. <strong>Nie</strong> otrzymujemy pełnego numeru Twojej karty płatniczej. Płatność przetwarzają Apple i Google."
+        },
+        "noSell": "<strong>Nie</strong> sprzedajemy Twoich danych osobowych ani zdjęć stronom trzecim i nie wykorzystujemy zdjęć postępów do reklamy."
+      },
+      "legalBases": {
+        "title": "4. Podstawy prawne (RODO)",
+        "items": {
+          "contract": "<strong>Umowa</strong> (art. 6 ust. 1 lit. b): tworzenie i prowadzenie Twojego konta, świadczenie Serwisu, przechowywanie statusu subskrypcji Trenera, wsparcie klienta.",
+          "consent": "<strong>Zgoda</strong> (art. 6 ust. 1 lit. a oraz, dla danych o zdrowiu, art. 9 ust. 2 lit. a): dane o zdrowiu i fitness, zdjęcia postępów, opcjonalne powiadomienia push. Możesz wycofać zgodę w dowolnym momencie (na przykład usuwając zdjęcia lub pomiary, wyłączając powiadomienia lub wnioskując o usunięcie konta). Wycofanie nie wpływa na przetwarzanie już dokonane.",
+          "legitimate": "<strong>Prawnie uzasadnione interesy</strong> (art. 6 ust. 1 lit. f): bezpieczeństwo, zapobieganie oszustwom, naprawianie błędów oraz rozumienie korzystania z produktu (Firebase i PostHog) w sposób proporcjonalny i nieprzeważający Twoich interesów.",
+          "obligation": "<strong>Obowiązek prawny</strong> (art. 6 ust. 1 lit. c): gdy musimy przechowywać ograniczone zapisy billingowe lub księgowe albo odpowiadać na zgodne z prawem żądania."
+        }
+      },
+      "usage": {
+        "title": "5. Jak wykorzystujemy Twoje informacje",
+        "items": {
+          "item1": "Aby świadczyć i utrzymywać Serwis, w tym dopasowywać Klienta do przypisanego Trenera.",
+          "item2": "Aby Trenerzy mogli przeglądać postępy Klienta po jego przypisaniu.",
+          "item3": "Aby stosować limity planu Trenera (plan darmowy do trzech Klientów; Pro przez subskrypcję w aplikacji) i przechowywać status subskrypcji na koncie Trenera na wszystkich urządzeniach.",
+          "item4": "Aby wysyłać powiadomienia transakcyjne oraz (jeśli włączone) powiadomienia push.",
+          "item5": "Aby monitorować użycie, diagnozować awarie i ulepszać Serwis."
+        }
+      },
+      "sharing": {
+        "title": "6. Udostępnianie i podmioty przetwarzające",
+        "lead": "Udostępniamy dane wyłącznie w zakresie potrzebnym do działania Serwisu:",
+        "items": {
+          "coach": "<strong>Z Twoim Trenerem:</strong> przypisany Trener ma dostęp do Twoich danych postępów i zdjęć w aplikacji. Nasza aplikacja nie ma osobnego przycisku „Pobierz”, ale Trener korzystający z przeglądarki internetowej nadal może zapisać obrazy standardowymi funkcjami przeglądarki.",
+          "supabase": "<strong>Supabase</strong> - baza danych, uwierzytelnianie i przechowywanie plików. Lokalizacja danych: EU (North).",
+          "firebase": "<strong>Google Firebase</strong> (Google Ireland Limited / Google LLC) - Analytics, Crashlytics, Performance, Remote Config, Cloud Messaging.",
+          "posthog": "<strong>PostHog</strong> - analityka produktowa.",
+          "revenuecat": "<strong>RevenueCat</strong> - status subskrypcji i walidacja paragonów App Store / Google Play. Sam zakup przetwarzają Apple i Google.",
+          "appleGoogle": "<strong>Apple / Google</strong> - logowanie przez Apple, Google Sign-In, dostarczanie powiadomień push i zakupy w aplikacji, gdy korzystasz z tych usług.",
+          "cloudflare": "<strong>Cloudflare</strong> - hosting i bezpieczeństwo tej strony internetowej.",
+          "legal": "<strong>Wymogi prawne:</strong> możemy ujawnić dane, jeśli wymaga tego prawo polskie lub inne właściwe prawo albo ważne żądania organów publicznych."
+        }
+      },
+      "transfers": {
+        "title": "7. Przekazywanie danych za granicę",
+        "text": "Niektóre podmioty przetwarzające (w tym Google, PostHog, RevenueCat i Apple) mogą przetwarzać dane poza Europejskim Obszarem Gospodarczym, w tym w Stanach Zjednoczonych. Gdy to robimy, opieramy się na decyzji o odpowiednim stopniu ochrony (w tym EU-US Data Privacy Framework, gdy podmiot jest certyfikowany) i/lub Standardowych Klauzulach Umownych oraz dodatkowych środkach, gdy jest to stosowne."
+      },
+      "storage": {
+        "title": "8. Przechowywanie danych i bezpieczeństwo",
+        "text": "Dane konta i treści (w tym zdjęcia) są przechowywane przy użyciu Supabase. Dostęp do zdjęć mają wyłącznie uprawniony Klient i jego przypisany Trener oraz nasze podmioty przetwarzające w zakresie potrzebnym do działania przechowywania. Żadna metoda przesyłania ani przechowywania nie jest w 100% bezpieczna; stosujemy komercyjnie uzasadnione środki techniczne i organizacyjne."
+      },
+      "retention": {
+        "title": "9. Okres przechowywania",
+        "text": "Przechowujemy dane osobowe, dopóki Twoje konto jest aktywne i tak długo, jak jest to potrzebne do celów określonych w tej Polityce. Po przetworzeniu wniosku o usunięcie konta usuwamy dane z aktywnych baz. Ograniczone kopie mogą pozostać w kopiach zapasowych przez krótki czas, aż te kopie zostaną wymienione. Identyfikatory subskrypcji i transakcji mogą być przechowywane tak długo, jak wymagają Apple, Google lub właściwe przepisy księgowe. Jeśli Trener jest w trybie tylko do odczytu z powodu limitów planu, nie usuwamy danych Klientów wyłącznie z tego powodu."
+      },
+      "rights": {
+        "title": "10. Twoje prawa",
+        "lead": "Jeśli stosuje się RODO (w tym gdy przebywasz w EOG), możesz:",
+        "items": {
+          "access": "<strong>Uzyskać dostęp</strong> do kopii danych osobowych, które o Tobie posiadamy.",
+          "rectify": "<strong>Sprostować</strong> nieprawidłowe dane.",
+          "erase": "<strong>Usunąć</strong> swoje konto i powiązane dane (zdjęcia, pomiary i inne treści, które przechowujemy), z zastrzeżeniem prawnego obowiązku przechowywania.",
+          "restrict": "<strong>Ograniczyć</strong> lub <strong>wnieść sprzeciw</strong> wobec określonego przetwarzania oraz zażądać <strong>przenoszenia</strong> danych, które podałeś.",
+          "withdraw": "<strong>Wycofać zgodę</strong> na dane o zdrowiu i zdjęcia, usuwając je lub nie przesyłając nowych, a na powiadomienia - w ustawieniach urządzenia."
+        },
+        "exercise": "Aby skorzystać z tych praw, napisz na <a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a>. Odpowiemy bez zbędnej zwłoki i w każdym razie w ciągu jednego miesiąca (możliwe przedłużenie o dwa miesiące w przypadku złożonych wniosków, z powiadomieniem). Anulowanie subskrypcji Pro w Apple lub Google samo w sobie nie usuwa Twojego konta StableFit."
+      },
+      "children": {
+        "title": "11. Dzieci",
+        "text": "Serwis jest przeznaczony dla użytkowników w wieku 18 lat lub starszych. Świadomie nie zbieramy danych osobowych dzieci. Jeśli uważasz, że to zrobiliśmy, skontaktuj się z nami, a je usuniemy."
+      },
+      "changes": {
+        "title": "12. Zmiany",
+        "text": "Możemy aktualizować tę Politykę prywatności. Zmienimy datę „Ostatnia aktualizacja” i, gdy zmiana jest istotna, przekażemy dodatkowe powiadomienie w aplikacji lub e-mailem."
+      },
+      "contact": {
+        "title": "13. Kontakt",
+        "email": "<a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a>",
+        "terms": "Korzystanie z Serwisu regulują również nasze <a href=\"/terms-and-conditions/\">Warunki korzystania</a>."
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Warunki korzystania - StableFit",
+      "description": "Warunki korzystania z aplikacji mobilnych i strony internetowej StableFit.",
+      "ogTitle": "Warunki korzystania - StableFit",
+      "ogDescription": "Warunki korzystania z aplikacji mobilnych i strony internetowej StableFit.",
+      "twitterTitle": "Warunki korzystania - StableFit",
+      "twitterDescription": "Warunki korzystania z aplikacji mobilnych i strony internetowej StableFit."
+    },
+    "title": "Warunki korzystania",
+    "lastUpdated": "Ostatnia aktualizacja: 9 września 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Wstęp",
+        "text1": "Witamy w <strong>StableFit</strong> (\"my\", \"nasz\" lub \"nas\"). Niniejsze Warunki korzystania (\"Warunki\") regulują korzystanie z aplikacji mobilnych StableFit (trener i klient) oraz powiązanych stron internetowych (łącznie \"Serwis\"). Serwisem zarządza <strong>SavvaDev - Ihor Savva</strong>, jednoosobowa działalność gospodarcza zarejestrowana w Polsce. Kontakt: <a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a>. Siedziba: <em>ul. Bobrowiecka 10/67, 00-728 Warszawa, Poland</em>. Numer identyfikacji podatkowej (NIP): <em>5214103415</em>.",
+        "text2": "Uzyskując dostęp do Serwisu lub z niego korzystając, zgadzasz się być związany tymi Warunkami. Jeśli nie zgadzasz się z jakąkolwiek częścią tych Warunków, nie możesz korzystać z Serwisu. Jeśli korzystasz z Serwisu jako Trener, robisz to w ramach swojej zawodowej działalności trenerskiej."
+      },
+      "age": {
+        "title": "2. Ograniczenie wiekowe",
+        "text": "Serwis jest przeznaczony wyłącznie dla użytkowników, którzy mają <strong>18 lat lub więcej</strong>. Uzyskując dostęp do Serwisu lub z niego korzystając, oświadczasz i gwarantujesz, że masz co najmniej 18 lat. Świadomie nie zbieramy informacji od osób poniżej 18. roku życia."
+      },
+      "description": {
+        "title": "3. Opis Serwisu",
+        "text": "StableFit to platforma ułatwiająca komunikację i śledzenie postępów między trenerami fitness (\"Trenerzy\") a ich klientami (\"Klienci\"). Serwis obejmuje aplikację Trenera i aplikację Klienta.",
+        "items": {
+          "tool": "<strong>Jesteśmy dostawcą narzędzia:</strong> StableFit zapewnia infrastrukturę programową. Nie udzielamy porad fitness, nie stawiamy diagnoz medycznych i nie zatrudniamy Trenerów korzystających z naszej platformy.",
+          "verification": "<strong>Brak weryfikacji Trenerów:</strong> nie weryfikujemy uprawnień, dyplomów ani certyfikatów Trenerów. Klienci ponoszą wyłączną odpowiedzialność za sprawdzenie swoich Trenerów przed rozpoczęciem jakiegokolwiek programu treningowego.",
+          "clientAccess": "<strong>Dostęp Klienta:</strong> rejestracja Klienta jest dostępna wyłącznie przez osobiste zaproszenie od Trenera. Klienci nie płacą StableFit za Serwis."
+        }
+      },
+      "medical": {
+        "title": "4. Zastrzeżenie medyczne",
+        "text": "<strong>StableFit nie jest aplikacją medyczną.</strong> Treści, wykresy i dane w Serwisie służą wyłącznie celom informacyjnym.",
+        "items": {
+          "item1": "Przed rozpoczęciem jakiegokolwiek programu ćwiczeń lub żywienia skonsultuj się z lekarzem lub innym specjalistą opieki zdrowotnej.",
+          "item2": "StableFit nie ponosi odpowiedzialności za problemy zdrowotne, urazy lub szkody, które mogą wyniknąć z programów treningowych dostarczonych przez Trenerów lub z korzystania z Serwisu."
+        }
+      },
+      "accounts": {
+        "title": "5. Konta",
+        "items": {
+          "item1": "Musisz podawać dokładne informacje i zachować poufność danych logowania. Odpowiadasz za aktywność na swoim koncie.",
+          "item2": "Trenerzy mogą zapraszać Klientów. <strong>Trenerzy nie mogą usuwać Klientów</strong> z Serwisu. Jeśli potrzebujesz usunąć konto, posiadacz konta może złożyć wniosek o usunięcie zgodnie z opisem poniżej.",
+          "item3": "Aby usunąć <strong>własne</strong> konto, napisz na <a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a>. Usunięcie konta Trenera nie anuluje automatycznie subskrypcji App Store lub Google Play; musisz anulować tę subskrypcję w sklepie zgodnie z opisem w Sekcji 6."
+        }
+      },
+      "subscriptions": {
+        "title": "6. Subskrypcje Trenera i płatności",
+        "lead": "Ta Sekcja dotyczy Trenerów. Klienci nie są obciążani przez StableFit.",
+        "plansTitle": "<strong>6.1 Plany.</strong> Trenerzy mogą korzystać z Serwisu w ramach darmowego planu lub płatnej subskrypcji \"Pro\".",
+        "items": {
+          "free": "<strong>Plan darmowy:</strong> Trener może korzystać z Serwisu z pełnym dostępem do zapisu dla maksymalnie <strong>trzech (3) Klientów</strong>.",
+          "pro": "<strong>Pro:</strong> Automatycznie odnawiana subskrypcja miesięczna lub roczna. Tytuł subskrypcji, długość okresu subskrypcji i cena są wyświetlane w aplikacji Trenera w momencie zakupu i mogą się różnić w zależności od kraju i sklepu. Nie oferujemy bezpłatnego okresu próbnego.",
+          "readonly": "Jeśli Trener ma <strong>więcej niż trzech Klientów</strong> i nie ma aktywnej subskrypcji Pro (w tym po wygaśnięciu lub anulowaniu na końcu opłaconego okresu), dostęp Trenera staje się <strong>tylko do odczytu</strong>: Trener może przeglądać istniejące dane, ale nie może dodawać Klientów, treningów, pomiarów ani innych działań zapisu, które wskazujemy w aplikacji. Istniejący Klienci i ich dane nie są usuwani z powodu tego limitu. Ponieważ Trenerzy nie mogą usuwać Klientów, Trener nie może wrócić do dostępu do zapisu w planie darmowym, usuwając Klientów. Przywrócenie dostępu do zapisu, gdy Trener ma więcej niż trzech Klientów, wymaga aktywnej subskrypcji Pro."
+        },
+        "clientsNote": "Klienci obecnie nadal korzystają z aplikacji Klienta jak zwykle, jeśli ich Trener jest na planie darmowym lub w trybie tylko do odczytu. Później możemy ograniczyć funkcje Klienta, gdy Trener przekroczy darmowy limit lub nie ma Pro. Jeśli to zrobimy, przekażemy wcześniejsze powiadomienie przez Serwis lub e-mailem.",
+        "nonPayment": "Brak płatności lub wygaśnięcie nie usuwa od razu Twoich danych. Konto Trenera pozostaje dostępne na warunkach wówczas obowiązującego planu (w tym tylko do odczytu). Przechowywanie po usunięciu konta opisuje nasza Polityka prywatności.",
+        "howYouPay": "<strong>6.2 Jak płacisz.</strong> Pro jest sprzedawane wyłącznie jako zakup w aplikacji przez Apple App Store lub Google Play. Nie przyjmujemy numerów kart. Apple lub Google (w zależności od przypadku) jest sprzedawcą transakcji. Rozliczenia mogą być przetwarzane przy wsparciu naszego dostawcy infrastruktury subskrypcji (RevenueCat).",
+        "appleTitle": "<strong>6.3 Automatycznie odnawiane subskrypcje Apple App Store.</strong> Jeśli kupujesz Pro na iOS:",
+        "appleItems": {
+          "item1": "Płatność zostanie pobrana z Twojego konta Apple ID w momencie potwierdzenia zakupu.",
+          "item2": "Subskrypcja odnawia się automatycznie, chyba że automatyczne odnawianie zostanie wyłączone co najmniej 24 godziny przed końcem bieżącego okresu.",
+          "item3": "Twoje konto zostanie obciążone za odnowienie w ciągu 24 godzin przed końcem bieżącego okresu, według ceny, która została Ci ujawniona.",
+          "item4": "Możesz zarządzać subskrypcją i wyłączyć automatyczne odnawianie w ustawieniach konta Apple ID po zakupie (Settings &gt; [your name] &gt; Subscriptions)."
+        },
+        "google": "<strong>6.4 Subskrypcje Google Play.</strong> Jeśli kupujesz Pro na Androidzie, płatność jest pobierana z Twojego konta Google. Subskrypcja odnawia się automatycznie, dopóki nie anulujesz jej w Google Play (Google Play &gt; Payments &amp; subscriptions &gt; Subscriptions). Anulowanie i zwroty są obsługiwane zgodnie z politykami Google Play.",
+        "tied": "<strong>6.5 Subskrypcja jest powiązana z Twoim kontem StableFit.</strong> Dostęp Pro jest przypisany do Twojego konta Trenera i przechowywany na naszych serwerach. Zmiana urządzeń, reinstalacja aplikacji lub logowanie na innym urządzeniu <strong>nie</strong> wymaga nowego zakupu, dopóki subskrypcja pozostaje aktywna. Możesz użyć Restore Purchases w aplikacji, aby ponownie zsynchronizować się z Apple lub Google. Anulowanie i rozliczenia pozostają w sklepie, w którym pierwotnie wykupiono subskrypcję.",
+        "refunds": "<strong>6.6 Zwroty.</strong> Wnioski o zwrot zakupów w aplikacji należy składać do Apple lub Google zgodnie z ich warunkami. StableFit nie może przetwarzać zwrotów sklepowych i nie jest sprzedawcą tych płatności.",
+        "price": "<strong>6.7 Zmiany cen.</strong> Apple lub Google mogą powiadomić Cię o zmianach cen zgodnie ze swoimi zasadami. Dalsze odnawianie po zmianie podlega warunkom właściwego sklepu oraz ewentualnej zgodzie, której wymagają.",
+        "coachClient": "<strong>6.8 Płatności Trener-Klient.</strong> Każda transakcja finansowa za usługi trenerskie odbywa się wyłącznie między Trenerem a Klientem. StableFit nie jest stroną tych transakcji i nie ponosi odpowiedzialności za zwroty ani spory dotyczące opłat trenerskich."
+      },
+      "content": {
+        "title": "7. Treści użytkownika i zdjęcia postępów",
+        "items": {
+          "voluntary": "<strong>Dobrowolne przesyłanie:</strong> Klienci mogą przesyłać zdjęcia (przód, bok, tył), pomiary ciała, treningi, dzienniki żywienia, ankiety i wiadomości. Przesyłanie zdjęć jest całkowicie opcjonalne.",
+          "ownership": "<strong>Własność:</strong> zachowujesz wszystkie prawa do treści, które przesyłasz.",
+          "license": "<strong>Licencja dla nas:</strong> przesyłając treści, udzielasz StableFit ograniczonej licencji na przechowywanie i wyświetlanie tych treści wyłącznie Tobie i Twojemu przypisanemu Trenerowi w celu świadczenia Serwisu.",
+          "prohibited": "<strong>Zakazane treści:</strong> zgadzasz się nie przesyłać treści nielegalnych, pornograficznych (akty seksualne), nękających ani naruszających prawa osób trzecich. Zastrzegamy sobie prawo (ale nie mamy obowiązku) do usuwania takich treści."
+        }
+      },
+      "acceptableUse": {
+        "title": "8. Dopuszczalne korzystanie",
+        "text": "Nie wolno nadużywać Serwisu, podejmować prób nieuprawnionego dostępu, zakłócać działania innych użytkowników, zbierać danych (scraping) ani odtwarzać kodu źródłowego Serwisu poza zakresem dozwolonym przez bezwzględnie obowiązujące prawo, ani używać go do wysyłania spamu lub złośliwego oprogramowania. Możemy zawiesić lub zakończyć dostęp w przypadku istotnego naruszenia, nielegalnej działalności lub zagrożenia dla Serwisu lub innych użytkowników, z powiadomieniem tam, gdzie jest to rozsądnie możliwe."
+      },
+      "ip": {
+        "title": "9. Własność intelektualna",
+        "text": "Serwis, w tym oprogramowanie, projekt i znaki towarowe, należy do nas lub naszych licencjodawców. Niniejsze Warunki nie przenoszą na Ciebie żadnej własności. Nie wolno kopiować, modyfikować ani rozpowszechniać Serwisu, z wyjątkiem zakresu potrzebnego do korzystania z niego na podstawie tych Warunków."
+      },
+      "liability": {
+        "title": "10. Ograniczenie odpowiedzialności",
+        "text1": "W maksymalnym zakresie dozwolonym przez właściwe prawo StableFit nie ponosi odpowiedzialności za jakiekolwiek szkody pośrednie, przypadkowe, szczególne lub następcze, w tym między innymi za utratę zysków, danych lub wartości firmy. Wyraźnie wyłączamy odpowiedzialność za jakiekolwiek działania lub porady udzielane przez Trenerów Klientom.",
+        "text2": "Nic w tych Warunkach nie ogranicza odpowiedzialności za śmierć lub uszczerbek na zdrowiu spowodowany niedbalstwem, oszustwem lub wprowadzeniem w błąd ani żadnej odpowiedzialności, której nie można ograniczyć na podstawie prawa polskiego lub innego bezwzględnie obowiązującego prawa. Jeśli jesteś konsumentem w Unii Europejskiej, Twoje bezwzględne ustawowe prawa pozostają nienaruszone. Trenerzy korzystają z Serwisu jako profesjonaliści; konsumenckie prawo odstąpienia od treści cyfrowych nie dotyczy zawodowego korzystania z Pro. Zakupy w aplikacji nadal podlegają warunkom Apple lub Google."
+      },
+      "changes": {
+        "title": "11. Zmiany Serwisu i tych Warunków",
+        "text": "Możemy zmieniać funkcje Serwisu (w tym limity planów) oraz te Warunki. W przypadku istotnych zmian zaktualizujemy datę „Ostatnia aktualizacja” i, gdy jest to wymagane, przekażemy powiadomienie w aplikacji lub e-mailem. Dalsze korzystanie po dacie wejścia w życie oznacza akceptację, z wyjątkiem sytuacji, gdy bezwzględnie obowiązujące prawo wymaga innego trybu. Jeśli się nie zgadzasz, zaprzestań korzystania z Serwisu i, jeśli masz Pro, anuluj automatyczne odnawianie w sklepie."
+      },
+      "law": {
+        "title": "12. Prawo właściwe",
+        "text": "Niniejsze Warunki podlegają i są interpretowane zgodnie z prawem <strong>Polski</strong>, bez względu na przepisy kolizyjne. Jeśli jesteś konsumentem zamieszkałym w UE/EOG, możesz również wnieść sprawę do sądów kraju zamieszkania i zachowujesz ochronę bezwzględnych przepisów konsumenckich tego kraju. Konsumenci z UE mogą korzystać z platformy ODR Komisji Europejskiej."
+      },
+      "contact": {
+        "title": "13. Kontakt",
+        "text": "Pytania dotyczące tych Warunków: <strong><a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a></strong>",
+        "privacy": "Praktyki dotyczące prywatności opisuje nasza <a href=\"/privacy-policy/\">Polityka prywatności</a>."
+      }
+    }
+  },
+  "support": {
+    "meta": {
+      "title": "Wsparcie - StableFit",
+      "description": "Uzyskaj pomoc ze StableFit: napisz na support@stable-fit.com lub wyślij wiadomość na Telegram.",
+      "ogTitle": "Wsparcie - StableFit",
+      "ogDescription": "Potrzebujesz pomocy ze StableFit? Napisz e-mail lub wyślij wiadomość na Telegram.",
+      "twitterTitle": "Wsparcie - StableFit",
+      "twitterDescription": "Potrzebujesz pomocy ze StableFit? Napisz e-mail lub wyślij wiadomość na Telegram."
+    },
+    "title": "Wsparcie",
+    "lead": "Witamy! Jesteśmy tu, aby pomóc Ci w pełni korzystać ze StableFit - aplikacji do śledzenia postępów, zdjęć transformacji i współpracy z trenerem.",
+    "cards": {
+      "how": {
+        "title": "Jak działa StableFit?",
+        "lead": "StableFit to aplikacja mobilna, która pozwala:",
+        "items": {
+          "item1": "Zapisywać pomiary ciała i śledzić zmiany",
+          "item2": "Przechowywać zdjęcia postępów i porównywać wyniki",
+          "item3": "Otrzymywać formularze i instrukcje od trenera",
+          "item4": "Otrzymywać powiadomienia push o ważnych aktualizacjach"
+        },
+        "note": "Rejestracja jest dostępna wyłącznie przez osobisty link zaproszenia od trenera. Jeśli jeszcze nie otrzymałeś linku, skontaktuj się z trenerem lub napisz do nas."
+      },
+      "contact": {
+        "title": "Potrzebujesz pomocy",
+        "lead": "Możesz skontaktować się z nami w każdej sprawie:",
+        "emailLabel": "E-mail",
+        "messageLabel": "Wiadomość"
+      }
+    }
+  },
+  "footer": {
+    "description": "Platforma, która łączy trenerów fitness i ich klientów, aby osiągać wyjątkowe wyniki.",
+    "platform": "Platforma",
+    "contacts": {
+      "title": "Kontakt",
+      "email": "support@stable-fit.com",
+      "telegram": "t.me/stable_fit"
+    },
+    "company": {
+      "title": "Dane firmy",
+      "name": "SavvaDev - Ihor Savva",
+      "address": "ul. Bobrowiecka 10/67\n00-728 Warszawa, Poland",
+      "nip": "NIP: 5214103415",
+      "regon": "REGON: 540758121"
+    },
+    "under": {
+      "copy": "© 2025 SavvaDev - Ihor Savva",
+      "privacy": "Polityka prywatności",
+      "terms": "Warunki korzystania"
+    }
+  }
+}

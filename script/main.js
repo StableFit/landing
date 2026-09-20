@@ -1,7 +1,9 @@
 (() => {
   const DEFAULT_LANG = "ua";
-  const SUPPORTED_LANGS = ["ua", "en"];
+  const SUPPORTED_LANGS = ["ua", "en", "pl"];
   const LANGUAGE_STORAGE_KEY = "stablefit-language";
+  const HTML_LANG_BY_DICT = { ua: "uk", en: "en", pl: "pl" };
+  const LOCALE_PREFIX_BY_DICT = { en: "en", pl: "pl" };
 
   const scriptEl = document.currentScript || document.querySelector('script[src*="main.js"]');
   const scriptUrl = scriptEl ? new URL(scriptEl.src, window.location.href) : new URL(window.location.href);
@@ -38,8 +40,75 @@
     });
   }
 
+  function stripLocalePrefix(pathname) {
+    const path = pathname.replace(/\/index\.html$/i, "") || "/";
+    const match = path.match(/^\/(en|pl)(\/.*)?$/);
+    if (match) return match[2] || "/";
+    return path;
+  }
+
+  function getDictLangFromPath(pathname) {
+    const path = pathname.replace(/\/index\.html$/i, "") || "/";
+    const match = path.match(/^\/(en|pl)(\/|$)/);
+    return match ? match[1] : DEFAULT_LANG;
+  }
+
+  function isLocalizedPath(pathname) {
+    const stripped = stripLocalePrefix(pathname);
+    if (stripped === "/" || stripped === "") return true;
+    return /^\/(for-clients|support|privacy-policy|terms-and-conditions|coach)\/?$/i.test(stripped);
+  }
+
+  function withLocalePrefix(pathname, dictLang) {
+    const raw = pathname || "/";
+    const path = raw.startsWith("/") ? raw : `/${raw}`;
+    const stripped = stripLocalePrefix(path);
+    const normalized = stripped === "" ? "/" : stripped;
+    if (!isLocalizedPath(normalized)) return path;
+    const prefix = LOCALE_PREFIX_BY_DICT[dictLang];
+    if (!prefix) return normalized;
+    if (normalized === "/") return `/${prefix}/`;
+    return `/${prefix}${normalized}`;
+  }
+
+  function localeSwitchHref(targetDictLang) {
+    const path = stripLocalePrefix(window.location.pathname);
+    const normalized = path === "/" || path.endsWith("/") ? path : `${path}/`;
+    return withLocalePrefix(normalized, targetDictLang) + window.location.hash;
+  }
+
+  function relocalizeInternalLinks(dictLang) {
+    document.querySelectorAll("a[href]").forEach((anchor) => {
+      if (anchor.classList.contains("localisation-item")) return;
+      const href = anchor.getAttribute("href");
+      if (!href || /^(https?:|mailto:|tel:|#)/i.test(href)) return;
+      let url;
+      try {
+        url = new URL(href, window.location.origin);
+      } catch {
+        return;
+      }
+      if (url.origin !== window.location.origin) return;
+      if (!isLocalizedPath(url.pathname)) return;
+      const nextPath = withLocalePrefix(url.pathname, dictLang);
+      const nextHref = nextPath + url.search + url.hash;
+      const currentPath = url.pathname.replace(/\/index\.html$/i, "") || "/";
+      const expectedPath = withLocalePrefix(stripLocalePrefix(url.pathname), dictLang);
+      if (currentPath === expectedPath || currentPath === expectedPath.replace(/\/$/, "")) return;
+      if (nextHref !== href) anchor.setAttribute("href", nextHref);
+    });
+  }
+
+  function syncLanguageSwitchHrefs() {
+    languageButtons.forEach((button) => {
+      const lang = button.dataset.lang;
+      if (!lang || button.tagName !== "A") return;
+      button.setAttribute("href", localeSwitchHref(lang));
+    });
+  }
+
   function paintActiveLandingNav() {
-    const path = window.location.pathname.replace(/\/index\.html$/i, "");
+    const path = stripLocalePrefix(window.location.pathname);
     const segments = path.split("/").filter(Boolean);
     const lastSegment = segments[segments.length - 1] || "";
 
@@ -155,7 +224,9 @@
       }
       paintActiveLanguage(normalizedLang);
       paintActiveLandingNav();
-      htmlNode.setAttribute("lang", normalizedLang);
+      relocalizeInternalLinks(normalizedLang);
+      syncLanguageSwitchHrefs();
+      htmlNode.setAttribute("lang", HTML_LANG_BY_DICT[normalizedLang] || "uk");
       currentLanguage = normalizedLang;
       localStorage.setItem(LANGUAGE_STORAGE_KEY, normalizedLang);
     } catch (error) {
@@ -164,13 +235,7 @@
   }
 
   function detectInitialLanguage() {
-    const fromStorage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    if (fromStorage && SUPPORTED_LANGS.includes(fromStorage)) {
-      return fromStorage;
-    }
-
-    const browserLang = navigator.language ? navigator.language.slice(0, 2).toLowerCase() : DEFAULT_LANG;
-    return SUPPORTED_LANGS.includes(browserLang) ? browserLang : DEFAULT_LANG;
+    return getDictLangFromPath(window.location.pathname);
   }
 
 
@@ -668,7 +733,7 @@
   }
 
   function getLandingFromPath(pathname) {
-    const path = pathname.replace(/\/index\.html$/i, "");
+    const path = stripLocalePrefix(pathname);
     if (/\/for-clients\/?$/i.test(path)) return "client";
     if (path === "" || path === "/" || /\/coach\/?$/i.test(path)) return "coach";
     return null;
@@ -713,6 +778,8 @@
 
     if (lastAppliedDictionary) applyTranslations(lastAppliedDictionary);
     paintActiveLandingNav();
+    relocalizeInternalLinks(currentLanguage);
+    syncLanguageSwitchHrefs();
     initMainModules();
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }
@@ -729,7 +796,6 @@
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
       if (link.target && link.target !== "_self") return;
       if (isNavigating) return;
-      event.preventDefault();
 
       const href = link.getAttribute("href");
       if (!href) return;
@@ -738,6 +804,7 @@
       const nextLanding = getLandingFromPath(nextUrl.pathname);
       if (!nextLanding || currentLanding === nextLanding) return;
 
+      event.preventDefault();
       isNavigating = true;
       try {
         await swapLandingMain(nextUrl.href, { push: true });
@@ -763,22 +830,15 @@
     initLandingInstantNavigation();
 
     languageButtons.forEach((button) => {
-      button.addEventListener("click", () => {
+      button.addEventListener("click", (event) => {
         const lang = button.dataset.lang;
-        if (!lang) return;
-        setLanguage(lang).then(() => {
-          initTestimonialsMarquee();
-        });
-      });
-
-      button.addEventListener("keydown", (event) => {
-        if (event.key !== "Enter" && event.key !== " ") return;
+        if (!lang || lang === currentLanguage) {
+          event.preventDefault();
+          return;
+        }
+        if (button.tagName === "A") return;
         event.preventDefault();
-        const lang = button.dataset.lang;
-        if (!lang) return;
-        setLanguage(lang).then(() => {
-          initTestimonialsMarquee();
-        });
+        window.location.href = localeSwitchHref(lang);
       });
     });
 

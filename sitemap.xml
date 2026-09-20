@@ -1,33 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://stable-fit.com/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/en/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/pl/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/"/>
   </url>
   <url>
     <loc>https://stable-fit.com/for-clients/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/for-clients/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/en/for-clients/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/for-clients/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/pl/for-clients/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/for-clients/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/for-clients/"/>
   </url>
   <url>
     <loc>https://stable-fit.com/support/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/support/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/en/support/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/support/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/pl/support/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/support/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/support/"/>
   </url>
   <url>
     <loc>https://stable-fit.com/privacy-policy/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/privacy-policy/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/en/privacy-policy/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/privacy-policy/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/pl/privacy-policy/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/privacy-policy/"/>
   </url>
   <url>
     <loc>https://stable-fit.com/terms-and-conditions/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/terms-and-conditions/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/en/terms-and-conditions/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/terms-and-conditions/"/>
+  </url>
+  <url>
+    <loc>https://stable-fit.com/pl/terms-and-conditions/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/terms-and-conditions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/terms-and-conditions/"/>
   </url>
 </urlset>

@@ -1,8 +1,13 @@
 {
   "meta": {
-    "title": "Stablefit",
+    "title": "StableFit",
     "brand": "StableFit",
-    "logoAlt": "StableFit logo"
+    "logoAlt": "StableFit logo",
+    "heroCoachAlt": "StableFit coach app screens",
+    "heroClientAlt": "StableFit screens of the client experience",
+    "appStoreQr": "QR code to download StableFit from the App Store",
+    "playQr": "QR code to download StableFit from Google Play",
+    "screenshotAlt": "StableFit app screenshot"
   },
   "nav": {
     "coaches": "For coaches",
@@ -17,6 +22,7 @@
   "aria": {
     "langUa": "Switch language to Ukrainian",
     "langEn": "Switch language to English",
+    "langPl": "Switch language to Polish",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -35,7 +41,7 @@
   },
   "coach": {
     "meta": {
-      "title": "StableFit - platform for fitness coaches and their clients",
+      "title": "StableFit - platform for fitness coaches",
       "description": "StableFit - a service for personal trainers: manage clients, track progress, and grow your business in one place.",
       "keywords": "fitness trainer app, coach client management, online workout programs, fitness platform Ukraine, client progress tracker",
       "ogTitle": "StableFit - platform for fitness coaches",
@@ -235,22 +241,23 @@
       "sectionTitle": "Fair pricing,",
       "gradientTitle": "no hidden fees",
       "description": "Start for free. Switch to a paid plan later.",
+      "disclaimer": "Paid through in-app purchases in the App Store or Google Play. The price may differ by country and is charged in local currency.",
       "cards": {
         "monthly": {
           "badge": "Optimal",
           "term": "per month",
-          "price": "₴349",
+          "price": "$20",
           "suffix": "/mo",
-          "noteLine1": "30 days free",
+          "noteLine1": "Up to 3 clients free",
           "noteLine2": "billed monthly"
         },
         "yearly": {
-          "badge": "Save 20%",
+          "badge": "Best value",
           "term": "per year",
-          "price": "₴279",
-          "suffix": "/mo",
-          "noteLine1": "30 days free",
-          "noteLine2": "₴3,360 billed yearly"
+          "price": "$100",
+          "suffix": "/yr",
+          "noteLine1": "Up to 3 clients free",
+          "noteLine2": "$100 billed yearly"
         }
       }
     },
@@ -288,13 +295,14 @@
   },
   "client": {
     "meta": {
-      "title": "StableFit - your training platform",
-      "description": "StableFit for clients: personalized training, progress tracking, nutrition, and connection with your coach - in one app.",
-      "keywords": "StableFit, fitness client, personal training, progress, nutrition, body measurements, fitness app",
-      "ogTitle": "StableFit - for clients",
-      "ogDescription": "Train with structure, track progress and nutrition with your coach in StableFit.",
-      "twitterTitle": "StableFit - your training platform",
-      "twitterDescription": "Train with structure, track progress and nutrition with your coach in StableFit."
+      "title": "StableFit - the client experience in your coaching app",
+      "description": "Give clients workouts from your programs, AI nutrition tracking, and progress in one StableFit app.",
+      "keywords": "client experience for coaches, fitness app for clients, workout programs, client progress, StableFit",
+      "ogTitle": "StableFit - client experience",
+      "ogDescription": "Workouts, AI nutrition, progress, and chat with the coach - how clients train in StableFit.",
+      "ogImageAlt": "StableFit - the client experience in the coaching app",
+      "twitterTitle": "StableFit - client experience",
+      "twitterDescription": "Workouts, AI nutrition, progress, and chat with the coach - how clients train in StableFit."
     },
     "hero": {
       "sectionTitle": "Progress faster.",
@@ -489,9 +497,11 @@
   "privacy": {
     "meta": {
       "title": "Privacy Policy - StableFit",
-      "description": "Privacy Policy for StableFit users.",
+      "description": "How StableFit collects, uses, and protects personal data of coaches and clients.",
       "ogTitle": "Privacy Policy - StableFit",
-      "ogDescription": "Privacy Policy for StableFit users."
+      "ogDescription": "How StableFit collects, uses, and protects personal data of coaches and clients.",
+      "twitterTitle": "Privacy Policy - StableFit",
+      "twitterDescription": "How StableFit collects, uses, and protects personal data of coaches and clients."
     },
     "title": "Privacy Policy",
     "lastUpdated": "Last Updated: 9 September 2026",
@@ -597,9 +607,11 @@
   "terms": {
     "meta": {
       "title": "Terms of Use - StableFit",
-      "description": "Terms of Use for StableFit users.",
+      "description": "Terms of use for StableFit mobile apps and website.",
       "ogTitle": "Terms of Use - StableFit",
-      "ogDescription": "Terms of Use for StableFit users."
+      "ogDescription": "Terms of use for StableFit mobile apps and website.",
+      "twitterTitle": "Terms of Use - StableFit",
+      "twitterDescription": "Terms of use for StableFit mobile apps and website."
     },
     "title": "Terms of Use",
     "lastUpdated": "Last Updated: 9 September 2026",
@@ -703,9 +715,11 @@
   "support": {
     "meta": {
       "title": "Support - StableFit",
-      "description": "StableFit support page.",
+      "description": "Get help with StableFit: email support@stable-fit.com or message us on Telegram.",
       "ogTitle": "Support - StableFit",
-      "ogDescription": "Need help with StableFit? Contact us."
+      "ogDescription": "Need help with StableFit? Email us or message Telegram.",
+      "twitterTitle": "Support - StableFit",
+      "twitterDescription": "Need help with StableFit? Email us or message Telegram."
     },
     "title": "Support",
     "lead": "Welcome! We are here to help you get the most out of StableFit - the app for tracking progress, transformation photos, and working with your coach.",
