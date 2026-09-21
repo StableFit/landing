@@ -24,7 +24,7 @@
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   
-  overflow: hidden;
+  overflow: visible;
   isolation: isolate;
 }
 
@@ -104,6 +104,89 @@ a.localisation-item:focus-visible {
 
 .localisation-item.is-active {
   color: var(--color-white);
+}
+
+.lang-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-switch-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--color-white);
+  font: inherit;
+  font-weight: 500;
+  letter-spacing: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lang-switch-toggle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  transform: translateY(1px);
+}
+
+.lang-switch.is-open .lang-switch-toggle::after {
+  transform: translateY(1px) rotate(180deg);
+}
+
+.lang-switch-toggle:focus-visible {
+  outline: 1px solid var(--color-white);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.header-desktop .lang-switch .localisation-langs {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 72px;
+  padding: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: rgba(10, 10, 10, 0.94);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+  z-index: 120;
+}
+
+.header-desktop .lang-switch.is-open .localisation-langs {
+  display: flex;
+}
+
+.header-desktop .lang-switch .localisation-item {
+  display: block;
+  padding: 8px 12px;
+  margin: 0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.header-desktop .lang-switch .localisation-item:not(:last-child) {
+  padding-right: 12px;
+  margin-right: 0;
+}
+
+.header-desktop .lang-switch .localisation-item:not(:last-child)::after {
+  content: none;
 }
 
 .download-button {

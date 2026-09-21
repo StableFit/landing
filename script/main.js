@@ -38,6 +38,61 @@
       const isActive = button.dataset.lang === lang;
       button.classList.toggle("is-active", isActive);
     });
+    document.querySelectorAll(".lang-switch").forEach((root) => {
+      const active = root.querySelector(`.localisation-item[data-lang="${lang}"]`);
+      const label = root.querySelector(".lang-switch-label");
+      if (active && label) label.textContent = active.textContent.trim();
+    });
+  }
+
+  function closeLangSwitches(except) {
+    document.querySelectorAll(".lang-switch.is-open").forEach((root) => {
+      if (root === except) return;
+      root.classList.remove("is-open");
+      const toggle = root.querySelector(".lang-switch-toggle");
+      if (toggle) toggle.setAttribute("aria-expanded", "false");
+    });
+  }
+
+  function initLangDropdowns() {
+    document.querySelectorAll(".header-desktop .localisation-langs").forEach((list) => {
+      if (list.closest(".lang-switch")) return;
+
+      const switchEl = document.createElement("div");
+      switchEl.className = "lang-switch";
+
+      const toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "lang-switch-toggle";
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-haspopup", "true");
+      toggle.setAttribute("data-i18n-aria", "aria.langMenu");
+
+      const label = document.createElement("span");
+      label.className = "lang-switch-label";
+      const active = list.querySelector(".localisation-item.is-active");
+      label.textContent = active ? active.textContent.trim() : "UA";
+      toggle.appendChild(label);
+
+      list.parentNode.insertBefore(switchEl, list);
+      switchEl.appendChild(toggle);
+      switchEl.appendChild(list);
+
+      toggle.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const willOpen = !switchEl.classList.contains("is-open");
+        closeLangSwitches(willOpen ? switchEl : null);
+        switchEl.classList.toggle("is-open", willOpen);
+        toggle.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      });
+    });
+
+    if (initLangDropdowns.bound) return;
+    initLangDropdowns.bound = true;
+    document.addEventListener("click", () => closeLangSwitches());
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeLangSwitches();
+    });
   }
 
   function stripLocalePrefix(pathname) {
@@ -844,6 +899,7 @@
   }
 
   function bootLandingInteractions() {
+    initLangDropdowns();
     initMainModules();
     initLandingInstantNavigation();
 
