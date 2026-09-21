@@ -1548,7 +1548,10 @@
     "contacts": {
       "title": "Kontakt",
       "email": "support@stable-fit.com",
-      "telegram": "t.me/stable_fit"
+      "telegram": "t.me/stable_fit",
+      "instagram": "instagram.com/stablefit.app",
+      "threads": "threads.com/@stablefit.app",
+      "linkedin": "linkedin.com/company/stablefit"
     },
     "company": {
       "title": "Dane firmy",
