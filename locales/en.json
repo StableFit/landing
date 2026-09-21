@@ -747,10 +747,10 @@
   "blog": {
     "meta": {
       "title": "Blog - StableFit",
-      "description": "The StableFit blog for personal trainers: clients, process, and growing a coaching practice."
+      "description": "The StableFit blog for personal trainers: clients, process, and business growth."
     },
     "title": "Blog",
-    "lead": "Articles for personal trainers: clients, process, and growing a coaching practice.",
+    "lead": "Articles for personal trainers: clients, process, and business growth.",
     "section": "Blog",
     "readArticle": "Read",
     "posts": {
