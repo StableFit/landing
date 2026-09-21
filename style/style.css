@@ -1514,6 +1514,37 @@ a.localisation-item:focus-visible {
   justify-content: center;
 }
 
+.faq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.faq-wrp {
+  width: 100%;
+}
+
+.faq-accordion {
+  width: 780px;
+  max-width: 100%;
+}
+
+.faq-q {
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.faq-a {
+  margin: 0;
+  padding: 0 0 16px;
+  color: var(--color-gray-1);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .pricing-wrp {
   width: 100%;
 }

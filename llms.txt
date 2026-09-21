@@ -1,0 +1,36 @@
+# StableFit
+
+StableFit is an app and CRM for personal trainers: clients, workout programs, progress, nutrition, and chat in one place - instead of Excel and messengers.
+
+It is for a solo personal trainer who runs their own clients.
+
+It is not a gym booking system, studio till, membership CRM, group slot scheduler, or white-label brand.
+
+Up to 3 clients are free. Then $20 per month or $100 per year through the App Store or Google Play, billed in local currency.
+
+## Coach landing
+
+- https://stable-fit.com/
+- https://stable-fit.com/en/
+- https://stable-fit.com/pl/
+
+## Client app (from a coach)
+
+- https://stable-fit.com/for-clients/
+- https://stable-fit.com/en/for-clients/
+- https://stable-fit.com/pl/for-clients/
+
+## Blog
+
+- https://stable-fit.com/blog/
+- https://stable-fit.com/en/blog/
+- https://stable-fit.com/pl/blog/
+
+Key articles:
+
+- https://stable-fit.com/blog/crm-for-personal-trainers/
+- https://stable-fit.com/blog/excel-and-telegram-are-not-a-crm-for-coaches/
+
+## FAQ
+
+https://stable-fit.com/#faq

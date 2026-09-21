@@ -59,7 +59,11 @@ BLOG_POST_TITLE_KEYS = {
     "why-coaches-burn-out": "blog.posts.whyCoachesBurnOut.title",
     "official-launch": "blog.posts.officialLaunch.title",
     "five-sales-techniques-for-coaches": "blog.posts.fiveSalesTechniquesForCoaches.title",
+    "excel-and-telegram-are-not-a-crm-for-coaches": "blog.posts.excelAndTelegramAreNotACrm.title",
+    "crm-for-personal-trainers": "blog.posts.crmForPersonalTrainers.title",
 }
+
+FAQ_ITEM_KEYS = ("who", "excel", "clientApp", "allInOne", "price", "notForStudio")
 
 PAGES = [
     {
@@ -194,6 +198,26 @@ PAGES = [
         "desc_key": "blog.posts.fiveSalesTechniquesForCoaches.description",
         "headline_key": "blog.posts.fiveSalesTechniquesForCoaches.title",
         "cover_key": "blog.posts.fiveSalesTechniquesForCoaches.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/excel-and-telegram-are-not-a-crm-for-coaches/index.html",
+        "uk": "/blog/excel-and-telegram-are-not-a-crm-for-coaches/",
+        "title_key": "blog.posts.excelAndTelegramAreNotACrm.metaTitle",
+        "desc_key": "blog.posts.excelAndTelegramAreNotACrm.description",
+        "headline_key": "blog.posts.excelAndTelegramAreNotACrm.title",
+        "cover_key": "blog.posts.excelAndTelegramAreNotACrm.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/crm-for-personal-trainers/index.html",
+        "uk": "/blog/crm-for-personal-trainers/",
+        "title_key": "blog.posts.crmForPersonalTrainers.metaTitle",
+        "desc_key": "blog.posts.crmForPersonalTrainers.description",
+        "headline_key": "blog.posts.crmForPersonalTrainers.title",
+        "cover_key": "blog.posts.crmForPersonalTrainers.cover",
         "changefreq": "monthly",
         "priority": "0.5",
     },
@@ -541,6 +565,29 @@ def update_json_ld(html: str, page: dict, dict_lang: str, title: str, descriptio
                         item["name"] = blog_title
                     if item.get("position") == 3:
                         item["name"] = headline
+            if node_type == "SoftwareApplication":
+                node["description"] = description
+                features = get_nested(dictionary, "coach.schema.featureList")
+                if isinstance(features, list):
+                    node["featureList"] = features
+            if node_type == "FAQPage":
+                node["@id"] = abs_url + "#faq"
+                node["url"] = abs_url + "#faq"
+                node["inLanguage"] = LOCALES[dict_lang]["schema"]
+                faq_items = []
+                for key in FAQ_ITEM_KEYS:
+                    q = get_nested(dictionary, f"coach.faq.items.{key}.q")
+                    a = get_nested(dictionary, f"coach.faq.items.{key}.a")
+                    if isinstance(q, str) and isinstance(a, str):
+                        faq_items.append(
+                            {
+                                "@type": "Question",
+                                "name": q,
+                                "acceptedAnswer": {"@type": "Answer", "text": a},
+                            }
+                        )
+                if faq_items:
+                    node["mainEntity"] = faq_items
             if node_type == "ItemList":
                 for item in node.get("itemListElement", []):
                     item_url = item.get("url")

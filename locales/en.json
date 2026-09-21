@@ -43,14 +43,14 @@
   },
   "coach": {
     "meta": {
-      "title": "StableFit - platform for fitness coaches",
-      "description": "StableFit - a service for personal trainers: manage clients, track progress, and grow your business in one place.",
-      "keywords": "fitness trainer app, coach client management, online workout programs, fitness platform Ukraine, client progress tracker",
-      "ogTitle": "StableFit - platform for fitness coaches",
-      "ogDescription": "Manage clients, send workout programs, and track results. Everything a coach needs - in one app.",
+      "title": "StableFit - app for personal trainers",
+      "description": "A personal trainer CRM and app: clients, programs, progress, and chat instead of Excel and messengers.",
+      "keywords": "app for personal trainers, personal trainer CRM, coach client management, workout programs for clients, client progress tracker",
+      "ogTitle": "StableFit - app for personal trainers",
+      "ogDescription": "Clients, programs, progress, and chat in one app - instead of Excel and messengers.",
       "ogImageAlt": "StableFit - app for personal trainers",
-      "twitterTitle": "StableFit - platform for fitness coaches",
-      "twitterDescription": "Manage clients, send workout programs, and track results. Everything a coach needs - in one app."
+      "twitterTitle": "StableFit - app for personal trainers",
+      "twitterDescription": "Clients, programs, progress, and chat in one app - instead of Excel and messengers."
     },
     "hero": {
       "sectionTitle": "Manage your clients.",
@@ -274,6 +274,46 @@
         "line2": "Your entire fitness workflow in one place."
       }
     },
+    "faq": {
+      "sectionName": "FAQ",
+      "sectionTitle": "Short answers",
+      "gradientTitle": "about StableFit",
+      "items": {
+        "who": {
+          "q": "Who is StableFit for - a solo trainer or a gym?",
+          "a": "For a personal trainer who runs their own clients. It is not a studio booking system and not a membership till."
+        },
+        "excel": {
+          "q": "How is this different from Excel and Telegram?",
+          "a": "A spreadsheet stores numbers. A messenger stores chats. StableFit keeps the client card, the program, progress, and chat in one place. The client sees the same thing you do."
+        },
+        "clientApp": {
+          "q": "What does the client see in their app?",
+          "a": "Today's program, nutrition, measurements and progress photos, and chat with you. They do not need Excel or a separate tracker."
+        },
+        "allInOne": {
+          "q": "Are chat, programs, progress, and nutrition in one place?",
+          "a": "Yes. You manage clients, send programs, see body stats and macros, and write in chat without switching apps."
+        },
+        "price": {
+          "q": "How much does it cost, and is there a free start?",
+          "a": "Up to 3 clients free. Then $20 a month or $100 a year through the App Store or Google Play, in local currency."
+        },
+        "notForStudio": {
+          "q": "What does StableFit not include?",
+          "a": "No group slot booking, no gym till, and no white-label under someone else's brand. If you need a studio with memberships, that is a different product."
+        }
+      }
+    },
+    "schema": {
+      "featureList": [
+        "Client management",
+        "Workout programs",
+        "Progress tracking",
+        "Nutrition",
+        "Chat"
+      ]
+    },
     "howToStart": {
       "sectionName": "How it works",
       "sectionTitle": "Get started in ",
@@ -297,14 +337,14 @@
   },
   "client": {
     "meta": {
-      "title": "StableFit - the client experience in your coaching app",
-      "description": "Give clients workouts from your programs, AI nutrition tracking, and progress in one StableFit app.",
-      "keywords": "client experience for coaches, fitness app for clients, workout programs, client progress, StableFit",
-      "ogTitle": "StableFit - client experience",
-      "ogDescription": "Workouts, AI nutrition, progress, and chat with the coach - how clients train in StableFit.",
-      "ogImageAlt": "StableFit - the client experience in the coaching app",
-      "twitterTitle": "StableFit - client experience",
-      "twitterDescription": "Workouts, AI nutrition, progress, and chat with the coach - how clients train in StableFit."
+      "title": "StableFit - client app from your coach",
+      "description": "The client app from your coach: workouts from your programs, AI nutrition, progress, and chat in one place.",
+      "keywords": "client app from your coach, coach workout programs, client progress app, AI nutrition tracking, chat with trainer",
+      "ogTitle": "StableFit - client app from your coach",
+      "ogDescription": "Workouts from your coach, AI nutrition, progress, and chat - how the client trains in StableFit.",
+      "ogImageAlt": "StableFit - client app from your personal trainer",
+      "twitterTitle": "StableFit - client app from your coach",
+      "twitterDescription": "Workouts from your coach, AI nutrition, progress, and chat - how the client trains in StableFit."
     },
     "hero": {
       "sectionTitle": "Progress faster.",
@@ -1189,6 +1229,80 @@
         "p9": "Because good sales are not when you talk about yourself beautifully.",
         "p10": "They are when the person leaves the conversation thinking: \"Yes. This is exactly what I need.\"",
         "p11": "StableFit is a mobile app that makes coaches' lives easier and clients' training nicer. You can work with up to 3 clients for free."
+      },
+      "crmForPersonalTrainers": {
+        "title": "CRM for personal trainers: what it actually is",
+        "metaTitle": "CRM for personal trainers: what it actually is - StableFit",
+        "description": "Not a gym till and not Excel. A trainer CRM is the client card, the program on their phone, progress, and chat in one place.",
+        "dateLabel": "21 September 2026",
+        "cover": "/assets/images/blog/crm-for-personal-trainers.en.jpg",
+        "ogImage": "https://stable-fit.com/assets/images/blog/crm-for-personal-trainers.en.jpg",
+        "coverAlt": "StableFit banner: CRM for personal trainers",
+        "cta": "Download on the App Store or Google Play",
+        "p1": "When a coach searches for \"CRM\", Google often shows gym tills, slot booking, and memberships. That is a different product. A personal trainer does not need a studio timetable. They need a place where each client lives.",
+        "p2": "A CRM for a personal trainer is the operating system of coaching: who you have now, what they do, how the body is changing, what you already discussed. Not a sales funnel and not a till.",
+        "h2_1": "A card, not a spreadsheet row",
+        "p3": "A real card has the goal, limits, injuries, notes. Not a \"weight\" column in Excel that you update after the session while the client keeps another truth in phone notes.",
+        "p4": "If the goal and health live apart from the program, every session starts with an investigation. The card removes that: open the client - and you already know who you are working with.",
+        "h2_2": "The program has to be on the client's phone",
+        "p5": "A screenshot of a spreadsheet in Telegram is not a program. It is a file that will get lost. The client should open the app and see what to do today, without waiting for your reply at 10 p.m.",
+        "p6": "Then you see what was done instead of asking \"so how was it\". You adjust the load from facts, not from chat feelings.",
+        "h2_3": "Progress and chat next to each other, not instead of each other",
+        "p7": "Measurements, photos, macros, and chat should live next to the card. Messages are for conversation. Data is for decisions. When everything sits in one messenger thread, you are selling attention, not a system.",
+        "p8": "The client sees the trend themselves. You do not have to prove every time that progress exists. That is the difference between running people and answering a chat.",
+        "h2_4": "Excel vs gym CRM vs trainer CRM",
+        "p9": "Excel counts. It is an archive. It will not remind anyone to take measurements and will not show the client today's program.",
+        "p10": "A gym CRM sells slots, memberships, group classes. If you are a solo trainer without a till and a front desk - you do not need that.",
+        "p11": "A trainer CRM holds the client as a process: the card, the program on their phone, progress, nutrition, one chat. That is what StableFit is. No group booking and no studio till - and no need to pretend it is another product.",
+        "h2_5": "In short",
+        "p12": "If you are looking for an \"app for personal trainers\" or a \"personal trainer CRM\", check one thing: does the client see the same system you do. If not - it is Excel plus a messenger again.",
+        "p13": "In StableFit you can work with up to 3 clients for free. That is enough to test the process, not to believe a pitch deck."
+      },
+      "excelAndTelegramAreNotACrm": {
+        "title": "Excel and Telegram are not a CRM for coaches",
+        "metaTitle": "Excel and Telegram are not a CRM for coaches - StableFit",
+        "description": "Why spreadsheets and chats cannot run clients - and what has to live in one place if you are a personal trainer.",
+        "dateLabel": "21 September 2026",
+        "cover": "/assets/images/blog/excel-and-telegram-are-not-a-crm-for-coaches.en.jpg",
+        "ogImage": "https://stable-fit.com/assets/images/blog/excel-and-telegram-are-not-a-crm-for-coaches.en.jpg",
+        "coverAlt": "StableFit banner: Excel and Telegram are not a CRM for coaches",
+        "cta": "Download on the App Store or Google Play",
+        "p1": "If you have more than five clients, you already run a mini-business. Programs, measurements, nutrition, payments, \"I can't today\", a mirror photo at 11:40 p.m. Excel and Telegram hold that for a week. Then the search starts: which chat had the knee injury, which tab has March working weights.",
+        "p2": "This is not laziness and not \"I have no system\". These tools are not for this job. A spreadsheet can count. A messenger can send. Neither can hold a client as a process.",
+        "h2_1": "What breaks in Excel when you get more clients",
+        "p3": "Excel looks fine in a demo: columns \"name / goal / weight / measurements\". By month three the file grows branches.",
+        "p4": "One tab per client. Or one tab for everyone, and then a horizontal scroll. Formulas someone nudged. A file named \"copy (2) final\". Before photos live in the phone gallery, not in the row. The note about blood pressure and meds went into another document, because it does not fit the sheet.",
+        "p5": "The main problem is not even chaos in the file. The main problem is the client does not see it. You update numbers after the session; they keep another truth in their notes. At the next workout you argue not about the load, but about which number is fresh.",
+        "p6": "Excel will not remind the client to take measurements. It will not show a six-month chart. It will not put today's program in front of them. It is an archive. An archive does not coach people.",
+        "h2_2": "Telegram is not a client card",
+        "p7": "Telegram is convenient for agreeing. It is inconvenient to return to a fact two months later.",
+        "p8": "The thread mixes everything: \"I squatted today\", a gym invoice, a meme, a plate photo, a question about supplements, a reschedule. Chat search finds the word \"knee\" in seven places - and none of them is a diagnosis. A group called \"my clients\" does not replace a list: who is on pause, who has not shown up for a week, who needs a new program.",
+        "p9": "Another trap is several channels. Someone writes on Instagram, someone on WhatsApp, someone \"only by call\". You are not a coach with a CRM. You are a person syncing messengers by hand.",
+        "p10": "Messages need a place to live. Client data lives separately: goal, limits, training history, weight and girth trends, done and missed sessions. When that sits in one chat thread, you are selling attention, not a system.",
+        "h2_3": "What kind of CRM a coach actually needs",
+        "p12": "A corporate sales CRM is beside the point. You do not need a lead funnel. You need an operating system for coaching.",
+        "p13": "The minimum without which the work falls apart:",
+        "m1": "a client card: goal, health, injuries, notes;",
+        "m2": "a program the client opens on the phone, not a screenshot of a sheet;",
+        "m3": "what was done: which weight, what was skipped;",
+        "m4": "progress in numbers and photos, not \"I think it looks better\";",
+        "m5": "nutrition, if you track it - without a daily interrogation in chat;",
+        "m6": "one chat next to this data, not instead of it.",
+        "p14": "If even one of these lives in another app, you are taping the process together again. The StableFit landing says this directly: data is scattered, programs in Excel, progress in notes, chats in different messengers.",
+        "h2_4": "What changes when it is all in one place",
+        "p15": "You stop starting the session with an investigation. Open the client - goal, last weight, measurements, what happened last time, whether they wrote in chat.",
+        "p16": "The client stops depending on your 10 p.m. reply to remember today's sets. The program is in their app. You see what was done and can adjust the load instead of asking \"so how was it\".",
+        "p17": "Progress becomes an argument, not a feeling. The chart and before/after photos hold the person when motivation dips. Measurement reminders take away your role of \"please send the numbers\".",
+        "p18": "Admin shrinks. Not to zero - a coach still thinks with their head. But the hour you spent merging sheets and forwarding files comes back into sessions, or into one more client you were not taking because \"I can't keep up\".",
+        "h2_5": "How to move without a revolution",
+        "p19": "You do not have to migrate everyone on Friday. Take three people you message the most in Telegram.",
+        "p20": "Create the cards. Drop in current programs. Ask for measurements and a current photo - once, calmly, as a new agreement on how you work. Keep training and progress chat in the app; everyday stuff can stay where it is for a while. In two weeks you will see whether you still hunt for anything in the old chat.",
+        "p21": "In StableFit you can work with up to three clients for free. That is enough to test the process, not to \"believe the pitch\". The client signs up by coach invite: you add the person, they enter their app, the data syncs.",
+        "p22": "If you still need Excel after that - let it be a report, not the workplace.",
+        "h2_6": "In short",
+        "p24": "Excel stores numbers. Telegram delivers messages. A coach needs a third thing: a place where the client, the program, progress, and the conversation do not scatter across apps.",
+        "p25": "Start with three cards, not a perfect system for 40 people. The rest of the tools will follow if the process lives in one place.",
+        "p26": "StableFit is a mobile app that makes coaches' lives easier and clients' training nicer. You can work with up to 3 clients for free."
       }
     }
   },
