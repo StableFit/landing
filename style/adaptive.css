@@ -1054,6 +1054,36 @@ body.nav-open .header-burger .header-burger-line:nth-child(3) {
   .doc-page {
     padding-top: 100px;
   }
+
+  .blog-cover,
+  .blog-cover img,
+  .page-blog .doc-content img,
+  .blog-index-card {
+    border-radius: 16px;
+  }
+
+  .blog-index-card {
+    gap: 12px;
+    padding: 10px 10px 14px;
+  }
+
+  .blog-index-card-media {
+    border-radius: 12px;
+  }
+
+  .blog-index-card-body {
+    padding: 0 6px 2px;
+  }
+
+  .blog-index-card-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .blog-index-card-lead {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1360px) {

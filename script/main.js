@@ -56,7 +56,7 @@
   function isLocalizedPath(pathname) {
     const stripped = stripLocalePrefix(pathname);
     if (stripped === "/" || stripped === "") return true;
-    return /^\/(for-clients|support|privacy-policy|terms-and-conditions|coach)\/?$/i.test(stripped);
+    return /^\/(for-clients|support|privacy-policy|terms-and-conditions|coach|blog(\/[\w-]+)?)\/?$/i.test(stripped);
   }
 
   function withLocalePrefix(pathname, dictLang) {
@@ -131,6 +131,7 @@
       lastSegment === "client";
 
     const isSupport = /\/support\/?$/i.test(path) || lastSegment === "support";
+    const isBlog = /\/blog(\/|$)/i.test(path);
 
     document.querySelectorAll(".landing-link[data-landing]").forEach((link) => {
       if (link.closest("footer")) {
@@ -142,7 +143,8 @@
       const isActive =
         (landing === "coach" && isCoach) ||
         (landing === "client" && isClient) ||
-        (landing === "support" && isSupport);
+        (landing === "support" && isSupport) ||
+        (landing === "blog" && isBlog);
       link.classList.toggle("is-active", isActive);
     });
   }
@@ -194,6 +196,22 @@
       const translatedText = getNestedValue(dictionary, key);
       if (typeof translatedText !== "string") return;
       node.setAttribute("alt", translatedText);
+    });
+
+    document.querySelectorAll("[data-i18n-src]").forEach((node) => {
+      const key = node.dataset.i18nSrc;
+      if (!key) return;
+      const translatedText = getNestedValue(dictionary, key);
+      if (typeof translatedText !== "string") return;
+      node.setAttribute("src", translatedText);
+    });
+
+    document.querySelectorAll("[data-i18n-href]").forEach((node) => {
+      const key = node.dataset.i18nHref;
+      if (!key) return;
+      const translatedText = getNestedValue(dictionary, key);
+      if (typeof translatedText !== "string") return;
+      node.setAttribute("href", translatedText);
     });
 
     document.querySelectorAll("[data-i18n-content]").forEach((node) => {

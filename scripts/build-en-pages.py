@@ -44,6 +44,23 @@ LOCALES = {
     },
 }
 
+UA_ONLY_SITEMAP = []
+
+BLOG_POST_TITLE_KEYS = {
+    "where-to-find-time-to-attract-new-clients": "blog.posts.whereToFindTime.title",
+    "why-a-coach-needs-a-system": "blog.posts.whyACoachNeedsASystem.title",
+    "free-consultations-and-workouts-ok-or-not": "blog.posts.freeConsultsAndWorkouts.title",
+    "should-a-coach-grow-social-media": "blog.posts.shouldACoachGrowSocialMedia.title",
+    "why-potential-clients-dont-stay": "blog.posts.whyPotentialClientsDontStay.title",
+    "is-coaching-not-for-you": "blog.posts.isCoachingNotForYou.title",
+    "secret-principle-of-finding-clients": "blog.posts.secretPrincipleOfFindingClients.title",
+    "why-clients-quit-training-even-with-results": "blog.posts.whyClientsQuitEvenWithResults.title",
+    "five-autumn-content-topics-for-coaches": "blog.posts.fiveAutumnContentTopics.title",
+    "why-coaches-burn-out": "blog.posts.whyCoachesBurnOut.title",
+    "official-launch": "blog.posts.officialLaunch.title",
+    "five-sales-techniques-for-coaches": "blog.posts.fiveSalesTechniquesForCoaches.title",
+}
+
 PAGES = [
     {
         "src": "index.html",
@@ -85,10 +102,135 @@ PAGES = [
         "changefreq": "yearly",
         "priority": "0.4",
     },
+    {
+        "src": "blog/index.html",
+        "uk": "/blog/",
+        "title_key": "blog.meta.title",
+        "desc_key": "blog.meta.description",
+        "changefreq": "weekly",
+        "priority": "0.6",
+    },
+    {
+        "src": "blog/where-to-find-time-to-attract-new-clients/index.html",
+        "uk": "/blog/where-to-find-time-to-attract-new-clients/",
+        "title_key": "blog.posts.whereToFindTime.metaTitle",
+        "desc_key": "blog.posts.whereToFindTime.description",
+        "headline_key": "blog.posts.whereToFindTime.title",
+        "cover_key": "blog.posts.whereToFindTime.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/why-a-coach-needs-a-system/index.html",
+        "uk": "/blog/why-a-coach-needs-a-system/",
+        "title_key": "blog.posts.whyACoachNeedsASystem.metaTitle",
+        "desc_key": "blog.posts.whyACoachNeedsASystem.description",
+        "headline_key": "blog.posts.whyACoachNeedsASystem.title",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/free-consultations-and-workouts-ok-or-not/index.html",
+        "uk": "/blog/free-consultations-and-workouts-ok-or-not/",
+        "title_key": "blog.posts.freeConsultsAndWorkouts.metaTitle",
+        "desc_key": "blog.posts.freeConsultsAndWorkouts.description",
+        "headline_key": "blog.posts.freeConsultsAndWorkouts.title",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/should-a-coach-grow-social-media/index.html",
+        "uk": "/blog/should-a-coach-grow-social-media/",
+        "title_key": "blog.posts.shouldACoachGrowSocialMedia.metaTitle",
+        "desc_key": "blog.posts.shouldACoachGrowSocialMedia.description",
+        "headline_key": "blog.posts.shouldACoachGrowSocialMedia.title",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/why-potential-clients-dont-stay/index.html",
+        "uk": "/blog/why-potential-clients-dont-stay/",
+        "title_key": "blog.posts.whyPotentialClientsDontStay.metaTitle",
+        "desc_key": "blog.posts.whyPotentialClientsDontStay.description",
+        "headline_key": "blog.posts.whyPotentialClientsDontStay.title",
+        "cover_key": "blog.posts.whyPotentialClientsDontStay.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/is-coaching-not-for-you/index.html",
+        "uk": "/blog/is-coaching-not-for-you/",
+        "title_key": "blog.posts.isCoachingNotForYou.metaTitle",
+        "desc_key": "blog.posts.isCoachingNotForYou.description",
+        "headline_key": "blog.posts.isCoachingNotForYou.title",
+        "cover_key": "blog.posts.isCoachingNotForYou.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/secret-principle-of-finding-clients/index.html",
+        "uk": "/blog/secret-principle-of-finding-clients/",
+        "title_key": "blog.posts.secretPrincipleOfFindingClients.metaTitle",
+        "desc_key": "blog.posts.secretPrincipleOfFindingClients.description",
+        "headline_key": "blog.posts.secretPrincipleOfFindingClients.title",
+        "cover_key": "blog.posts.secretPrincipleOfFindingClients.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/why-clients-quit-training-even-with-results/index.html",
+        "uk": "/blog/why-clients-quit-training-even-with-results/",
+        "title_key": "blog.posts.whyClientsQuitEvenWithResults.metaTitle",
+        "desc_key": "blog.posts.whyClientsQuitEvenWithResults.description",
+        "headline_key": "blog.posts.whyClientsQuitEvenWithResults.title",
+        "cover_key": "blog.posts.whyClientsQuitEvenWithResults.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/five-sales-techniques-for-coaches/index.html",
+        "uk": "/blog/five-sales-techniques-for-coaches/",
+        "title_key": "blog.posts.fiveSalesTechniquesForCoaches.metaTitle",
+        "desc_key": "blog.posts.fiveSalesTechniquesForCoaches.description",
+        "headline_key": "blog.posts.fiveSalesTechniquesForCoaches.title",
+        "cover_key": "blog.posts.fiveSalesTechniquesForCoaches.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/official-launch/index.html",
+        "uk": "/blog/official-launch/",
+        "title_key": "blog.posts.officialLaunch.metaTitle",
+        "desc_key": "blog.posts.officialLaunch.description",
+        "headline_key": "blog.posts.officialLaunch.title",
+        "cover_key": "blog.posts.officialLaunch.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/why-coaches-burn-out/index.html",
+        "uk": "/blog/why-coaches-burn-out/",
+        "title_key": "blog.posts.whyCoachesBurnOut.metaTitle",
+        "desc_key": "blog.posts.whyCoachesBurnOut.description",
+        "headline_key": "blog.posts.whyCoachesBurnOut.title",
+        "cover_key": "blog.posts.whyCoachesBurnOut.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
+    {
+        "src": "blog/five-autumn-content-topics-for-coaches/index.html",
+        "uk": "/blog/five-autumn-content-topics-for-coaches/",
+        "title_key": "blog.posts.fiveAutumnContentTopics.metaTitle",
+        "desc_key": "blog.posts.fiveAutumnContentTopics.description",
+        "headline_key": "blog.posts.fiveAutumnContentTopics.title",
+        "cover_key": "blog.posts.fiveAutumnContentTopics.cover",
+        "changefreq": "monthly",
+        "priority": "0.5",
+    },
 ]
 
 LOCALIZED_PATH = re.compile(
-    r"^/(?:for-clients|support|privacy-policy|terms-and-conditions|coach)?/?$"
+    r"^/(?:for-clients|support|privacy-policy|terms-and-conditions|coach|blog(?:/[\w-]+)?)?/?$"
 )
 PRELOAD_LANG = re.compile(
     r'var lang = path === "/en" \|\| path\.indexOf\("/en/"\) === 0 \? "en" : "ua";'
@@ -217,6 +359,8 @@ def apply_text_i18n(html: str, dictionary: dict, attr: str, as_html: bool) -> st
 def apply_i18n(html: str, dictionary: dict) -> str:
     html = apply_attr_i18n(html, dictionary, "data-i18n-content", "content")
     html = apply_attr_i18n(html, dictionary, "data-i18n-alt", "alt")
+    html = apply_attr_i18n(html, dictionary, "data-i18n-src", "src")
+    html = apply_attr_i18n(html, dictionary, "data-i18n-href", "href")
     html = apply_attr_i18n(html, dictionary, "data-i18n-aria", "aria-label")
     html = apply_text_i18n(html, dictionary, "data-i18n-html", True)
     html = apply_text_i18n(html, dictionary, "data-i18n", False)
@@ -335,25 +479,79 @@ def rewrite_head_locale(html: str, page: dict, dict_lang: str) -> str:
     return html
 
 
-def update_json_ld(html: str, page: dict, dict_lang: str, title: str, description: str) -> str:
+def update_json_ld(html: str, page: dict, dict_lang: str, title: str, description: str, dictionary: dict) -> str:
     pattern = re.compile(
         r'<script type="application/ld\+json">\s*(\{.*?\})\s*</script>',
         re.S,
     )
     abs_url = ORIGIN + localized_path(page["uk"], dict_lang)
+    headline = get_nested(dictionary, page.get("headline_key") or "")
+    if not isinstance(headline, str):
+        headline = title
+    cover = get_nested(dictionary, page.get("cover_key") or "")
+    cover_abs = None
+    if isinstance(cover, str):
+        if cover.startswith("http"):
+            cover_abs = cover
+        elif cover.startswith("/"):
+            cover_abs = ORIGIN + cover
+    blog_title = get_nested(dictionary, "blog.title")
+
+    def localize_origin_url(url: str) -> str:
+        if not url.startswith(ORIGIN):
+            return url
+        path = strip_locale_prefix(url[len(ORIGIN):] or "/")
+        if path not in {"", "/"} and not path.endswith("/"):
+            path += "/"
+        return ORIGIN + localized_path(path, dict_lang)
 
     def repl(match: re.Match) -> str:
         data = json.loads(match.group(1))
         webpage_id = abs_url + "#webpage"
         for node in data.get("@graph", []):
-            if node.get("@type") == "WebSite":
+            node_type = node.get("@type")
+            if node_type == "WebSite":
                 node["inLanguage"] = ["uk-UA", "en-US", "pl-PL"]
-            if node.get("@type") == "WebPage":
+            if node_type in {"WebPage", "CollectionPage"}:
                 node["url"] = abs_url
                 node["@id"] = webpage_id
                 node["inLanguage"] = LOCALES[dict_lang]["schema"]
                 node["name"] = title
                 node["description"] = description
+                if cover_abs and isinstance(node.get("primaryImageOfPage"), dict):
+                    node["primaryImageOfPage"]["url"] = cover_abs
+                if "breadcrumb" in node:
+                    node["breadcrumb"] = {"@id": abs_url + "#breadcrumb"}
+            if node_type == "BlogPosting":
+                node["url"] = abs_url
+                node["@id"] = abs_url + "#article"
+                node["inLanguage"] = LOCALES[dict_lang]["schema"]
+                node["headline"] = headline
+                node["description"] = description
+                node["mainEntityOfPage"] = {"@id": webpage_id}
+                if cover_abs and isinstance(node.get("image"), dict):
+                    node["image"]["url"] = cover_abs
+            if node_type == "BreadcrumbList":
+                node["@id"] = abs_url + "#breadcrumb"
+                for item in node.get("itemListElement", []):
+                    item_url = item.get("item")
+                    if isinstance(item_url, str):
+                        item["item"] = localize_origin_url(item_url)
+                    if item.get("position") == 2 and isinstance(blog_title, str):
+                        item["name"] = blog_title
+                    if item.get("position") == 3:
+                        item["name"] = headline
+            if node_type == "ItemList":
+                for item in node.get("itemListElement", []):
+                    item_url = item.get("url")
+                    if isinstance(item_url, str):
+                        item["url"] = localize_origin_url(item_url)
+                    for slug, title_key in BLOG_POST_TITLE_KEYS.items():
+                        if slug in str(item.get("url", "")):
+                            post_title = get_nested(dictionary, title_key)
+                            if isinstance(post_title, str):
+                                item["name"] = post_title
+                            break
         dumped = json.dumps(data, ensure_ascii=False, indent=2)
         return f'<script type="application/ld+json">\n  {dumped}\n  </script>'
 
@@ -401,7 +599,7 @@ def build_page(page: dict, dict_lang: str, dictionary: dict) -> None:
     html = apply_i18n(html, dictionary)
     html = rewrite_localized_hrefs(html, dict_lang)
     html = rewrite_head_locale(html, page, dict_lang)
-    html = update_json_ld(html, page, dict_lang, title, desc)
+    html = update_json_ld(html, page, dict_lang, title, desc, dictionary)
     html = replace_lang_switchers(html, page, dict_lang)
     dest_rel = dest_for(page["uk"], dict_lang)
     dest = ROOT / dest_rel
@@ -444,6 +642,18 @@ def write_sitemap() -> None:
                 + "\n".join(links)
                 + "\n  </url>"
             )
+    for extra in UA_ONLY_SITEMAP:
+        loc = ORIGIN + extra["uk"]
+        blocks.append(
+            "  <url>\n"
+            f"    <loc>{loc}</loc>\n"
+            "    <lastmod>2026-09-21</lastmod>\n"
+            f"    <changefreq>{extra['changefreq']}</changefreq>\n"
+            f"    <priority>{extra['priority']}</priority>\n"
+            f'    <xhtml:link rel="alternate" hreflang="uk" href="{loc}"/>\n'
+            f'    <xhtml:link rel="alternate" hreflang="x-default" href="{loc}"/>\n'
+            "  </url>"
+        )
     xml = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
