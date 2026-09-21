@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0A0A0A">
+  <meta name="color-scheme" content="dark">
+  <meta name="author" content="StableFit">
+  <meta name="description" content="Not a step counter and not a gym till. A trainer app holds the client card, the program on their phone, progress, and chat in one place." data-i18n-content="blog.posts.appForPersonalTrainers.description">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://stable-fit.com/en/blog/app-for-personal-trainers/">
+  <link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/app-for-personal-trainers/">
+  <link rel="alternate" hreflang="en" href="https://stable-fit.com/en/blog/app-for-personal-trainers/">
+  <link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/blog/app-for-personal-trainers/">
+  <link rel="alternate" hreflang="x-default" href="https://stable-fit.com/blog/app-for-personal-trainers/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="StableFit">
+  <meta property="og:url" content="https://stable-fit.com/en/blog/app-for-personal-trainers/">
+  <meta property="og:title" content="App for personal trainers: what has to be inside" data-i18n-content="blog.posts.appForPersonalTrainers.title">
+  <meta property="og:description" content="Not a step counter and not a gym till. A trainer app holds the client card, the program on their phone, progress, and chat in one place." data-i18n-content="blog.posts.appForPersonalTrainers.description">
+  <meta property="og:image" content="https://stable-fit.com/assets/images/blog/app-for-personal-trainers.en.jpg" data-i18n-content="blog.posts.appForPersonalTrainers.ogImage">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="448">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="StableFit banner: app for personal trainers" data-i18n-content="blog.posts.appForPersonalTrainers.coverAlt">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="pl_PL">
+  <meta property="article:published_time" content="2026-09-21">
+  <meta property="article:modified_time" content="2026-09-21">
+  <meta property="article:section" content="Blog" data-i18n-content="blog.section">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="App for personal trainers: what has to be inside" data-i18n-content="blog.posts.appForPersonalTrainers.title">
+  <meta name="twitter:description" content="Not a step counter and not a gym till. A trainer app holds the client card, the program on their phone, progress, and chat in one place." data-i18n-content="blog.posts.appForPersonalTrainers.description">
+  <meta name="twitter:image" content="https://stable-fit.com/assets/images/blog/app-for-personal-trainers.en.jpg" data-i18n-content="blog.posts.appForPersonalTrainers.ogImage">
+  <meta name="twitter:image:alt" content="StableFit banner: app for personal trainers" data-i18n-content="blog.posts.appForPersonalTrainers.coverAlt">
+  <title data-i18n="blog.posts.appForPersonalTrainers.metaTitle">App for personal trainers: what has to be inside - StableFit</title>
+  <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="preload" as="image" href="/assets/images/blog/app-for-personal-trainers.en.jpg" data-i18n-href="blog.posts.appForPersonalTrainers.cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=optional" rel="stylesheet">
+  <link rel="stylesheet" href="/style/normalize.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/adaptive.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://stable-fit.com/en/blog/app-for-personal-trainers/#article",
+      "headline": "App for personal trainers: what has to be inside",
+      "description": "Not a step counter and not a gym till. A trainer app holds the client card, the program on their phone, progress, and chat in one place.",
+      "datePublished": "2026-09-21",
+      "dateModified": "2026-09-21",
+      "inLanguage": "en-US",
+      "url": "https://stable-fit.com/en/blog/app-for-personal-trainers/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://stable-fit.com/assets/images/blog/app-for-personal-trainers.en.jpg",
+        "width": 1024,
+        "height": 448
+      },
+      "author": {
+        "@id": "https://stable-fit.com/#organization"
+      },
+      "publisher": {
+        "@id": "https://stable-fit.com/#organization"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://stable-fit.com/en/blog/app-for-personal-trainers/#webpage"
+      },
+      "isPartOf": {
+        "@id": "https://stable-fit.com/#website"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://stable-fit.com/en/blog/app-for-personal-trainers/#webpage",
+      "url": "https://stable-fit.com/en/blog/app-for-personal-trainers/",
+      "name": "App for personal trainers: what has to be inside - StableFit",
+      "description": "Not a step counter and not a gym till. A trainer app holds the client card, the program on their phone, progress, and chat in one place.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://stable-fit.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://stable-fit.com/assets/images/blog/app-for-personal-trainers.en.jpg"
+      },
+      "breadcrumb": {
+        "@id": "https://stable-fit.com/en/blog/app-for-personal-trainers/#breadcrumb"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://stable-fit.com/en/blog/app-for-personal-trainers/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "StableFit",
+          "item": "https://stable-fit.com/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://stable-fit.com/en/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "App for personal trainers: what has to be inside"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://stable-fit.com/#organization",
+      "name": "StableFit",
+      "url": "https://stable-fit.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://stable-fit.com/assets/images/preview-og.png",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body class="page-doc page-blog">
+  <header>
+    <div class="header-wrp">
+      <div class="header-logo-wrap">
+        <img
+          loading="lazy"
+          src="/assets/images/Logo.svg"
+          alt="StableFit logo"
+          data-i18n-alt="meta.logoAlt"
+        >
+      </div>
+      <button
+        type="button"
+        class="header-burger"
+        aria-expanded="false"
+        aria-controls="header-drawer"
+        data-i18n-aria="aria.openMenu"
+       aria-label="Open menu">
+        <span class="header-burger-line"></span>
+        <span class="header-burger-line"></span>
+        <span class="header-burger-line"></span>
+      </button>
+      <div class="header-desktop">
+        <div class="header-nav">
+          <div class="nav-item">
+            <a
+              href="/en/"
+              class="landing-link"
+              data-landing="coach"
+              data-i18n="nav.coaches"
+            >For coaches</a>
+          </div>
+          <div class="nav-item">
+            <a
+              href="/en/for-clients/"
+              class="landing-link"
+              data-landing="client"
+              data-i18n="nav.clients"
+            >Client experience</a>
+          </div>
+        </div>
+        <div class="localisation">
+          <div class="localisation-langs">
+            <a class="localisation-item" href="/blog/app-for-personal-trainers/" hreflang="uk" lang="uk" data-lang="ua" data-i18n-aria="aria.langUa">UA</a>
+            <a class="localisation-item is-active" href="/en/blog/app-for-personal-trainers/" hreflang="en" lang="en" data-lang="en" data-i18n-aria="aria.langEn">EN</a>
+            <a class="localisation-item" href="/pl/blog/app-for-personal-trainers/" hreflang="pl" lang="pl" data-lang="pl" data-i18n-aria="aria.langPl">PL</a>
+          </div>
+          <a
+            href="/en/#download-app"
+            class="download-button btn btn-hover-transparent"
+            data-i18n="buttons.download"
+          >Download</a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="header-drawer"
+      id="header-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="header-drawer-inner">
+        <div class="header-drawer-top">
+          <div class="header-logo-wrap">
+            <img
+              loading="lazy"
+              src="/assets/images/Logo.svg"
+              alt="StableFit logo"
+              data-i18n-alt="meta.logoAlt"
+            >
+          </div>
+          <button
+            type="button"
+            class="header-drawer-close"
+            data-i18n-aria="aria.closeMenu"
+           aria-label="Close menu">
+            &times;
+          </button>
+        </div>
+        <nav
+          class="header-drawer-nav"
+          aria-label="Навігація"
+        >
+          <a
+            href="/en/"
+            class="landing-link"
+            data-landing="coach"
+            data-i18n="nav.coaches"
+          >For coaches</a>
+          <a
+            href="/en/for-clients/"
+            class="landing-link"
+            data-landing="client"
+            data-i18n="nav.clients"
+          >Client experience</a>
+          <a
+            href="/en/support/"
+            class="landing-link"
+            data-landing="support"
+            data-i18n="nav.support"
+          >Support</a>
+          <a
+            href="/en/blog/"
+            class="landing-link is-active"
+            data-landing="blog"
+            data-i18n="nav.blog"
+          >Blog</a>
+        </nav>
+        <div class="header-drawer-lang localisation">
+          <div class="localisation-langs">
+            <a class="localisation-item" href="/blog/app-for-personal-trainers/" hreflang="uk" lang="uk" data-lang="ua" data-i18n-aria="aria.langUa">UA</a>
+            <a class="localisation-item is-active" href="/en/blog/app-for-personal-trainers/" hreflang="en" lang="en" data-lang="en" data-i18n-aria="aria.langEn">EN</a>
+            <a class="localisation-item" href="/pl/blog/app-for-personal-trainers/" hreflang="pl" lang="pl" data-lang="pl" data-i18n-aria="aria.langPl">PL</a>
+          </div>
+        </div>
+        <a
+          href="/en/#download-app"
+          class="download-button header-drawer-cta btn btn-hover-transparent"
+          data-i18n="buttons.download"
+        >Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="doc-page">
+    <div class="doc-container">
+      <article
+        class="doc-section"
+        aria-labelledby="doc-main-title"
+      >
+        <header class="doc-hero">
+          <h1
+            id="doc-main-title"
+            class="doc-title"
+            data-i18n="blog.posts.appForPersonalTrainers.title"
+          >App for personal trainers: what has to be inside</h1>
+          <p class="blog-meta">
+            <a href="/en/blog/" data-i18n="blog.title">Blog</a>
+            ·
+            <time datetime="2026-09-21" data-i18n="blog.posts.appForPersonalTrainers.dateLabel">21 September 2026</time>
+          </p>
+          <figure class="blog-cover">
+            <img
+              src="/assets/images/blog/app-for-personal-trainers.en.jpg"
+              alt="StableFit banner: app for personal trainers"
+              width="1024"
+              height="448"
+              fetchpriority="high"
+              decoding="async"
+              data-i18n-src="blog.posts.appForPersonalTrainers.cover"
+              data-i18n-alt="blog.posts.appForPersonalTrainers.coverAlt"
+            >
+          </figure>
+        </header>
+                                <div class="doc-content">
+          <p data-i18n="blog.posts.appForPersonalTrainers.p1">Search for an &quot;app for personal trainers&quot; and stores show step counters, &quot;abs in 7 days&quot;, and gym desks. That is not your job. You need an app where the client lives as a process, not as a subscription to someone else&#x27;s videos.</p>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p2">The check is simple: does the client see the same system you do. If the program is in your sheet and in their chat - it is not a trainer app. It is Excel plus a messenger again.</p>
+          <h2 data-i18n="blog.posts.appForPersonalTrainers.h2_1">The client as a process, not as a chat</h2>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p3">A real trainer app has a list of people, not a message feed. Open the client - goal, limits, what happened last session, whether they opened the program.</p>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p4">Chat sits next to that. Not instead of it. Messages are for talk. Data is for decisions. If everything lives in one Telegram thread, you are selling attention, not coaching.</p>
+          <h2 data-i18n="blog.posts.appForPersonalTrainers.h2_2">A card and a program the client opens themselves</h2>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p5">A card without a program is a form. A program without a card is a file. Together they remove the investigation at the start of a session: you do not hunt a knee note from a March chat.</p>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p6">The client opens the app and sees what to do today. No spreadsheet screenshot, no waiting for your reply at 10 p.m. You see what was done instead of &quot;so how was it&quot;.</p>
+          <h2 data-i18n="blog.posts.appForPersonalTrainers.h2_3">Progress and nutrition next to it</h2>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p7">Measurements, before/after photos, and a chart should live on the card. Otherwise progress is a feeling you have to argue in words.</p>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p8">If you coach nutrition, macros live here too, not in a third tracker. The client should not keep a food log in one place and read the program in another.</p>
+          <h2 data-i18n="blog.posts.appForPersonalTrainers.h2_4">What not to look for in a &quot;fitness app&quot;</h2>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p9">Do not look for a gym till, group slot booking, or someone else&#x27;s brand on top of yours. That is studio CRM. You need a solo trainer and their clients.</p>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p10">Do not look for another calorie counter &quot;for everyone&quot;. Look for a system you invite a person into - then program, progress, and chat stay in sync.</p>
+          <h2 data-i18n="blog.posts.appForPersonalTrainers.h2_5">In short</h2>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p11">An app for personal trainers is not shelf video classes. It is the card, the program on the client&#x27;s phone, progress, nutrition, and one chat.</p>
+          <p data-i18n="blog.posts.appForPersonalTrainers.p12">In StableFit you can run up to 3 clients for free. That is enough to test the process, not to believe a store screenshot.</p>
+          <a
+            href="/en/#download-app"
+            class="download-button btn btn-hover-transparent blog-cta"
+            data-i18n="blog.posts.appForPersonalTrainers.cta"
+          >Download on the App Store or Google Play</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrp">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img
+                loading="lazy"
+                src="/assets/images/Logo.svg"
+                alt="StableFit logo"
+                data-i18n-alt="meta.logoAlt"
+              >
+            </div>
+            <div class="footer-description" data-i18n="footer.description">A platform that unites fitness coaches and their clients to achieve outstanding results.</div>
+            <div class="footerlocalisation">
+              <div class="localisation-langs">
+                <a class="localisation-item" href="/blog/app-for-personal-trainers/" hreflang="uk" lang="uk" data-lang="ua" data-i18n-aria="aria.langUa">UA</a>
+            <a class="localisation-item is-active" href="/en/blog/app-for-personal-trainers/" hreflang="en" lang="en" data-lang="en" data-i18n-aria="aria.langEn">EN</a>
+            <a class="localisation-item" href="/pl/blog/app-for-personal-trainers/" hreflang="pl" lang="pl" data-lang="pl" data-i18n-aria="aria.langPl">PL</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content-group">
+            <div class="content-item">
+            <div class="footer-title" data-i18n="footer.platform">Platform</div>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a
+                  href="/en/"
+                  class="landing-link"
+                  data-landing="coach"
+                  data-i18n="nav.coaches"
+                >For coaches</a>
+              </li>
+              <li class="footer-list-item">
+                <a
+                  href="/en/for-clients/"
+                  class="landing-link"
+                  data-landing="client"
+                  data-i18n="nav.clients"
+                >Client experience</a>
+              </li>
+              <li class="footer-list-item">
+                <a
+                  href="/en/support/"
+                  class="landing-link"
+                  data-landing="support"
+                  data-i18n="nav.support"
+                >Support</a>
+              </li>
+              <li class="footer-list-item">
+                <a
+                  href="/en/blog/"
+                  class="landing-link"
+                  data-landing="blog"
+                  data-i18n="nav.blog"
+                >Blog</a>
+              </li>
+            </ul>
+          </div>
+            <div class="content-item">
+            <div class="footer-title" data-i18n="footer.contacts.title">Contacts</div>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/mail-icon.svg"
+                  alt="email_icon"
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="mailto:support@stable-fit.com"
+                  data-i18n="footer.contacts.email"
+                >support@stable-fit.com</a>
+              </li>
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/tg-icon.svg"
+                  alt="telegram_icon"
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="https://t.me/stable_fit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="footer.contacts.telegram"
+                >t.me/stable_fit</a>
+              </li>
+            </ul>
+          </div>
+            <div class="content-item">
+            <div
+              class="footer-title"
+              data-i18n="footer.company.title"
+            >Company details</div>
+            <ul class="footer-list">
+              <li
+                class="footer-list-item"
+                data-i18n="footer.company.name"
+              >SavvaDev - Ihor Savva</li>
+              <li
+                class="footer-list-item"
+                data-i18n="footer.company.address"
+              >ul. Bobrowiecka 10/67<br>00-728 Warszawa, Poland</li>
+              <li
+                class="footer-list-item"
+                data-i18n="footer.company.nip"
+              >NIP: 5214103415</li>
+              <li
+                class="footer-list-item"
+                data-i18n="footer.company.regon"
+              >REGON: 540758121</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="underfooter">
+          <div
+            class="underfooter-item"
+            data-i18n="footer.under.copy"
+          >© 2025 SavvaDev - Ihor Savva</div>
+          <div class="underfooter-content">
+            <a
+              href="/en/privacy-policy/"
+              class="underfooter-item"
+              data-i18n="footer.under.privacy"
+            >Privacy Policy</a>
+            <a
+              href="/en/terms-and-conditions/"
+              class="underfooter-item"
+              data-i18n="footer.under.terms"
+            >Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/script/main.js?v=20260923"></script>
+</body>
+</html>

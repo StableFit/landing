@@ -4,3 +4,6 @@ Allow: /
 Disallow: /coach/
 
 Sitemap: https://stable-fit.com/sitemap.xml
+
+# Context for AI crawlers (not a sitemap URL)
+# https://stable-fit.com/llms.txt
