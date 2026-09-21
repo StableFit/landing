@@ -276,32 +276,56 @@
     },
     "faq": {
       "sectionName": "FAQ",
-      "sectionTitle": "Short answers",
+      "sectionTitle": "Answers",
       "gradientTitle": "about StableFit",
       "items": {
         "who": {
           "q": "Who is StableFit for - a solo trainer or a gym?",
-          "a": "For a personal trainer who runs their own clients. It is not a studio booking system and not a membership till."
+          "a": "For a personal trainer who runs their own clients - in the gym or online. It is not a studio booking system, not a membership till, and not a CRM for a gym admin. If you personally coach people on your programs, this is for you."
         },
         "excel": {
           "q": "How is this different from Excel and Telegram?",
-          "a": "A spreadsheet stores numbers. A messenger stores chats. StableFit keeps the client card, the program, progress, and chat in one place. The client sees the same thing you do."
+          "a": "A spreadsheet stores numbers. A messenger stores chats. The client does not see the same sheet, and you jump between files and threads. StableFit keeps the client card, the program on their phone, progress, and chat in one place. You both look at the same thing."
         },
         "clientApp": {
           "q": "What does the client see in their app?",
-          "a": "Today's program, nutrition, measurements and progress photos, and chat with you. They do not need Excel or a separate tracker."
+          "a": "A separate client app: today's program, nutrition, measurements and progress photos, and chat with you. They do not need Excel, a calorie tracker, or a second messenger for training. You send the program - they see it on their phone."
         },
         "allInOne": {
           "q": "Are chat, programs, progress, and nutrition in one place?",
-          "a": "Yes. You manage clients, send programs, see body stats and macros, and write in chat without switching apps."
+          "a": "Yes. Clients, workout programs, body stats, macros, and chat live in one coach app. You do not copy the program into Telegram and the weights into a sheet. The client logs workouts and meals - you see progress without switching apps."
         },
         "price": {
           "q": "How much does it cost, and is there a free start?",
-          "a": "Up to 3 clients free. Then $20 a month or $100 a year through the App Store or Google Play, in local currency."
+          "a": "Up to 3 clients free, no card. Then $20 a month or $100 a year through the App Store or Google Play, billed in local currency. The client app is free - only the coach pays. Cancel in the store where you subscribed."
         },
         "notForStudio": {
           "q": "What does StableFit not include?",
-          "a": "No group slot booking, no gym till, and no white-label under someone else's brand. If you need a studio with memberships, that is a different product."
+          "a": "No group slot booking, no gym till, no membership CRM, and no white-label under someone else's brand. If you need a studio with a front desk and class schedule, that is a different product. StableFit is for a solo personal trainer and their clients."
+        },
+        "platforms": {
+          "q": "Does it work on iPhone and Android?",
+          "a": "Yes. The coach app StableFit Pro and the client app are on the App Store and Google Play. You and the client can be on different platforms - the data stays in sync."
+        },
+        "clientPays": {
+          "q": "Does the client pay for the app?",
+          "a": "No. The client downloads the app free and trains on your programs. You pay for Pro when you go past 3 clients. There is no separate client till in StableFit."
+        },
+        "invite": {
+          "q": "How do I add a client?",
+          "a": "Sign up in the coach app, add the client - they get an invite to register. After that, the program, progress, and chat stay in sync. They do not need a separate client website."
+        },
+        "online": {
+          "q": "Can I coach online, not only in the gym?",
+          "a": "Yes. The client sees the program on their phone, logs workouts and meals, and writes in chat. You can coach people in the gym and remotely in the same CRM. This is not studio group-slot booking."
+        },
+        "cancel": {
+          "q": "How do I cancel the subscription?",
+          "a": "Through the App Store or Google Play - wherever you bought Pro. There is no separate StableFit till. Cancellation and refunds follow Apple or Google rules."
+        },
+        "languages": {
+          "q": "What languages is the site in?",
+          "a": "Ukrainian, English, and Polish: stable-fit.com, /en/, and /pl/. Those are full landing and blog versions, not one page with a text switcher."
         }
       }
     },

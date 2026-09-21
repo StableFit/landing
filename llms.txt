@@ -6,7 +6,7 @@ It is for a solo personal trainer who runs their own clients.
 
 It is not a gym booking system, studio till, membership CRM, group slot scheduler, or white-label brand.
 
-Up to 3 clients are free. Then $20 per month or $100 per year through the App Store or Google Play, billed in local currency.
+Up to 3 clients are free. Then $20 per month or $100 per year through the App Store or Google Play, billed in local currency. The client app is free.
 
 ## Coach landing
 
@@ -20,17 +20,35 @@ Up to 3 clients are free. Then $20 per month or $100 per year through the App St
 - https://stable-fit.com/en/for-clients/
 - https://stable-fit.com/pl/for-clients/
 
+## FAQ
+
+- https://stable-fit.com/#faq
+- https://stable-fit.com/en/#faq
+- https://stable-fit.com/pl/#faq
+
 ## Blog
+
+Indexes:
 
 - https://stable-fit.com/blog/
 - https://stable-fit.com/en/blog/
 - https://stable-fit.com/pl/blog/
 
-Key articles:
+Every article has UA / EN / PL URLs with the same English slug:
 
 - https://stable-fit.com/blog/crm-for-personal-trainers/
 - https://stable-fit.com/blog/excel-and-telegram-are-not-a-crm-for-coaches/
+- https://stable-fit.com/blog/five-sales-techniques-for-coaches/
+- https://stable-fit.com/blog/official-launch/
+- https://stable-fit.com/blog/why-coaches-burn-out/
+- https://stable-fit.com/blog/five-autumn-content-topics-for-coaches/
+- https://stable-fit.com/blog/why-clients-quit-training-even-with-results/
+- https://stable-fit.com/blog/secret-principle-of-finding-clients/
+- https://stable-fit.com/blog/is-coaching-not-for-you/
+- https://stable-fit.com/blog/why-potential-clients-dont-stay/
+- https://stable-fit.com/blog/should-a-coach-grow-social-media/
+- https://stable-fit.com/blog/free-consultations-and-workouts-ok-or-not/
+- https://stable-fit.com/blog/why-a-coach-needs-a-system/
+- https://stable-fit.com/blog/where-to-find-time-to-attract-new-clients/
 
-## FAQ
-
-https://stable-fit.com/#faq
+EN: prefix `/en`. PL: prefix `/pl`. Example: https://stable-fit.com/en/blog/crm-for-personal-trainers/

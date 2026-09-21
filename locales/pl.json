@@ -276,32 +276,56 @@
     },
     "faq": {
       "sectionName": "Pytania",
-      "sectionTitle": "Krótko",
+      "sectionTitle": "Odpowiedzi",
       "gradientTitle": "o StableFit",
       "items": {
         "who": {
           "q": "Dla kogo jest StableFit - solo trener czy siłownia?",
-          "a": "Dla trenera personalnego, który prowadzi własnych klientów. To nie system zapisów do studia i nie kasa karnetów."
+          "a": "Dla trenera personalnego, który sam prowadzi własnych klientów - na siłowni albo online. To nie system zapisów do studia, nie kasa karnetów i nie CRM dla administratora siłowni. Jeśli osobiście prowadzisz ludzi na swoich programach - to jest dla ciebie."
         },
         "excel": {
           "q": "Czym to się różni od Excela i Telegrama?",
-          "a": "Arkusz trzyma liczby, komunikator - wiadomości. StableFit trzyma kartę klienta, program, postępy i czat w jednym miejscu. Klient widzi to samo co ty."
+          "a": "Arkusz trzyma liczby, komunikator - wiadomości. Klient nie widzi tego samego arkusza, a ty skaczesz między plikami i wątkami. StableFit trzyma kartę klienta, program w jego telefonie, postępy i czat w jednym miejscu. Patrzycie na to samo."
         },
         "clientApp": {
           "q": "Co klient widzi w swojej aplikacji?",
-          "a": "Program na dziś, żywienie, pomiary i zdjęcia postępów oraz czat z tobą. Nie potrzebuje Excela ani osobnego trackera."
+          "a": "Osobna aplikacja klienta: program na dziś, żywienie, pomiary i zdjęcia postępów oraz czat z tobą. Nie potrzebuje Excela, osobnego trackera kalorii ani drugiego komunikatora do treningów. Wysyłasz program - widzi go w telefonie."
         },
         "allInOne": {
           "q": "Czy czat, programy, postępy i żywienie są w jednym miejscu?",
-          "a": "Tak. Prowadzisz klientów, wysyłasz programy, widzisz dynamikę i makroskładniki i piszesz na czacie bez przełączania aplikacji."
+          "a": "Tak. Klienci, programy treningowe, dynamika ciała, makroskładniki i czat - w jednej aplikacji trenera. Nie kopiujesz programu do Telegrama, a ciężarów do arkusza. Klient zapisuje treningi i posiłki, ty widzisz postępy bez przełączania aplikacji."
         },
         "price": {
           "q": "Ile to kosztuje i czy jest darmowy start?",
-          "a": "Do 3 klientów za darmo. Potem $20 miesięcznie albo $100 rocznie przez App Store lub Google Play, w walucie lokalnej."
+          "a": "Do 3 klientów za darmo, karta nie jest potrzebna. Potem $20 miesięcznie albo $100 rocznie przez App Store lub Google Play, w walucie lokalnej. Aplikacja klienta jest darmowa - płaci tylko trener. Subskrypcję anulujesz w sklepie, w którym ją opłacasz."
         },
         "notForStudio": {
           "q": "Czego w StableFit nie ma?",
-          "a": "Nie ma grupowych zapisów na sloty, kasy siłowni i white label pod cudzą markę. Jeśli potrzebujesz studia z karnetami - to inny produkt."
+          "a": "Nie ma grupowych zapisów na sloty, kasy siłowni, CRM karnetów i white label pod cudzą markę. Jeśli potrzebujesz studia z recepcją i grafikiem grup - to inny produkt. StableFit jest dla solo trenera i jego klientów."
+        },
+        "platforms": {
+          "q": "Czy działa na iPhonie i Androidzie?",
+          "a": "Tak. Aplikacja trenera StableFit Pro i aplikacja klienta są w App Store i Google Play. Ty i klient możecie być na różnych platformach - dane zostają zsynchronizowane."
+        },
+        "clientPays": {
+          "q": "Czy klient płaci za aplikację?",
+          "a": "Nie. Klient pobiera aplikację za darmo i trenuje według twoich programów. Ty płacisz za Pro, gdy wychodzisz poza 3 klientów. W StableFit nie ma osobnej kasy dla klienta."
+        },
+        "invite": {
+          "q": "Jak dodać klienta?",
+          "a": "Rejestrujesz się w aplikacji trenera, dodajesz klienta - dostaje zaproszenie do rejestracji. Potem program, postępy i czat zostają zsynchronizowane. Osobna strona-gabinet klienta nie jest potrzebna."
+        },
+        "online": {
+          "q": "Czy można prowadzić klientów online, nie tylko na siłowni?",
+          "a": "Tak. Klient widzi program w telefonie, zapisuje treningi i żywienie i pisze na czacie. Możesz prowadzić ludzi na siłowni i zdalnie w jednym CRM. To nie zapisy na grupowe sloty studia."
+        },
+        "cancel": {
+          "q": "Jak anulować subskrypcję?",
+          "a": "Przez App Store albo Google Play - tam, gdzie jest Pro. Osobnej kasy StableFit nie ma. Anulowanie i zwroty idą według zasad Apple albo Google."
+        },
+        "languages": {
+          "q": "W jakich językach jest strona?",
+          "a": "Po ukraińsku, angielsku i polsku: stable-fit.com, /en/ i /pl/. To pełne wersje landingu i bloga, nie jedna strona z przełącznikiem tekstu."
         }
       }
     },

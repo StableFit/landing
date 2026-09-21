@@ -63,7 +63,20 @@ BLOG_POST_TITLE_KEYS = {
     "crm-for-personal-trainers": "blog.posts.crmForPersonalTrainers.title",
 }
 
-FAQ_ITEM_KEYS = ("who", "excel", "clientApp", "allInOne", "price", "notForStudio")
+FAQ_ITEM_KEYS = (
+    "who",
+    "excel",
+    "clientApp",
+    "allInOne",
+    "price",
+    "notForStudio",
+    "platforms",
+    "clientPays",
+    "invite",
+    "online",
+    "cancel",
+    "languages",
+)
 
 PAGES = [
     {
