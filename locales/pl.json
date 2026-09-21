@@ -281,7 +281,7 @@
       "items": {
         "who": {
           "q": "Dla kogo jest StableFit - solo trener czy siłownia?",
-          "a": "Dla trenera personalnego, który sam prowadzi własnych klientów - na siłowni albo online. To nie system zapisów do studia, nie kasa karnetów i nie CRM dla administratora siłowni. Jeśli osobiście prowadzisz ludzi na swoich programach - to jest dla ciebie."
+          "a": "Dla trenera personalnego, który sam prowadzi własnych klientów - na siłowni albo online. To nie system zapisów do studia i nie CRM dla administratora siłowni. Jeśli osobiście prowadzisz ludzi na swoich programach - to jest dla ciebie."
         },
         "excel": {
           "q": "Czym to się różni od Excela i Telegrama?",
@@ -301,7 +301,7 @@
         },
         "notForStudio": {
           "q": "Czego w StableFit nie ma?",
-          "a": "Nie ma grupowych zapisów na sloty, kasy siłowni, CRM karnetów i white label pod cudzą markę. Jeśli potrzebujesz studia z recepcją i grafikiem grup - to inny produkt. StableFit jest dla solo trenera i jego klientów."
+          "a": "Nie ma grupowych zapisów na sloty, kasy siłowni i white label pod cudzą markę. Zarządzanie finansami i karnetami twoich klientów jest już w robocie - nadal dla jednego trenera, nie dla studia. Jeśli potrzebujesz siłowni z recepcją i grafikiem grup - to inny produkt."
         },
         "platforms": {
           "q": "Czy działa na iPhonie i Androidzie?",
@@ -322,10 +322,6 @@
         "cancel": {
           "q": "Jak anulować subskrypcję?",
           "a": "Przez App Store albo Google Play - tam, gdzie jest Pro. Osobnej kasy StableFit nie ma. Anulowanie i zwroty idą według zasad Apple albo Google."
-        },
-        "languages": {
-          "q": "W jakich językach jest strona?",
-          "a": "Po ukraińsku, angielsku i polsku: stable-fit.com, /en/ i /pl/. To pełne wersje landingu i bloga, nie jedna strona z przełącznikiem tekstu."
         }
       }
     },

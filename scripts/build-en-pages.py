@@ -75,7 +75,6 @@ FAQ_ITEM_KEYS = (
     "invite",
     "online",
     "cancel",
-    "languages",
 )
 
 PAGES = [

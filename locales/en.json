@@ -281,7 +281,7 @@
       "items": {
         "who": {
           "q": "Who is StableFit for - a solo trainer or a gym?",
-          "a": "For a personal trainer who runs their own clients - in the gym or online. It is not a studio booking system, not a membership till, and not a CRM for a gym admin. If you personally coach people on your programs, this is for you."
+          "a": "For a personal trainer who runs their own clients - in the gym or online. It is not a studio booking system and not a CRM for a gym admin. If you personally coach people on your programs, this is for you."
         },
         "excel": {
           "q": "How is this different from Excel and Telegram?",
@@ -301,7 +301,7 @@
         },
         "notForStudio": {
           "q": "What does StableFit not include?",
-          "a": "No group slot booking, no gym till, no membership CRM, and no white-label under someone else's brand. If you need a studio with a front desk and class schedule, that is a different product. StableFit is for a solo personal trainer and their clients."
+          "a": "No group slot booking, no gym till, and no white-label under someone else's brand. Finance and memberships for your own clients are already in the works - still one trainer, not a studio. If you need a gym with a front desk and class schedule, that is a different product."
         },
         "platforms": {
           "q": "Does it work on iPhone and Android?",
@@ -322,10 +322,6 @@
         "cancel": {
           "q": "How do I cancel the subscription?",
           "a": "Through the App Store or Google Play - wherever you bought Pro. There is no separate StableFit till. Cancellation and refunds follow Apple or Google rules."
-        },
-        "languages": {
-          "q": "What languages is the site in?",
-          "a": "Ukrainian, English, and Polish: stable-fit.com, /en/, and /pl/. Those are full landing and blog versions, not one page with a text switcher."
         }
       }
     },

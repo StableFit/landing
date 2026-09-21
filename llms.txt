@@ -4,7 +4,7 @@ StableFit is an app and CRM for personal trainers: clients, workout programs, pr
 
 It is for a solo personal trainer who runs their own clients.
 
-It is not a gym booking system, studio till, membership CRM, group slot scheduler, or white-label brand.
+It is not a gym booking system, studio till, group slot scheduler, or white-label brand. Finance and memberships for the trainer's own clients are in the works - still one trainer, not a studio.
 
 Up to 3 clients are free. Then $20 per month or $100 per year through the App Store or Google Play, billed in local currency. The client app is free.
 
