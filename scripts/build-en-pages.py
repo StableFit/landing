@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://stable-fit.com"
-SCRIPT_VERSION = "20260922"
+SCRIPT_VERSION = "20260923"
 GENERATED_LANGS = ("en", "pl")
 
 LOCALES = {
@@ -584,6 +584,7 @@ def patch_source_seo(html: str, page: dict) -> str:
     html = html.replace("main.js?v=20260920", f"main.js?v={SCRIPT_VERSION}")
     html = html.replace("main.js?v=20260921", f"main.js?v={SCRIPT_VERSION}")
     html = html.replace("main.js?v=20260922", f"main.js?v={SCRIPT_VERSION}")
+    html = html.replace("main.js?v=20260923", f"main.js?v={SCRIPT_VERSION}")
     html = html.replace(
         '"inLanguage": ["uk-UA", "en-US"]',
         '"inLanguage": ["uk-UA", "en-US", "pl-PL"]',

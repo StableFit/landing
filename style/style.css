@@ -149,7 +149,8 @@ a.localisation-item:focus-visible {
   border-radius: 4px;
 }
 
-.header-desktop .lang-switch .localisation-langs {
+.header-desktop .lang-switch .localisation-langs,
+.footerlocalisation .lang-switch .localisation-langs {
   display: none;
   position: absolute;
   top: calc(100% + 12px);
@@ -168,11 +169,13 @@ a.localisation-item:focus-visible {
   z-index: 120;
 }
 
-.header-desktop .lang-switch.is-open .localisation-langs {
+.header-desktop .lang-switch.is-open .localisation-langs,
+.footerlocalisation .lang-switch.is-open .localisation-langs {
   display: flex;
 }
 
-.header-desktop .lang-switch .localisation-item {
+.header-desktop .lang-switch .localisation-item,
+.footerlocalisation .lang-switch .localisation-item {
   display: block;
   padding: 8px 12px;
   margin: 0;
@@ -180,13 +183,26 @@ a.localisation-item:focus-visible {
   border-radius: 8px;
 }
 
-.header-desktop .lang-switch .localisation-item:not(:last-child) {
+.header-desktop .lang-switch .localisation-item:not(:last-child),
+.footerlocalisation .lang-switch .localisation-item:not(:last-child) {
   padding-right: 12px;
   margin-right: 0;
 }
 
-.header-desktop .lang-switch .localisation-item:not(:last-child)::after {
+.header-desktop .lang-switch .localisation-item:not(:last-child)::after,
+.footerlocalisation .lang-switch .localisation-item:not(:last-child)::after {
   content: none;
+}
+
+.footerlocalisation .lang-switch {
+  justify-content: flex-start;
+}
+
+.footerlocalisation .lang-switch .localisation-langs {
+  top: calc(100% + 10px);
+  bottom: auto;
+  left: 0;
+  transform: none;
 }
 
 .download-button {
@@ -1731,7 +1747,7 @@ footer {
   justify-content: center;
   border-top: 1px solid #FFFFFF0D;
   padding: 40px 0 24px 0;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 .footer-wrp {
@@ -1809,6 +1825,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  margin-bottom: 0;
 }
 
 .footer-title {
@@ -1834,9 +1851,14 @@ footer {
   text-align: left;
 }
 
+.footer-title:has(img) {
+  margin-bottom: 0;
+}
+
 .footer-description {
   line-height: 23px;
-  margin-bottom: 11.5px;
+  margin-top: 24px;
+  margin-bottom: 16px;
   overflow-wrap: anywhere;
 }
 
@@ -1909,7 +1931,7 @@ a.underfooter-item {
 }
 
 .footerlocalisation {
-  padding: 8px;
+  padding: 0;
 }
 
 

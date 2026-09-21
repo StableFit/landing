@@ -55,7 +55,7 @@
   }
 
   function initLangDropdowns() {
-    document.querySelectorAll(".header-desktop .localisation-langs").forEach((list) => {
+    document.querySelectorAll(".header-desktop .localisation-langs, .footerlocalisation .localisation-langs").forEach((list) => {
       if (list.closest(".lang-switch")) return;
 
       const switchEl = document.createElement("div");
