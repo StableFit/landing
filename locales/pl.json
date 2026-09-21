@@ -747,10 +747,10 @@
   "blog": {
     "meta": {
       "title": "Blog - StableFit",
-      "description": "Notatki dla trenerów personalnych: czas, klienci i codzienny proces."
+      "description": "Blog StableFit dla trenerów personalnych: klienci, system pracy i rozwój praktyki."
     },
     "title": "Blog",
-    "lead": "Krótkie teksty dla trenerów, którzy prowadzą klientów i swój czas.",
+    "lead": "Artykuły dla trenerów personalnych: klienci, system pracy i rozwój praktyki.",
     "section": "Blog",
     "readArticle": "Czytaj",
     "posts": {

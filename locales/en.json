@@ -747,10 +747,10 @@
   "blog": {
     "meta": {
       "title": "Blog - StableFit",
-      "description": "Notes for personal trainers: time, clients, and how the work actually runs."
+      "description": "The StableFit blog for personal trainers: clients, process, and growing a coaching practice."
     },
     "title": "Blog",
-    "lead": "Short pieces for coaches who manage clients and their own time.",
+    "lead": "Articles for personal trainers: clients, process, and growing a coaching practice.",
     "section": "Blog",
     "readArticle": "Read",
     "posts": {
