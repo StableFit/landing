@@ -815,6 +815,25 @@
     "section": "Блог",
     "readArticle": "Читати",
     "posts": {
+      "stablefitOnCensuus": {
+        "title": "StableFit тепер на Censuus",
+        "metaTitle": "StableFit тепер на Censuus - StableFit",
+        "description": "StableFit PRO є в переписі застосунків Censuus: категорія Health & Fitness, посилання на App Store, Google Play і сайт.",
+        "dateLabel": "1 жовтня 2026",
+        "cover": "/assets/images/blog/stablefit-on-censuus.uk.jpg",
+        "ogImage": "https://stable-fit.com/assets/images/blog/stablefit-on-censuus.uk.jpg",
+        "coverAlt": "Банер StableFit: StableFit PRO тепер на Censuus",
+        "cta": "Завантажити в App Store або Google Play",
+        "p1": "StableFit PRO тепер є на Censuus. Це перепис застосунків: місце в рейтингу залежить від реальних візитів, а не від того, кому сподобалось в редакції.",
+        "h1": "Де нас знайти",
+        "s1": "Картка називається «StableFit PRO: для тренерів». Категорія - Health & Fitness. Звідти відкриваються App Store, Google Play і сайт.",
+        "linkHtml": "<a href=\"https://censuus.com/a/stablefit-pro-00c5\" target=\"_blank\" rel=\"noopener noreferrer\">Відкрити картку StableFit на Censuus</a>",
+        "h2": "Що це за каталог",
+        "s2": "Censuus тримає живий рейтинг за трафіком візитів. Безкоштовні застосунки піднімаються за реальними відвідуваннями. Місце в списку там не вигадують.",
+        "h3": "Навіщо це тренеру",
+        "s3": "Якщо шукаєш інструмент для роботи з клієнтами онлайн і офлайн, StableFit тепер видно не лише в сторах. На картці коротко: це для фітнес-тренерів, не лічильник кроків і не каса залу.",
+        "s4": "Для клієнтів додаток лишається безкоштовним. Платить тренер."
+      },
       "whereToFindTime": {
         "title": "Де взяти час, щоб залучати нових клієнтів?",
         "metaTitle": "Де взяти час, щоб залучати нових клієнтів? - StableFit",

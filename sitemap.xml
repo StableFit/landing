@@ -153,7 +153,7 @@
   </url>
   <url>
     <loc>https://stable-fit.com/blog/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/"/>
@@ -163,7 +163,7 @@
   </url>
   <url>
     <loc>https://stable-fit.com/en/blog/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/"/>
@@ -173,7 +173,7 @@
   </url>
   <url>
     <loc>https://stable-fit.com/pl/blog/</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/"/>
@@ -901,4 +901,34 @@
     <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/blog/five-autumn-content-topics-for-coaches/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/blog/five-autumn-content-topics-for-coaches/"/>
   </url>
+<url>
+  <loc>https://stable-fit.com/blog/stablefit-on-censuus/</loc>
+  <lastmod>2026-10-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/blog/stablefit-on-censuus/"/>
+</url>
+<url>
+  <loc>https://stable-fit.com/en/blog/stablefit-on-censuus/</loc>
+  <lastmod>2026-10-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/blog/stablefit-on-censuus/"/>
+</url>
+<url>
+  <loc>https://stable-fit.com/pl/blog/stablefit-on-censuus/</loc>
+  <lastmod>2026-10-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="uk" href="https://stable-fit.com/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://stable-fit.com/en/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="pl" href="https://stable-fit.com/pl/blog/stablefit-on-censuus/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://stable-fit.com/blog/stablefit-on-censuus/"/>
+</url>
 </urlset>

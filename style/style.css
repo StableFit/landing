@@ -1975,6 +1975,12 @@ a.underfooter-item {
   padding: 0;
 }
 
+.footer-content > .content-item > a[href^="https://censuus.com/a/"] {
+  display: block;
+  margin-top: 20px;
+  line-height: 0;
+}
+
 
 
 .page-doc {

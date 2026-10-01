@@ -815,6 +815,25 @@
     "section": "Blog",
     "readArticle": "Read",
     "posts": {
+      "stablefitOnCensuus": {
+        "title": "StableFit is now on Censuus",
+        "metaTitle": "StableFit is now on Censuus - StableFit",
+        "description": "StableFit PRO is in the Censuus app census: Health & Fitness, with links to the App Store, Google Play and the site.",
+        "dateLabel": "1 October 2026",
+        "cover": "/assets/images/blog/stablefit-on-censuus.en.jpg",
+        "ogImage": "https://stable-fit.com/assets/images/blog/stablefit-on-censuus.en.jpg",
+        "coverAlt": "StableFit banner: StableFit PRO is now on Censuus",
+        "cta": "Download on the App Store or Google Play",
+        "p1": "StableFit PRO is now on Censuus. It is a census of apps: rank comes from real visits, not from an editor's pick.",
+        "h1": "Where to find us",
+        "s1": "The card is called StableFit PRO: for trainers. The category is Health & Fitness. From there you open the App Store, Google Play and the website.",
+        "linkHtml": "<a href=\"https://censuus.com/a/stablefit-pro-00c5\" target=\"_blank\" rel=\"noopener noreferrer\">Open the StableFit card on Censuus</a>",
+        "h2": "What this catalog is",
+        "s2": "Censuus keeps a live ranking by visit traffic. Free apps rise on real visits. A place on the list is not invented there.",
+        "h3": "Why it matters for a coach",
+        "s3": "If you are looking for a tool to work with clients online and offline, StableFit is now visible outside the stores too. The card says it plainly: this is for fitness trainers, not a step counter and not a gym till.",
+        "s4": "For clients the app stays free. The coach pays."
+      },
       "whereToFindTime": {
         "title": "Where to find time to attract new clients?",
         "metaTitle": "Where to find time to attract new clients? - StableFit",

@@ -815,6 +815,25 @@
     "section": "Blog",
     "readArticle": "Czytaj",
     "posts": {
+      "stablefitOnCensuus": {
+        "title": "StableFit jest już na Censuus",
+        "metaTitle": "StableFit jest już na Censuus - StableFit",
+        "description": "StableFit PRO jest w spisie aplikacji Censuus: kategoria Health & Fitness, z linkami do App Store, Google Play i strony.",
+        "dateLabel": "1 października 2026",
+        "cover": "/assets/images/blog/stablefit-on-censuus.pl.jpg",
+        "ogImage": "https://stable-fit.com/assets/images/blog/stablefit-on-censuus.pl.jpg",
+        "coverAlt": "Baner StableFit: StableFit PRO jest już na Censuus",
+        "cta": "Pobierz z App Store lub Google Play",
+        "p1": "StableFit PRO jest już na Censuus. To spis aplikacji: miejsce w rankingu zależy od realnych wizyt, a nie od tego, co spodobało się redakcji.",
+        "h1": "Gdzie nas znaleźć",
+        "s1": "Karta nazywa się „StableFit PRO: dla trenerów”. Kategoria to Health & Fitness. Stamtąd otwierają się App Store, Google Play i strona.",
+        "linkHtml": "<a href=\"https://censuus.com/a/stablefit-pro-00c5\" target=\"_blank\" rel=\"noopener noreferrer\">Otwórz kartę StableFit na Censuus</a>",
+        "h2": "Czym jest ten katalog",
+        "s2": "Censuus trzyma żywy ranking według ruchu wizyt. Darmowe aplikacje rosną na realnych odwiedzinach. Miejsca na liście nikt tam nie wymyśla.",
+        "h3": "Po co to trenerowi",
+        "s3": "Jeśli szukasz narzędzia do pracy z klientami online i offline, StableFit widać już nie tylko w sklepach. Na karcie jest krótko: to dla trenerów fitness, nie licznik kroków i nie kasa siłowni.",
+        "s4": "Dla klientów aplikacja zostaje darmowa. Płaci trener."
+      },
       "whereToFindTime": {
         "title": "Skąd wziąć czas, żeby pozyskiwać nowych klientów?",
         "metaTitle": "Skąd wziąć czas, żeby pozyskiwać nowych klientów? - StableFit",
