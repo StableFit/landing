@@ -1,16 +1,16 @@
 ---
-title: "StableFit тепер на Censuus"
-description: "StableFit PRO є в переписі застосунків Censuus: категорія Health & Fitness, посилання на App Store, Google Play і сайт."
+title: "StableFit на 3-му місці в рейтингу Censuus"
+description: "StableFit PRO посів 3-тє місце в категорії Health & Fitness на Censuus."
 date: 2026-10-01
 lang: uk
 slug: stablefit-on-censuus
-cover: /assets/images/blog/stablefit-on-censuus.uk.jpg
-coverAlt: "Банер StableFit: StableFit PRO тепер на Censuus"
+cover: /assets/images/blog/stablefit-on-censuus.jpg
+coverAlt: "Банер Censuus: StableFit PRO на 3-му місці в Health & Fitness"
 coverWidth: 1024
-coverHeight: 448
+coverHeight: 537
 ---
 
-StableFit PRO тепер є на Censuus. Це перепис застосунків: місце в рейтингу залежить від реальних візитів, а не від того, кому сподобалось в редакції.
+StableFit PRO на 3-му місці в категорії Health & Fitness на Censuus. Місце складається з реальних візитів, а не з редакційної добірки.
 
 ## Де нас знайти
 

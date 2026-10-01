@@ -1,16 +1,16 @@
 ---
-title: "StableFit is now on Censuus"
-description: "StableFit PRO is in the Censuus app census: Health & Fitness, with links to the App Store, Google Play and the site."
+title: "StableFit is #3 on Censuus"
+description: "StableFit PRO is #3 in Health & Fitness on Censuus."
 date: 2026-10-01
 lang: en
 slug: stablefit-on-censuus
-cover: /assets/images/blog/stablefit-on-censuus.en.jpg
-coverAlt: "StableFit banner: StableFit PRO is now on Censuus"
+cover: /assets/images/blog/stablefit-on-censuus.jpg
+coverAlt: "Censuus banner: StableFit PRO is #3 in Health & Fitness"
 coverWidth: 1024
-coverHeight: 448
+coverHeight: 537
 ---
 
-StableFit PRO is now on Censuus. It is a census of apps: rank comes from real visits, not from an editor's pick.
+StableFit PRO is 3rd in Health & Fitness on Censuus. The rank comes from real visits, not from an editor's pick.
 
 ## Where to find us
 
