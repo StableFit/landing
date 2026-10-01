@@ -1,16 +1,16 @@
 ---
-title: "StableFit на 3-му місці в рейтингу Censuus"
-description: "StableFit PRO посів 3-тє місце в категорії Health & Fitness на Censuus."
+title: "StableFit на 2-му місці в рейтингу Censuus"
+description: "StableFit PRO посів 2-ге місце в категорії Health & Fitness на Censuus."
 date: 2026-10-01
 lang: uk
 slug: stablefit-on-censuus
 cover: /assets/images/blog/stablefit-on-censuus.jpg
-coverAlt: "Банер Censuus: StableFit PRO на 3-му місці в Health & Fitness"
+coverAlt: "Банер Censuus: StableFit PRO на 2-му місці в Health & Fitness"
 coverWidth: 1024
 coverHeight: 537
 ---
 
-StableFit PRO на 3-му місці в категорії Health & Fitness на Censuus. Місце складається з реальних візитів, а не з редакційної добірки.
+StableFit PRO на 2-му місці в категорії Health & Fitness на Censuus. Місце складається з реальних візитів, а не з редакційної добірки.
 
 ## Де нас знайти
 

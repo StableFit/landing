@@ -1,16 +1,16 @@
 ---
-title: "StableFit is #3 on Censuus"
-description: "StableFit PRO is #3 in Health & Fitness on Censuus."
+title: "StableFit is #2 on Censuus"
+description: "StableFit PRO is #2 in Health & Fitness on Censuus."
 date: 2026-10-01
 lang: en
 slug: stablefit-on-censuus
 cover: /assets/images/blog/stablefit-on-censuus.en.jpg
-coverAlt: "Censuus banner: StableFit PRO is #3 in Health & Fitness"
+coverAlt: "Censuus banner: StableFit PRO is #2 in Health & Fitness"
 coverWidth: 1024
 coverHeight: 537
 ---
 
-StableFit PRO is 3rd in Health & Fitness on Censuus. The rank comes from real visits, not from an editor's pick.
+StableFit PRO is 2nd in Health & Fitness on Censuus. The rank comes from real visits, not from an editor's pick.
 
 ## Where to find us
 

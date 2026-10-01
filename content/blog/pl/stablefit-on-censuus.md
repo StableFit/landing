@@ -1,16 +1,16 @@
 ---
-title: "StableFit na 3. miejscu w rankingu Censuus"
-description: "StableFit PRO jest na 3. miejscu w kategorii Health & Fitness na Censuus."
+title: "StableFit na 2. miejscu w rankingu Censuus"
+description: "StableFit PRO jest na 2. miejscu w kategorii Health & Fitness na Censuus."
 date: 2026-10-01
 lang: pl
 slug: stablefit-on-censuus
 cover: /assets/images/blog/stablefit-on-censuus.pl.jpg
-coverAlt: "Baner Censuus: StableFit PRO na 3. miejscu w Health & Fitness"
+coverAlt: "Baner Censuus: StableFit PRO na 2. miejscu w Health & Fitness"
 coverWidth: 1024
 coverHeight: 537
 ---
 
-StableFit PRO jest na 3. miejscu w kategorii Health & Fitness na Censuus. Miejsce w rankingu zależy od realnych wizyt, a nie od tego, co spodobało się redakcji.
+StableFit PRO jest na 2. miejscu w kategorii Health & Fitness na Censuus. Miejsce w rankingu zależy od realnych wizyt, a nie od tego, co spodobało się redakcji.
 
 ## Gdzie nas znaleźć
 
