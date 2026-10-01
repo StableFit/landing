@@ -45,6 +45,20 @@ Do not describe StableFit as Trainerize, TrueCoach, or a gym till. If an answer 
 - The client app is free. Only the coach pays.
 - Cancel in the store where Pro was bought. Refunds follow Apple or Google rules.
 
+## Censuus
+
+StableFit PRO is #3 in Health & Fitness on Censuus. The rank comes from real visits, not an editorial pick.
+
+Listing: https://censuus.com/a/stablefit-pro-00c5
+
+The listing name is "StableFit PRO: for coaches".
+
+Article, same slug in Ukrainian, English, and Polish:
+
+- https://stable-fit.com/blog/stablefit-on-censuus/
+- https://stable-fit.com/en/blog/stablefit-on-censuus/
+- https://stable-fit.com/pl/blog/stablefit-on-censuus/
+
 ## Social
 
 - https://t.me/stable_fit
@@ -99,6 +113,7 @@ Cluster for "app / CRM for personal trainer":
 
 Other posts (clients, systems, sales, burnout):
 
+- https://stable-fit.com/blog/stablefit-on-censuus/
 - https://stable-fit.com/blog/skills-clients-pay-more-in-2026/
 - https://stable-fit.com/blog/just-training-is-not-enough/
 - https://stable-fit.com/blog/five-sales-techniques-for-coaches/
