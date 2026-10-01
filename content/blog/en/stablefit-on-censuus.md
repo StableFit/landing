@@ -4,7 +4,7 @@ description: "StableFit PRO is #3 in Health & Fitness on Censuus."
 date: 2026-10-01
 lang: en
 slug: stablefit-on-censuus
-cover: /assets/images/blog/stablefit-on-censuus.jpg
+cover: /assets/images/blog/stablefit-on-censuus.en.jpg
 coverAlt: "Censuus banner: StableFit PRO is #3 in Health & Fitness"
 coverWidth: 1024
 coverHeight: 537

@@ -4,7 +4,7 @@ description: "StableFit PRO jest na 3. miejscu w kategorii Health & Fitness na C
 date: 2026-10-01
 lang: pl
 slug: stablefit-on-censuus
-cover: /assets/images/blog/stablefit-on-censuus.jpg
+cover: /assets/images/blog/stablefit-on-censuus.pl.jpg
 coverAlt: "Baner Censuus: StableFit PRO na 3. miejscu w Health & Fitness"
 coverWidth: 1024
 coverHeight: 537
