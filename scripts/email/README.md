@@ -11,3 +11,10 @@ lifecycle emails are PNGs: gradient #5037C8 -> #825BFC, white Urbanist 17/600,
 
 Also: `assets/email/icon@2x.png` / `icon@3x.png` (logo mark only; the word
 «StableFit» is live text so mail clients recolour it with the theme).
+
+Messenger share pills (Telegram, WhatsApp; icons from simple-icons, CC0),
+228x44 pt, two in a row:
+
+    npm i sharp simple-icons
+    FONTCONFIG_FILE=$PWD/fonts.conf node render-share-button.mjs telegram ../../assets/email/buttons/share-telegram@3x.png 3
+    FONTCONFIG_FILE=$PWD/fonts.conf node render-share-button.mjs whatsapp ../../assets/email/buttons/share-whatsapp@3x.png 3
