@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["Q4WF2L4FAK.com.fit.stable.pro"],
+        "components": [
+          { "/": "/app/*", "comment": "Coach app screens from emails" },
+          { "/": "/c/*", "comment": "Promo code -> paywall" }
+        ]
+      },
+      {
+        "appIDs": ["Q4WF2L4FAK.com.fit.stable.app"],
+        "components": [
+          { "/": "/join/*", "comment": "Client sign-up with the registration code" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["Q4WF2L4FAK.com.fit.stable.pro", "Q4WF2L4FAK.com.fit.stable.app"]
+  }
+}
