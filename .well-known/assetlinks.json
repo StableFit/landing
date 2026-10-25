@@ -1,18 +1,26 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.fit.stable.pro",
-      "sha256_cert_fingerprints": ["REPLACE_WITH_PLAY_APP_SIGNING_SHA256_PRO"]
+      "sha256_cert_fingerprints": [
+        "F5:50:B9:F1:38:94:DB:3C:D1:DC:65:13:63:A8:CA:98:6F:66:8B:5F:9E:EB:9E:5E:F4:2F:F6:AB:B0:77:18:C5"
+      ]
     }
   },
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.fit.stable.app",
-      "sha256_cert_fingerprints": ["REPLACE_WITH_PLAY_APP_SIGNING_SHA256_APP"]
+      "sha256_cert_fingerprints": [
+        "9D:3F:F3:50:77:16:DC:0E:54:A0:D5:30:24:3E:7F:19:A3:9C:7B:BA:FF:95:36:86:DE:3C:82:BD:F9:E4:77:6D"
+      ]
     }
   }
 ]
