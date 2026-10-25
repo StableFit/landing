@@ -44,9 +44,9 @@
   var T = {
     uk: {
       "app.title": "Відкрий StableFit Pro на телефоні",
-      "app.lead": "Наведи камеру на код - відкриється потрібний екран. Немає застосунку - постав його з магазину.",
+      "app.lead": "Наведи камеру телефону на код - відкриється потрібний екран, а без застосунку - магазин.",
       "app.opening": "Відкриваємо StableFit Pro…",
-      "app.notOpened": "Застосунок не відкрився? Постав StableFit Pro і спробуй ще раз.",
+      "app.notOpened": "Натисни кнопку - відкриється StableFit Pro, а якщо його ще немає, магазин.",
       "app.open": "Відкрити StableFit Pro",
       "app.hint.createClient": "Екран «Додати клієнта»",
       "app.hint.clients": "Список клієнтів",
@@ -56,9 +56,12 @@
       "join.title": "Твій код для StableFit",
       "join.lead": "Встанови StableFit і введи цей код під час реєстрації - і твій тренер побачить твої заміри, харчування й тренування.",
       "join.opening": "Відкриваємо StableFit…",
-      "join.open": "Відкрити StableFit",
-      "join.afterInstall": "Після встановлення введи код у застосунку.",
+      "join.open": "Відкрити або встановити StableFit",
+      "join.afterInstall": "Кнопка відкриє StableFit, а якщо його ще немає - магазин. Після встановлення введи код.",
       "join.copy": "Скопіювати код",
+      "join.scanHint": "Наведи камеру телефону на код - відкриється застосунок або магазин.",
+      "promo.scanHint": "Наведи камеру телефону на код - відкриється StableFit Pro або магазин.",
+      "get.scanHint": "Наведи камеру телефону на код - відкриється магазин твого телефону.",
       "invite.title": "Повідомлення для клієнта",
       "invite.lead": "Скопіюй текст і надішли клієнту - або відправ одним натисканням.",
       "invite.copy": "Скопіювати текст",
@@ -69,7 +72,7 @@
       "promo.lead": "Введи його на екрані StableFit PRO - знижка застосується на першу оплату.",
       "promo.copy": "Скопіювати код",
       "promo.open": "Відкрити StableFit Pro",
-      "promo.afterInstall": "Немає застосунку? Постав StableFit Pro, зареєструйся і введи код у розділі PRO.",
+      "promo.afterInstall": "Кнопка відкриє StableFit Pro з кодом, а якщо застосунку ще немає - магазин.",
       "get.title": "StableFit для клієнтів",
       "get.lead": "Завантаж застосунок - і введи код від свого тренера.",
       "copied": "Скопійовано",
@@ -83,9 +86,9 @@
     },
     en: {
       "app.title": "Open StableFit Pro on your phone",
-      "app.lead": "Point the camera at the code - the right screen opens. No app yet? Install it from the store.",
+      "app.lead": "Point your phone camera at the code - the right screen opens, or the store if the app is missing.",
       "app.opening": "Opening StableFit Pro…",
-      "app.notOpened": "The app did not open? Install StableFit Pro and try again.",
+      "app.notOpened": "Tap the button - StableFit Pro opens, or the store if it is not installed yet.",
       "app.open": "Open StableFit Pro",
       "app.hint.createClient": "The «Add client» screen",
       "app.hint.clients": "Clients list",
@@ -95,9 +98,12 @@
       "join.title": "Your StableFit code",
       "join.lead": "Install StableFit and enter this code when you sign up - your coach will see your measurements, nutrition and workouts.",
       "join.opening": "Opening StableFit…",
-      "join.open": "Open StableFit",
-      "join.afterInstall": "After installing, enter the code in the app.",
+      "join.open": "Open or install StableFit",
+      "join.afterInstall": "The button opens StableFit, or the store if it is not installed yet. After installing, enter the code.",
       "join.copy": "Copy code",
+      "join.scanHint": "Point your phone camera at the code - the app or the store opens.",
+      "promo.scanHint": "Point your phone camera at the code - StableFit Pro or the store opens.",
+      "get.scanHint": "Point your phone camera at the code - your phone's store opens.",
       "invite.title": "Message for your client",
       "invite.lead": "Copy the text and send it to your client - or send it in one tap.",
       "invite.copy": "Copy text",
@@ -108,7 +114,7 @@
       "promo.lead": "Enter it on the StableFit PRO screen - the discount applies to your first payment.",
       "promo.copy": "Copy code",
       "promo.open": "Open StableFit Pro",
-      "promo.afterInstall": "No app yet? Install StableFit Pro, sign up and enter the code in the PRO section.",
+      "promo.afterInstall": "The button opens StableFit Pro with the code, or the store if it is not installed yet.",
       "get.title": "StableFit for clients",
       "get.lead": "Install the app and enter the code from your coach.",
       "copied": "Copied",
@@ -161,14 +167,23 @@
     if (opts.onClick) a.addEventListener("click", opts.onClick);
     return a;
   }
-  function storeButtons(app) {
-    var wrap = el("div", { class: "dl-stores" });
-    var ios = el("a", { class: "dl-store", href: STORES[app].ios, rel: "noopener" }, [el("span", { text: t("stores.ios") })]);
-    var android = el("a", { class: "dl-store", href: STORES[app].android, rel: "noopener" }, [el("span", { text: t("stores.android") })]);
-    if (isIOS) wrap.appendChild(ios);
-    else if (isAndroid) wrap.appendChild(android);
-    else { wrap.appendChild(ios); wrap.appendChild(android); }
-    return wrap;
+  function storeUrl(app) {
+    return isIOS ? STORES[app].ios : STORES[app].android;
+  }
+  // One button on a phone: try the app scheme, and when nothing opened within
+  // 1.5 s go to this device's store. The user never picks a platform.
+  function openOrInstall(label, app, schemeUrl) {
+    return pill(label, schemeUrl, {
+      onClick: function (e) {
+        e.preventDefault();
+        tryOpen(schemeUrl, function () { location.href = storeUrl(app); });
+      }
+    });
+  }
+  // Laptop: the QR alone. The phone that scans it lands on this same page and
+  // gets the one-button flow above.
+  function laptop(url, hintKey) {
+    return [qr(url), el("p", { class: "dl-hint", text: t(hintKey) })];
   }
   function qr(url) {
     var box = el("div", { class: "dl-qr", "aria-hidden": "true" });
@@ -269,15 +284,17 @@
     var here = SITE + location.pathname + location.search;
     document.title = t("app.title") + " - StableFit";
 
-    var fallback = function (tried) {
-      render(heading(t("app.title"), isPhone ? (tried ? t("app.notOpened") : t("app.lead")) : t("app.lead")).concat([
+    if (!isPhone) {
+      render(heading(t("app.title"), t("app.lead")).concat(laptop(here, screen.hint)));
+      return;
+    }
+    render(heading(t("app.opening")));
+    tryOpen(scheme, function () {
+      render(heading(t("app.title"), t("app.notOpened")).concat([
         el("p", { class: "dl-hint", text: t(screen.hint) }),
-        isPhone ? pill(t("app.open"), scheme) : qr(here),
-        storeButtons("coach")
+        openOrInstall(t("app.open"), "coach", scheme)
       ]));
-    };
-    if (isPhone) render(heading(t("app.opening")));
-    tryOpen(scheme, fallback);
+    });
   }
 
   function viewJoin(code) {
@@ -289,13 +306,11 @@
       render(heading(t("join.title"), t("join.lead")).concat([
         codeBox(code),
         copyButton(t("join.copy"), code),
-        isPhone ? pill(t("join.open"), scheme, { outline: true }) : qr(here),
-        storeButtons("client"),
-        el("p", { class: "dl-hint", text: t("join.afterInstall") })
-      ]));
+        isPhone ? openOrInstall(t("join.open"), "client", scheme) : null
+      ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("join.afterInstall") })] : laptop(here, "join.scanHint")));
     };
-    if (!code) { fallback(); return; }
-    if (isPhone) render(heading(t("join.opening")));
+    if (!code || !isPhone) { fallback(); return; }
+    render(heading(t("join.opening")));
     tryOpen(scheme, fallback);
   }
 
@@ -335,17 +350,15 @@
     render(heading(t("promo.title"), t("promo.lead")).concat([
       codeBox(code),
       copyButton(t("promo.copy"), code),
-      isPhone ? pill(t("promo.open"), scheme, { outline: true }) : qr(SITE + "/c/" + code),
-      storeButtons("coach"),
-      el("p", { class: "dl-hint", text: t("promo.afterInstall") })
-    ]));
+      isPhone ? openOrInstall(t("promo.open"), "coach", scheme) : null
+    ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("promo.afterInstall") })] : laptop(SITE + "/c/" + code, "promo.scanHint")));
   }
 
   function viewGet() {
     document.title = t("get.title") + " - StableFit";
     if (isIOS) { location.replace(STORES.client.ios); return; }
     if (isAndroid) { location.replace(STORES.client.android); return; }
-    render(heading(t("get.title"), t("get.lead")).concat([qr(SITE + "/get"), storeButtons("client")]));
+    render(heading(t("get.title"), t("get.lead")).concat(laptop(SITE + "/get", "get.scanHint")));
   }
 
   // ---- router ---------------------------------------------------------------
