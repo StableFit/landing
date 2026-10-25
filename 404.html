@@ -19,6 +19,145 @@
 </head>
 <body class="page-doc page-404">
   <div class="sf-landing-bg" aria-hidden="true"></div>
+  <header>
+    <div class="header-wrp">
+      <a href="/" class="header-logo-wrap" data-i18n-aria="meta.logoAlt">
+        <img 
+          loading="lazy" 
+          src="/assets/images/Logo.svg"
+          alt="header logo" 
+          data-i18n-alt="meta.logoAlt" 
+        >
+      </a>
+      <button
+        type="button"
+        class="header-burger"
+        aria-expanded="false"
+        aria-controls="header-drawer"
+        data-i18n-aria="aria.openMenu"
+      >
+        <span class="header-burger-line"></span>
+        <span class="header-burger-line"></span>
+        <span class="header-burger-line"></span>
+      </button>
+      <div class="header-desktop">
+        <div class="header-nav">
+          <div class="nav-item">
+            <a 
+              href="/" 
+              class="landing-link" 
+              data-landing="coach" 
+              data-i18n="nav.coaches"
+            >
+              Для тренерів
+            </a>
+          </div>
+          <div class="nav-item">
+            <a 
+              href="/for-clients/" 
+              class="landing-link" 
+              data-landing="client" 
+              data-i18n="nav.clients"
+            >
+              Досвід клієнтів
+            </a>
+          </div>
+        </div>
+        <div class="localisation">
+          <div class="localisation-langs">
+            <a class="localisation-item is-active" href="?lang=ua" hreflang="uk" lang="uk" data-lang="ua" data-i18n-aria="aria.langUa">UA</a>
+            <a class="localisation-item" href="?lang=en" hreflang="en" lang="en" data-lang="en" data-i18n-aria="aria.langEn">EN</a>
+            <a class="localisation-item" href="?lang=pl" hreflang="pl" lang="pl" data-lang="pl" data-i18n-aria="aria.langPl">PL</a>
+          </div>
+          <a
+            href="/#download-app"
+            class="download-button btn btn-hover-transparent"
+            data-i18n="buttons.download"
+          >
+            Завантажити
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      class="header-drawer"
+      id="header-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="header-drawer-inner">
+        <div class="header-drawer-top">
+          <a href="/" class="header-logo-wrap" data-i18n-aria="meta.logoAlt">
+            <img
+              loading="lazy"
+              src="/assets/images/Logo.svg"
+              alt=""
+              data-i18n-alt="meta.logoAlt"
+            >
+      </a>
+          <button
+            type="button"
+            class="header-drawer-close"
+            data-i18n-aria="aria.closeMenu"
+          >
+            &times;
+          </button>
+        </div>
+        <nav
+          class="header-drawer-nav"
+          aria-label="Навігація"
+        >
+          <a
+            href="/"
+            class="landing-link"
+            data-landing="coach"
+            data-i18n="nav.coaches"
+          >
+            Для тренерів
+          </a>
+          <a
+            href="/for-clients/"
+            class="landing-link"
+            data-landing="client"
+            data-i18n="nav.clients"
+          >
+            Досвід клієнтів
+          </a>
+          <a
+            href="./"
+            class="landing-link"
+            data-landing="support"
+            data-i18n="nav.support"
+          >
+            <span data-i18n="support.title">Підтримка</span>
+          </a>
+          <a
+            href="/blog/"
+            class="landing-link"
+            data-landing="blog"
+            data-i18n="nav.blog"
+          >
+            Блог
+          </a>
+        </nav>
+        <div class="header-drawer-lang localisation">
+          <div class="localisation-langs">
+            <a class="localisation-item is-active" href="?lang=ua" hreflang="uk" lang="uk" data-lang="ua" data-i18n-aria="aria.langUa">UA</a>
+            <a class="localisation-item" href="?lang=en" hreflang="en" lang="en" data-lang="en" data-i18n-aria="aria.langEn">EN</a>
+            <a class="localisation-item" href="?lang=pl" hreflang="pl" lang="pl" data-lang="pl" data-i18n-aria="aria.langPl">PL</a>
+          </div>
+        </div>
+        <a
+          href="/#download-app"
+          class="download-button header-drawer-cta btn btn-hover-transparent"
+          data-i18n="buttons.download"
+        >
+          Завантажити
+        </a>
+      </div>
+    </div>
+  </header>
   <main class="doc-page">
     <div class="doc-container page-404-inner">
       <a class="page-404-logo" href="/">
@@ -30,12 +169,10 @@
       <p class="page-404-code">404</p>
       <h1 class="doc-title">Сторінку не знайдено</h1>
       <p class="doc-lead">
-        Цього URL немає на сайті. Відкрийте головну або оберіть мову.
+        Цього URL немає на сайті. Відкрийте головну - мову можна змінити вгорі.
       </p>
       <div class="page-404-actions">
         <a class="btn btn-hover-transparent page-404-btn" href="/">На головну</a>
-        <a class="page-404-lang" href="/en/">English</a>
-        <a class="page-404-lang" href="/pl/">Polski</a>
       </div>
       <p class="page-404-links">
         <a href="/for-clients/">Досвід клієнтів</a>
@@ -47,6 +184,240 @@
       </div>
     </div>
   </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-wrp">
+        <div class="footer-content">
+          <div class="content-item">
+            <a href="/" class="footer-title" data-i18n-aria="meta.logoAlt">
+              <img
+                  loading="lazy"
+                  src="/assets/images/Logo.svg"
+                  alt="logo"
+                  data-i18n-alt="meta.logoAlt"
+              >
+      </a>
+            <p 
+              class="footer-list-item footer-description" 
+              data-i18n="footer.description"
+            >
+              Платформа, що об'єднує фітнес-тренерів та їхніх клієнтів для досягнення видатних результатів.
+            </p>
+            <div class="localisation footerlocalisation">
+              <div class="localisation-langs">
+                <a class="localisation-item is-active" href="?lang=ua" hreflang="uk" lang="uk" data-lang="ua" data-i18n-aria="aria.langUa">UA</a>
+            <a class="localisation-item" href="?lang=en" hreflang="en" lang="en" data-lang="en" data-i18n-aria="aria.langEn">EN</a>
+            <a class="localisation-item" href="?lang=pl" hreflang="pl" lang="pl" data-lang="pl" data-i18n-aria="aria.langPl">PL</a>
+              </div>
+            </div>
+            <a href="https://censuus.com/a/stablefit-pro-00c5?utm_source=badge&utm_medium=badge" rel="noopener">
+              <img src="https://censuus.com/badge/stablefit-pro-00c5.svg?theme=dark&accent=violet&radius=20" alt="StableFit PRO: Для тренерів ranked on Censuus" width="200" height="60" loading="lazy" />
+            </a>
+          </div>
+          <div class="footer-content-group">
+            <div class="content-item">
+            <div class="footer-title" data-i18n="footer.platform">
+              Платформа
+            </div>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a
+                  href="/"
+                  class="landing-link"
+                  data-landing="coach"
+                  data-i18n="nav.coaches"
+                >
+                  Для тренерів
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a
+                  href="/for-clients/"
+                  class="landing-link"
+                  data-landing="client"
+                  data-i18n="nav.clients"
+                >
+                  Досвід клієнтів
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a
+                  href="/support/"
+                  class="landing-link"
+                  data-landing="support"
+                  data-i18n="nav.support"
+                >
+                  Підтримка
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <a
+                  href="/blog/"
+                  class="landing-link"
+                  data-landing="blog"
+                  data-i18n="nav.blog"
+                >
+                  Блог
+                </a>
+              </li>
+            </ul>
+          </div>
+            <div class="content-item">
+            <div class="footer-title" data-i18n="footer.contacts.title">
+              Контакти
+            </div>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/mail-icon.svg"
+                  alt="email_icon"
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="mailto:support@stable-fit.com"
+                  data-i18n="footer.contacts.email"
+                >
+                  support@stable-fit.com
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/tg-icon.svg"
+                  alt="telegram_icon"
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="https://t.me/stable_fit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="footer.contacts.telegram"
+                >
+                  t.me/stable_fit
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/instagram-icon.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="https://www.instagram.com/stablefit.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="footer.contacts.instagram"
+                >
+                  instagram.com/stablefit.app
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/threads-icon.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="https://www.threads.com/@stablefit.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="footer.contacts.threads"
+                >
+                  threads.com/@stablefit.app
+                </a>
+              </li>
+              <li class="footer-list-item">
+                <img
+                  loading="lazy"
+                  src="/assets/icons/linkedin-icon.svg"
+                  alt=""
+                  width="18"
+                  height="18"
+                >
+                <a
+                  href="https://www.linkedin.com/company/stablefit"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="footer.contacts.linkedin"
+                >
+                  linkedin.com/company/stablefit
+                </a>
+              </li>
+
+            </ul>
+          </div>
+            <div class="content-item">
+            <div 
+              class="footer-title" 
+              data-i18n="footer.company.title"
+            >
+              Деталі компанії
+            </div>
+            <ul class="footer-list">
+              <li 
+                class="footer-list-item" 
+                data-i18n="footer.company.name"
+              >
+                SavvaDev - Ihor Savva
+              </li>
+              <li 
+                class="footer-list-item" 
+                data-i18n="footer.company.address"
+              >
+                ul. Bobrowiecka 10/67<br />00-728 Warszawa, Poland
+              </li>
+              <li 
+                class="footer-list-item" 
+                data-i18n="footer.company.nip"
+              >
+                NIP: 5214103415
+              </li>
+              <li 
+                class="footer-list-item" 
+                data-i18n="footer.company.regon"
+              >
+                REGON: 540758121
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="underfooter">
+          <div 
+            class="underfooter-item" 
+            data-i18n="footer.under.copy"
+          >
+            © 2025 SavvaDev - Ihor Savva
+          </div>
+          <div class="underfooter-content">
+            <a
+              href="/privacy-policy/"
+              class="underfooter-item"
+              data-i18n="footer.under.privacy"
+            >
+              Політика конфіденційності
+            </a>
+            <a
+              href="/terms-and-conditions/"
+              class="underfooter-item"
+              data-i18n="footer.under.terms"
+            >
+              Умови використання
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/script/main.js?v=20261026"></script>
   <script src="/script/qrcode.js?v=20261026"></script>
   <script src="/script/deeplink.js?v=20261026"></script>
 </body>

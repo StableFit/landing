@@ -127,6 +127,13 @@
   }
 
   function localeSwitchHref(targetDictLang) {
+    // Deep-link pages (/join/…, /app/…, /c/…, /i/…, /get) have no /en/ or /pl/
+    // copies: switch with ?lang= and keep the rest of the URL.
+    if (!isLocalizedPath(window.location.pathname)) {
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", targetDictLang);
+      return url.pathname + url.search + url.hash;
+    }
     const path = stripLocalePrefix(window.location.pathname);
     const normalized = path === "/" || path.endsWith("/") ? path : `${path}/`;
     return withLocalePrefix(normalized, targetDictLang) + window.location.hash;
@@ -300,6 +307,8 @@
       relocalizeInternalLinks(normalizedLang);
       syncLanguageSwitchHrefs();
       htmlNode.setAttribute("lang", HTML_LANG_BY_DICT[normalizedLang] || "uk");
+      htmlNode.setAttribute("data-sf-lang", normalizedLang);
+      document.dispatchEvent(new CustomEvent("sf:language", { detail: normalizedLang }));
       currentLanguage = normalizedLang;
       localStorage.setItem(LANGUAGE_STORAGE_KEY, normalizedLang);
     } catch (error) {
@@ -307,7 +316,25 @@
     }
   }
 
+  // Deep-link pages: ?lang= (ua | uk | en | pl), else the language picked
+  // before on the site, else the browser (uk / ru -> ua, pl -> pl, else en).
+  // script/deeplink.js reads the same value from <html data-sf-lang>.
+  function detectDeepLinkLanguage() {
+    const q = (new URLSearchParams(window.location.search).get("lang") || "").toLowerCase();
+    if (q === "uk") return "ua";
+    if (SUPPORTED_LANGS.includes(q)) return q;
+    try {
+      const stored = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+      if (SUPPORTED_LANGS.includes(stored)) return stored;
+    } catch (_) { /* storage blocked */ }
+    const nav = ((navigator.languages && navigator.languages[0]) || navigator.language || "uk").toLowerCase();
+    if (/^(uk|ru)/.test(nav)) return "ua";
+    if (/^pl/.test(nav)) return "pl";
+    return "en";
+  }
+
   function detectInitialLanguage() {
+    if (!isLocalizedPath(window.location.pathname)) return detectDeepLinkLanguage();
     return getDictLangFromPath(window.location.pathname);
   }
 
@@ -928,5 +955,6 @@
   }
 
   currentLanguage = detectInitialLanguage();
+  htmlNode.setAttribute("data-sf-lang", currentLanguage);
   bootLandingInteractions();
 })();
