@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/style/normalize.css">
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/adaptive.css">
+  <link rel="stylesheet" href="/style/deeplink.css?v=20261026">
 </head>
 <body class="page-doc page-404">
   <div class="sf-landing-bg" aria-hidden="true"></div>
@@ -23,6 +24,9 @@
       <a class="page-404-logo" href="/">
         <img src="/assets/images/Logo.svg" alt="StableFit">
       </a>
+      <!-- /app/*, /join/*, /i/*, /c/* are rendered here by script/deeplink.js -->
+      <div id="dl-root" hidden></div>
+      <div id="page-404-content">
       <p class="page-404-code">404</p>
       <h1 class="doc-title">Сторінку не знайдено</h1>
       <p class="doc-lead">
@@ -40,7 +44,10 @@
         ·
         <a href="/blog/">Блог</a>
       </p>
+      </div>
     </div>
   </main>
+  <script src="/script/qrcode.js?v=20261026"></script>
+  <script src="/script/deeplink.js?v=20261026"></script>
 </body>
 </html>
