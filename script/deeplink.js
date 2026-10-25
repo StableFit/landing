@@ -276,7 +276,9 @@
     var enc = encodeURIComponent(text);
     var row = el("div", { class: "dl-share" });
     row.appendChild(pill(t("telegram"), "https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + enc, { blank: true }));
-    row.appendChild(pill(t("whatsapp"), "https://wa.me/?text=" + enc, { blank: true }));
+    // wa.me loses the text on some phones (it shows the link alone); the app
+    // scheme keeps it. Laptops go to WhatsApp Web through api.whatsapp.com.
+    row.appendChild(pill(t("whatsapp"), isPhone ? "whatsapp://send?text=" + enc : "https://api.whatsapp.com/send?text=" + enc, { blank: !isPhone }));
     row.appendChild(pill(t("viber"), "viber://forward?text=" + enc));
     return row;
   }
