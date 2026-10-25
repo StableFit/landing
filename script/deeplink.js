@@ -2,6 +2,7 @@
  * Deep-link pages served through 404.html (GitHub Pages has no server routing).
  *
  *   /app/<screen>[?promo=…]  coach app screen (stablefitpro:// scheme); laptop -> QR + stores
+ *   /unsubscribe?t=<token>     email footer unsubscribe (POSTs to the email-unsubscribe function)
  *   /client[/measurement]      client app (home / new measurement) by the stablefit:// scheme
  *   /join/<code>              client sign-up with the registration code (stablefit:// scheme);
  *                             no app -> code + the right store for the device
@@ -19,6 +20,10 @@
   var INVITE_API = {
     prod: "https://iqgixbirxzmprdaozwio.supabase.co/functions/v1/invite-info",
     dev: "https://bvzkpfbirwpkgyvnufji.supabase.co/functions/v1/invite-info"
+  };
+  var UNSUB_API = {
+    prod: "https://iqgixbirxzmprdaozwio.supabase.co/functions/v1/email-unsubscribe",
+    dev: "https://bvzkpfbirwpkgyvnufji.supabase.co/functions/v1/email-unsubscribe"
   };
   var STORES = {
     coach: {
@@ -76,6 +81,12 @@
       "join.scanHint": "Наведи камеру телефону на код - відкриється застосунок або магазин.",
       "promo.scanHint": "Наведи камеру телефону на код - відкриється StableFit Pro або магазин.",
       "get.scanHint": "Наведи камеру телефону на код - відкриється магазин твого телефону.",
+      "unsub.working": "Відписуємо…",
+      "unsub.done": "Готово",
+      "unsub.coach": "Порад і новин від StableFit більше не буде. Службові листи про підписку залишаються. Передумаєш - увімкни «Поради та новини» в налаштуваннях сповіщень у застосунку.",
+      "unsub.client": "Нагадувань і листів від StableFit більше не буде. Повідомлення від тренера в чаті приходитимуть як і раніше.",
+      "unsub.bad": "Посилання не спрацювало",
+      "unsub.badBody": "Схоже, посилання пошкоджене або застаріле. Напиши нам на support@stable-fit.com - відпишемо вручну.",
       "invite.title": "Повідомлення для клієнта",
       "invite.lead": "Скопіюй текст і надішли клієнту - або відправ одним натисканням.",
       "invite.copy": "Скопіювати текст",
@@ -123,6 +134,12 @@
       "join.scanHint": "Skieruj aparat telefonu na kod - otworzy się aplikacja albo sklep.",
       "promo.scanHint": "Skieruj aparat telefonu na kod - otworzy się StableFit Pro albo sklep.",
       "get.scanHint": "Skieruj aparat telefonu na kod - otworzy się sklep twojego telefonu.",
+      "unsub.working": "Wypisujemy…",
+      "unsub.done": "Gotowe",
+      "unsub.coach": "Nie będziemy już wysyłać porad i nowości od StableFit. Maile serwisowe o subskrypcji nadal przychodzą.",
+      "unsub.client": "Nie będziemy już wysyłać przypomnień i maili od StableFit. Wiadomości od trenera na czacie przychodzą jak dotąd.",
+      "unsub.bad": "Link nie zadziałał",
+      "unsub.badBody": "Wygląda na to, że link jest uszkodzony lub nieaktualny. Napisz do nas na support@stable-fit.com - wypiszemy ręcznie.",
       "invite.title": "Wiadomość dla klienta",
       "invite.lead": "Skopiuj tekst i wyślij klientowi - albo wyślij jednym kliknięciem.",
       "invite.copy": "Skopiuj tekst",
@@ -170,6 +187,12 @@
       "join.scanHint": "Point your phone camera at the code - the app or the store opens.",
       "promo.scanHint": "Point your phone camera at the code - StableFit Pro or the store opens.",
       "get.scanHint": "Point your phone camera at the code - your phone's store opens.",
+      "unsub.working": "Unsubscribing…",
+      "unsub.done": "Done",
+      "unsub.coach": "No more tips and news from StableFit. Service emails about your subscription still arrive. Changed your mind? Turn «Tips and news» back on in the app's notification settings.",
+      "unsub.client": "No more reminders and emails from StableFit. Messages from your coach in the chat still arrive.",
+      "unsub.bad": "This link did not work",
+      "unsub.badBody": "The link looks broken or outdated. Write to support@stable-fit.com and we will unsubscribe you by hand.",
       "invite.title": "Message for your client",
       "invite.lead": "Copy the text and send it to your client - or send it in one tap.",
       "invite.copy": "Copy text",
@@ -405,6 +428,28 @@
     tryOpen(scheme, fallback);
   }
 
+  // Unsubscribe page for the email footer link (the function itself can not
+  // serve HTML on *.supabase.co). The flag flips here, on a real page view, so
+  // mail link scanners that only fetch the URL change nothing.
+  function viewUnsubscribe() {
+    var token = (params.get("t") || "").replace(/[^A-Za-z0-9_.-]/g, "");
+    var api = UNSUB_API[params.get("env") === "dev" ? "dev" : "prod"];
+    document.title = "StableFit";
+    var bad = function () { render(heading(t("unsub.bad"), t("unsub.badBody"))); };
+    if (!token) { bad(); return; }
+    render(heading(t("unsub.working")));
+    fetch(api + "?t=" + encodeURIComponent(token) + "&format=json", {
+      method: "POST",
+      headers: { accept: "application/json" }
+    })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d || !d.ok) { bad(); return; }
+        render(heading(t("unsub.done"), t(d.audience === "client" ? "unsub.client" : "unsub.coach")));
+      })
+      .catch(bad);
+  }
+
   function viewInvite(token) {
     token = (token || "").replace(/[^A-Za-z0-9_-]/g, "");
     document.title = t("invite.title") + " - StableFit";
@@ -455,6 +500,7 @@
     if ((m = path.match(/^i\/([^/]+)(\/viber)?\/?$/))) return viewInvite(m[1]);
     if ((m = path.match(/^c\/([^/]+)\/?$/))) return viewPromo(decodeURIComponent(m[1]));
     if (/^get\/?$/.test(path)) return viewGet();
+    if (/^unsubscribe\/?$/.test(path)) return viewUnsubscribe();
     return false; // plain 404 stays visible
   }
 
