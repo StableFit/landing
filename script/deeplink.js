@@ -84,6 +84,48 @@
       "whatsapp": "WhatsApp",
       "viber": "Viber"
     },
+    pl: {
+      "app.title": "Otwórz StableFit Pro na telefonie",
+      "app.lead": "Skieruj aparat telefonu na kod - otworzy się właściwy ekran, a bez aplikacji - sklep.",
+      "app.opening": "Otwieramy StableFit Pro…",
+      "app.notOpened": "Naciśnij przycisk - otworzy się StableFit Pro, a jeśli go jeszcze nie ma, sklep.",
+      "app.open": "Otwórz StableFit Pro",
+      "app.hint.createClient": "Ekran «Dodaj klienta»",
+      "app.hint.clients": "Lista klientów",
+      "app.hint.chats": "Czaty",
+      "app.hint.notifications": "Ustawienia powiadomień",
+      "app.hint.paywall": "Ekran StableFit PRO z kodem promocyjnym",
+      "join.title": "Twój kod do StableFit",
+      "join.lead": "Zainstaluj StableFit i wpisz ten kod przy rejestracji - twój trener zobaczy twoje pomiary, posiłki i treningi.",
+      "join.opening": "Otwieramy StableFit…",
+      "join.open": "Otwórz lub zainstaluj StableFit",
+      "join.afterInstall": "Przycisk otworzy StableFit, a jeśli go jeszcze nie ma - sklep. Po instalacji wpisz kod.",
+      "join.copy": "Skopiuj kod",
+      "join.scanHint": "Skieruj aparat telefonu na kod - otworzy się aplikacja albo sklep.",
+      "promo.scanHint": "Skieruj aparat telefonu na kod - otworzy się StableFit Pro albo sklep.",
+      "get.scanHint": "Skieruj aparat telefonu na kod - otworzy się sklep twojego telefonu.",
+      "invite.title": "Wiadomość dla klienta",
+      "invite.lead": "Skopiuj tekst i wyślij klientowi - albo wyślij jednym kliknięciem.",
+      "invite.copy": "Skopiuj tekst",
+      "invite.viberLead": "Otwieramy Viber… Jeśli się nie otworzył, naciśnij przycisk.",
+      "invite.notFound": "Ten link wygasł. Otwórz kartę klienta w StableFit Pro - jest tam kod i przycisk «Udostępnij».",
+      "invite.error": "Nie udało się wczytać. Spróbuj ponownie za minutę.",
+      "promo.title": "Twój kod promocyjny",
+      "promo.lead": "Wpisz go na ekranie StableFit PRO - zniżka obejmie pierwszą płatność.",
+      "promo.copy": "Skopiuj kod",
+      "promo.open": "Otwórz StableFit Pro",
+      "promo.afterInstall": "Przycisk otworzy StableFit Pro z kodem, a jeśli aplikacji jeszcze nie ma - sklep.",
+      "get.title": "StableFit dla klientów",
+      "get.lead": "Zainstaluj aplikację i wpisz kod od swojego trenera.",
+      "copied": "Skopiowano",
+      "copyFailed": "Nie udało się skopiować - zaznacz tekst ręcznie",
+      "stores.ios": "App Store",
+      "stores.android": "Google Play",
+      "or": "lub",
+      "telegram": "Telegram",
+      "whatsapp": "WhatsApp",
+      "viber": "Viber"
+    },
     en: {
       "app.title": "Open StableFit Pro on your phone",
       "app.lead": "Point your phone camera at the code - the right screen opens, or the store if the app is missing.",
@@ -135,11 +177,16 @@
   var isAndroid = /Android/i.test(ua);
   var isPhone = isIOS || isAndroid;
 
+  // Same choice as the site header (script/main.js sets <html data-sf-lang>):
+  // ?lang=, else the language picked before, else the browser.
   function pickLang() {
-    var q = (params.get("lang") || "").toLowerCase();
-    if (q === "uk" || q === "en") return q;
+    var site = document.documentElement.getAttribute("data-sf-lang");
+    var q = (params.get("lang") || site || "").toLowerCase();
+    if (q === "ua" || q === "uk") return "uk";
+    if (q === "en" || q === "pl") return q;
     var nav = ((navigator.languages && navigator.languages[0]) || navigator.language || "uk").toLowerCase();
-    return /^(uk|ru)/.test(nav) ? "uk" : "en";
+    if (/^(uk|ru)/.test(nav)) return "uk";
+    return /^pl/.test(nav) ? "pl" : "en";
   }
   function t(key) { return (T[lang] && T[lang][key]) || T.uk[key] || key; }
   function el(tag, attrs, children) {

@@ -1,4 +1,7 @@
-/* Deep-link pages (/app, /join, /i, /c, /get) rendered inside 404.html. */
+/* Deep-link pages (/app, /join, /i, /c, /get) rendered inside 404.html, under
+   the site header and above the site footer. */
+.page-404 .doc-page { min-height: 0; padding: 140px 24px 72px; }
+.page-404 .page-404-logo { display: none; }
 .page-deeplink .doc-container { max-width: 440px; }
 #dl-root { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
 #dl-root[hidden] { display: none; }
