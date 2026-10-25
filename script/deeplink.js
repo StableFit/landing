@@ -4,7 +4,7 @@
  *   /app/<screen>[?promo=…]  coach app screen (stablefitpro:// scheme); laptop -> QR + stores
  *   /join/<code>              client sign-up with the registration code (stablefit:// scheme);
  *                             no app -> code + the right store for the device
- *   /i/<token>[/viber]        invite text for the coach to forward (copy, Telegram, WhatsApp, Viber)
+ *   /i/<token>                invite text for the coach to forward (copy, Telegram, WhatsApp)
  *   /c/<code>                 promo code -> coach paywall with the code prefilled
  *
  * Texts: uk / en by ?lang=, else the browser language (uk / ru -> uk).
@@ -65,7 +65,6 @@
       "invite.title": "Повідомлення для клієнта",
       "invite.lead": "Скопіюй текст і надішли клієнту - або відправ одним натисканням.",
       "invite.copy": "Скопіювати текст",
-      "invite.viberLead": "Відкриваємо Viber… Якщо не відкрився - натисни кнопку.",
       "invite.notFound": "Це посилання застаріло. Відкрий картку клієнта у StableFit Pro - там є код і кнопка «Поділитися».",
       "invite.error": "Не вдалося завантажити. Спробуй ще раз за хвилину.",
       "promo.title": "Твій промокод",
@@ -81,8 +80,7 @@
       "stores.android": "Google Play",
       "or": "або",
       "telegram": "Telegram",
-      "whatsapp": "WhatsApp",
-      "viber": "Viber"
+      "whatsapp": "WhatsApp"
     },
     pl: {
       "app.title": "Otwórz StableFit Pro na telefonie",
@@ -107,7 +105,6 @@
       "invite.title": "Wiadomość dla klienta",
       "invite.lead": "Skopiuj tekst i wyślij klientowi - albo wyślij jednym kliknięciem.",
       "invite.copy": "Skopiuj tekst",
-      "invite.viberLead": "Otwieramy Viber… Jeśli się nie otworzył, naciśnij przycisk.",
       "invite.notFound": "Ten link wygasł. Otwórz kartę klienta w StableFit Pro - jest tam kod i przycisk «Udostępnij».",
       "invite.error": "Nie udało się wczytać. Spróbuj ponownie za minutę.",
       "promo.title": "Twój kod promocyjny",
@@ -123,8 +120,7 @@
       "stores.android": "Google Play",
       "or": "lub",
       "telegram": "Telegram",
-      "whatsapp": "WhatsApp",
-      "viber": "Viber"
+      "whatsapp": "WhatsApp"
     },
     en: {
       "app.title": "Open StableFit Pro on your phone",
@@ -149,7 +145,6 @@
       "invite.title": "Message for your client",
       "invite.lead": "Copy the text and send it to your client - or send it in one tap.",
       "invite.copy": "Copy text",
-      "invite.viberLead": "Opening Viber… If it did not open, tap the button.",
       "invite.notFound": "This link has expired. Open the client card in StableFit Pro - the code and the share button are there.",
       "invite.error": "Could not load. Try again in a minute.",
       "promo.title": "Your promo code",
@@ -165,8 +160,7 @@
       "stores.android": "Google Play",
       "or": "or",
       "telegram": "Telegram",
-      "whatsapp": "WhatsApp",
-      "viber": "Viber"
+      "whatsapp": "WhatsApp"
     }
   };
 
@@ -279,7 +273,6 @@
     // wa.me loses the text on some phones (it shows the link alone); the app
     // scheme keeps it. Laptops go to WhatsApp Web through api.whatsapp.com.
     row.appendChild(pill(t("whatsapp"), isPhone ? "whatsapp://send?text=" + enc : "https://api.whatsapp.com/send?text=" + enc, { blank: !isPhone }));
-    row.appendChild(pill(t("viber"), "viber://forward?text=" + enc));
     return row;
   }
 
@@ -363,7 +356,7 @@
     tryOpen(scheme, fallback);
   }
 
-  function viewInvite(token, viber) {
+  function viewInvite(token) {
     token = (token || "").replace(/[^A-Za-z0-9_-]/g, "");
     document.title = t("invite.title") + " - StableFit";
     render(heading(t("invite.title"), "…"));
@@ -372,15 +365,6 @@
       .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
       .then(function (d) {
         var text = d.text || "";
-        if (viber) {
-          location.href = "viber://forward?text=" + encodeURIComponent(text);
-          render(heading(t("invite.title"), t("invite.viberLead")).concat([
-            pill(t("viber"), "viber://forward?text=" + encodeURIComponent(text)),
-            el("pre", { class: "dl-quote", text: text }),
-            copyButton(t("invite.copy"), text)
-          ]));
-          return;
-        }
         render(heading(t("invite.title"), t("invite.lead")).concat([
           el("pre", { class: "dl-quote", text: text }),
           copyButton(t("invite.copy"), text),
@@ -417,7 +401,8 @@
     var m;
     if ((m = path.match(/^app(?:\/(.*))?$/))) return viewApp(m[1] || "");
     if ((m = path.match(/^join\/([^/]+)\/?$/))) return viewJoin(decodeURIComponent(m[1]));
-    if ((m = path.match(/^i\/([^/]+)(\/viber)?\/?$/))) return viewInvite(m[1], Boolean(m[2]));
+    // `/viber` suffix: Viber was dropped (2026-10-27), such links show the page.
+    if ((m = path.match(/^i\/([^/]+)(\/viber)?\/?$/))) return viewInvite(m[1]);
     if ((m = path.match(/^c\/([^/]+)\/?$/))) return viewPromo(decodeURIComponent(m[1]));
     if (/^get\/?$/.test(path)) return viewGet();
     return false; // plain 404 stays visible
