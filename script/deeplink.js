@@ -2,6 +2,7 @@
  * Deep-link pages served through 404.html (GitHub Pages has no server routing).
  *
  *   /app/<screen>[?promo=…]  coach app screen (stablefitpro:// scheme); laptop -> QR + stores
+ *   /client[/measurement]      client app (home / new measurement) by the stablefit:// scheme
  *   /join/<code>              client sign-up with the registration code (stablefit:// scheme);
  *                             no app -> code + the right store for the device
  *   /i/<token>                invite text for the coach to forward (copy, Telegram, WhatsApp)
@@ -41,8 +42,21 @@
     "paywall": { path: "/payWallPage", hint: "app.hint.paywall", query: { promo: "promocode" } }
   };
 
+  // Client app screens reachable by URL (prod, origin/main routePath).
+  var CLIENT_SCREENS = {
+    "": { path: "/", hint: "client.hint.home" },
+    "measurement": { path: "/addMeasurement", hint: "client.hint.measurement" }
+  };
+
   var T = {
     uk: {
+      "client.title": "Відкрий StableFit на телефоні",
+      "client.lead": "Наведи камеру телефону на код - відкриється StableFit, а без застосунку - магазин.",
+      "client.opening": "Відкриваємо StableFit…",
+      "client.notOpened": "Натисни кнопку - відкриється StableFit, а якщо його ще немає, магазин.",
+      "client.open": "Відкрити StableFit",
+      "client.hint.home": "Застосунок StableFit",
+      "client.hint.measurement": "Екран «Новий замір»",
       "app.title": "Відкрий StableFit Pro на телефоні",
       "app.lead": "Наведи камеру телефону на код - відкриється потрібний екран, а без застосунку - магазин.",
       "app.opening": "Відкриваємо StableFit Pro…",
@@ -83,6 +97,13 @@
       "whatsapp": "WhatsApp"
     },
     pl: {
+      "client.title": "Otwórz StableFit na telefonie",
+      "client.lead": "Skieruj aparat telefonu na kod - otworzy się StableFit, a bez aplikacji - sklep.",
+      "client.opening": "Otwieramy StableFit…",
+      "client.notOpened": "Naciśnij przycisk - otworzy się StableFit, a jeśli go jeszcze nie ma, sklep.",
+      "client.open": "Otwórz StableFit",
+      "client.hint.home": "Aplikacja StableFit",
+      "client.hint.measurement": "Ekran «Nowy pomiar»",
       "app.title": "Otwórz StableFit Pro na telefonie",
       "app.lead": "Skieruj aparat telefonu na kod - otworzy się właściwy ekran, a bez aplikacji - sklep.",
       "app.opening": "Otwieramy StableFit Pro…",
@@ -123,6 +144,13 @@
       "whatsapp": "WhatsApp"
     },
     en: {
+      "client.title": "Open StableFit on your phone",
+      "client.lead": "Point your phone camera at the code - StableFit opens, or the store if the app is missing.",
+      "client.opening": "Opening StableFit…",
+      "client.notOpened": "Tap the button - StableFit opens, or the store if it is not installed yet.",
+      "client.open": "Open StableFit",
+      "client.hint.home": "The StableFit app",
+      "client.hint.measurement": "The «New measurement» screen",
       "app.title": "Open StableFit Pro on your phone",
       "app.lead": "Point your phone camera at the code - the right screen opens, or the store if the app is missing.",
       "app.opening": "Opening StableFit Pro…",
@@ -339,6 +367,27 @@
     });
   }
 
+  // Client app screen: tries the client app's scheme on a phone, falls back to
+  // the client app in the store; a laptop gets a QR to the same link.
+  function viewClient(rest) {
+    var key = (rest || "").replace(/\/+$/, "");
+    var screen = CLIENT_SCREENS[key] || CLIENT_SCREENS[""];
+    var scheme = CLIENT_SCHEME + screen.path;
+    var here = SITE + location.pathname;
+    document.title = t("client.title") + " - StableFit";
+    if (!isPhone) {
+      render(heading(t("client.title"), t("client.lead")).concat(laptop(here, screen.hint)));
+      return;
+    }
+    render(heading(t("client.opening")));
+    tryOpen(scheme, function () {
+      render(heading(t("client.title"), t("client.notOpened")).concat([
+        el("p", { class: "dl-hint", text: t(screen.hint) }),
+        openOrInstall(t("client.open"), "client", scheme)
+      ]));
+    });
+  }
+
   function viewJoin(code) {
     code = (code || "").replace(/[^A-Za-z0-9]/g, "").slice(0, 12);
     var scheme = CLIENT_SCHEME + "/createAccount/" + encodeURIComponent(code);
@@ -400,6 +449,7 @@
     var path = location.pathname.replace(/^\/+/, "");
     var m;
     if ((m = path.match(/^app(?:\/(.*))?$/))) return viewApp(m[1] || "");
+    if ((m = path.match(/^client(?:\/(.*))?$/))) return viewClient(m[1] || "");
     if ((m = path.match(/^join\/([^/]+)\/?$/))) return viewJoin(decodeURIComponent(m[1]));
     // `/viber` suffix: Viber was dropped (2026-10-27), such links show the page.
     if ((m = path.match(/^i\/([^/]+)(\/viber)?\/?$/))) return viewInvite(m[1]);
