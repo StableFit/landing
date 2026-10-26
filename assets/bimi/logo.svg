@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" baseProfile="tiny-ps" viewBox="0 0 512 512">
+<title>StableFit</title>
+<defs>
+<radialGradient id="bg" cx="256" cy="300" r="380" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#241B48"/>
+<stop offset="0.6" stop-color="#1D1838"/>
+<stop offset="1" stop-color="#0E0D14"/>
+</radialGradient>
+<linearGradient id="g0" x1="1.16408" y1="16.8208" x2="4.55572" y2="5.16747" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#4330AC"/>
+<stop offset="1" stop-color="#6040EA"/>
+</linearGradient>
+<linearGradient id="g1" x1="20.9539" y1="20.4565" x2="24.89" y2="-2.41101" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#4935BC"/>
+<stop offset="1" stop-color="#855CFF"/>
+</linearGradient>
+<linearGradient id="g2" x1="33.0297" y1="29.2516" x2="23.5333" y2="9.43608" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#857EBF"/>
+<stop offset="1" stop-color="#DDC2FE"/>
+</linearGradient>
+</defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<g transform="translate(71.7 166.1) scale(6.88)">
+<path d="M1.52786 4.54688H4.12886V17.1617H1.52786V12.256H0V9.28218H1.52786V4.54688Z" fill="url(#g0)"/>
+<path d="M10.0406 0H43.2352L41.8267 2.87907H15.197L16.4977 5.11413H29.3026L24.6826 7.95532H14.6788L10.0406 0ZM29.3026 5.11413L24.6826 7.95532L21.7724 14.3006V20.3618L29.3026 5.11413ZM4.875 2.87907H7.6397L7.60332 9.35697L18.9531 9.37591L21.7724 14.3006V20.3618C20.5356 17.9184 18.4984 14.7552 17.2252 12.3307H7.6397L7.65789 17.8616H4.875V2.87907Z" fill="url(#g1)"/>
+<path d="M45.5087 2.91797H48.4189V18.0331H45.5815L45.5633 15.1565V12.3128H31.958L25.1372 26.1381L23.3184 22.9181C24.2642 20.8724 27.8656 13.7334 28.775 11.8203L32.0854 5.09621H40.7251L39.3245 7.89951H34.1407L33.4737 9.26328H45.5087V2.91797Z" fill="url(#g2)"/>
+<path d="M49.1641 4.16797H52.0743V9.35787H53.5816V12.3506H52.0743V17.1806H49.1641V4.16797Z" fill="#AD9DDB"/>
+</g>
+</svg>
