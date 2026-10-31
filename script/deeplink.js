@@ -8,6 +8,8 @@
  *                             no app -> code + the right store for the device
  *   /i/<token>                invite text for the coach to forward (copy, Telegram, WhatsApp)
  *   /c/<code>                 promo code -> coach paywall with the code prefilled
+ *   /get[?c=<6 digits>]       client app store; with c= the coach's invite code: the app's code
+ *                             screen, else the store with the code (Play referrer / clipboard)
  *
  * Texts: uk / en by ?lang=, else the browser language (uk / ru -> uk).
  * Deep links are the apps' own schemes: the prod apps have no Universal Links
@@ -99,6 +101,12 @@
       "promo.afterInstall": "Кнопка відкриє StableFit Pro з кодом, а якщо застосунку ще немає - магазин.",
       "get.title": "StableFit для клієнтів",
       "get.lead": "Завантаж застосунок - і введи код від свого тренера.",
+      "get.codeTitle": "Твій код від тренера",
+      "get.codeLead": "Встанови StableFit і введи цей код - так тренер побачить твої заміри, харчування й тренування.",
+      "get.download": "Завантажити",
+      "get.codeCopied": "Код скопійовано",
+      "get.afterInstall.ios": "Кнопка скопіює код і відкриє App Store. Після встановлення відкрий StableFit і натисни «Вставити».",
+      "get.afterInstall.android": "Після встановлення відкрий StableFit - код підставиться сам.",
       "copied": "Скопійовано",
       "copyFailed": "Не вдалося скопіювати - виділи текст вручну",
       "stores.ios": "App Store",
@@ -152,6 +160,12 @@
       "promo.afterInstall": "Przycisk otworzy StableFit Pro z kodem, a jeśli aplikacji jeszcze nie ma - sklep.",
       "get.title": "StableFit dla klientów",
       "get.lead": "Zainstaluj aplikację i wpisz kod od swojego trenera.",
+      "get.codeTitle": "Twój kod od trenera",
+      "get.codeLead": "Zainstaluj StableFit i wpisz ten kod - trener zobaczy twoje pomiary, posiłki i treningi.",
+      "get.download": "Pobierz",
+      "get.codeCopied": "Kod skopiowany",
+      "get.afterInstall.ios": "Przycisk skopiuje kod i otworzy App Store. Po instalacji otwórz StableFit i naciśnij «Wklej».",
+      "get.afterInstall.android": "Po instalacji otwórz StableFit - kod uzupełni się sam.",
       "copied": "Skopiowano",
       "copyFailed": "Nie udało się skopiować - zaznacz tekst ręcznie",
       "stores.ios": "App Store",
@@ -205,6 +219,12 @@
       "promo.afterInstall": "The button opens StableFit Pro with the code, or the store if it is not installed yet.",
       "get.title": "StableFit for clients",
       "get.lead": "Install the app and enter the code from your coach.",
+      "get.codeTitle": "Your code from your coach",
+      "get.codeLead": "Install StableFit and enter this code - your coach will see your measurements, nutrition and workouts.",
+      "get.download": "Download",
+      "get.codeCopied": "Code copied",
+      "get.afterInstall.ios": "The button copies the code and opens the App Store. After installing, open StableFit and tap «Paste».",
+      "get.afterInstall.android": "After installing, open StableFit - the code fills in by itself.",
       "copied": "Copied",
       "copyFailed": "Could not copy - select the text by hand",
       "stores.ios": "App Store",
@@ -488,6 +508,42 @@
     render(heading(t("get.title"), t("get.lead")).concat(laptop(SITE + "/get", "get.scanHint")));
   }
 
+  // Invite link from the coach app. With the app installed -> its code screen;
+  // without it -> this device's store, carrying the code (Play install referrer
+  // on Android; iOS has none, so the download button copies the code first).
+  function viewGetCode(code) {
+    var scheme = CLIENT_SCHEME + "/enterInvitationCode?code=" + code;
+    document.title = t("get.codeTitle") + " - StableFit";
+    var page = function () {
+      var copy = copyButton(t("join.copy"), code);
+      if (isPhone) copy.classList.add("dl-pill-outline"); // the download button leads
+      render(heading(t("get.codeTitle"), t("get.codeLead")).concat([
+        codeBox(code.slice(0, 3) + " " + code.slice(3)),
+        isPhone ? downloadButton(code) : null,
+        copy
+      ]).concat(isPhone
+        ? [el("p", { class: "dl-hint", text: t(isIOS ? "get.afterInstall.ios" : "get.afterInstall.android") })]
+        : laptop(SITE + "/get?c=" + code, "join.scanHint")));
+    };
+    if (!isPhone) { page(); return; }
+    render(heading(t("join.opening")));
+    tryOpen(scheme, page);
+  }
+  function downloadButton(code) {
+    if (!isIOS) return pill(t("get.download"), STORES.client.android + "&referrer=" + encodeURIComponent("c=" + code));
+    var btn = pill(t("get.download"), STORES.client.ios, {
+      onClick: function (e) {
+        e.preventDefault();
+        copyText(code).then(function (ok) {
+          if (ok) btn.textContent = t("get.codeCopied");
+          // A beat to read «Код скопійовано» before the App Store takes over.
+          setTimeout(function () { location.href = STORES.client.ios; }, ok ? 900 : 0);
+        });
+      }
+    });
+    return btn;
+  }
+
   // ---- router ---------------------------------------------------------------
 
   function route() {
@@ -499,7 +555,10 @@
     // `/viber` suffix: Viber was dropped (2026-10-27), such links show the page.
     if ((m = path.match(/^i\/([^/]+)(\/viber)?\/?$/))) return viewInvite(m[1]);
     if ((m = path.match(/^c\/([^/]+)\/?$/))) return viewPromo(decodeURIComponent(m[1]));
-    if (/^get\/?$/.test(path)) return viewGet();
+    if (/^get\/?$/.test(path)) {
+      var c = params.get("c") || "";
+      return /^\d{6}$/.test(c) ? viewGetCode(c) : viewGet();
+    }
     if (/^unsubscribe\/?$/.test(path)) return viewUnsubscribe();
     return false; // plain 404 stays visible
   }
