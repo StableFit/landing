@@ -11,7 +11,9 @@
       {
         "appIDs": ["Q4WF2L4FAK.com.fit.stable.app"],
         "components": [
-          { "/": "/join/*", "comment": "Client sign-up with the registration code" }
+          { "/": "/join/*", "comment": "Client sign-up with the registration code" },
+          { "/": "/client", "comment": "Client app home from emails" },
+          { "/": "/client/*", "comment": "Client app screens from emails" }
         ]
       }
     ]
