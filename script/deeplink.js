@@ -411,21 +411,33 @@
     });
   }
 
+  // Owner 18.11 (Trello #100, option A): the coach's invite link
+  // /join/<code>. On a phone: the app if installed (the scheme fills the
+  // code in), otherwise this device's store - Play with the install referrer
+  // c=<code>, which the client app reads at sign-up. The code stays on the
+  // page for the way back. On a laptop: the QR of this page.
+  function joinStore(code) {
+    if (!isAndroid) return STORES.client.ios;
+    return STORES.client.android + "&referrer=" + encodeURIComponent("c=" + code);
+  }
   function viewJoin(code) {
     code = (code || "").replace(/[^A-Za-z0-9]/g, "").slice(0, 12);
-    var scheme = CLIENT_SCHEME + "/createAccount/" + encodeURIComponent(code);
+    var scheme = CLIENT_SCHEME + "/enterInvitationCode?code=" + encodeURIComponent(code);
     var here = SITE + "/join/" + code;
     document.title = t("join.title") + " - StableFit";
-    var fallback = function () {
+    var page = function () {
       render(heading(t("join.title"), t("join.lead")).concat([
         codeBox(code),
         copyButton(t("join.copy"), code),
-        isPhone ? openOrInstall(t("join.open"), "client", scheme) : null
+        isPhone ? pill(t("join.open"), joinStore(code)) : null
       ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("join.afterInstall") })] : laptop(here, "join.scanHint")));
     };
-    if (!code || !isPhone) { fallback(); return; }
+    if (!code || !isPhone) { page(); return; }
     render(heading(t("join.opening")));
-    tryOpen(scheme, fallback);
+    tryOpen(scheme, function () {
+      page();
+      location.replace(joinStore(code));
+    });
   }
 
   // Unsubscribe page for the email footer link (the function itself can not
