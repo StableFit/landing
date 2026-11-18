@@ -412,32 +412,34 @@
   }
 
   // Owner 18.11 (Trello #100, option A): the coach's invite link
-  // /join/<code>. On a phone: the app if installed (the scheme fills the
-  // code in), otherwise this device's store - Play with the install referrer
-  // c=<code>, which the client app reads at sign-up. The code stays on the
-  // page for the way back. On a laptop: the QR of this page.
+  // /join/<code>, no wait (owner: «можем сделать быстрее?»).
+  // - Android: one intent:// redirect - Chrome opens the client app with the
+  //   code if installed, otherwise goes straight to Play with the install
+  //   referrer c=<code> (S.browser_fallback_url).
+  // - iOS: an installed app takes /join/* as a Universal Link before this
+  //   page loads, so a page that loads means no app: the App Store at once.
+  //   The code stays on the page for the way back (no referrer on iOS).
+  // - Laptop: the code and the QR of this page.
   function joinStore(code) {
     if (!isAndroid) return STORES.client.ios;
     return STORES.client.android + "&referrer=" + encodeURIComponent("c=" + code);
   }
+  function joinIntent(code) {
+    return "intent://stablefit.com/enterInvitationCode?code=" + encodeURIComponent(code) +
+      "#Intent;scheme=stablefit;package=com.fit.stable.app;S.browser_fallback_url=" +
+      encodeURIComponent(joinStore(code)) + ";end";
+  }
   function viewJoin(code) {
     code = (code || "").replace(/[^A-Za-z0-9]/g, "").slice(0, 12);
-    var scheme = CLIENT_SCHEME + "/enterInvitationCode?code=" + encodeURIComponent(code);
     var here = SITE + "/join/" + code;
     document.title = t("join.title") + " - StableFit";
-    var page = function () {
-      render(heading(t("join.title"), t("join.lead")).concat([
-        codeBox(code),
-        copyButton(t("join.copy"), code),
-        isPhone ? pill(t("join.open"), joinStore(code)) : null
-      ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("join.afterInstall") })] : laptop(here, "join.scanHint")));
-    };
-    if (!code || !isPhone) { page(); return; }
-    render(heading(t("join.opening")));
-    tryOpen(scheme, function () {
-      page();
-      location.replace(joinStore(code));
-    });
+    render(heading(t("join.title"), t("join.lead")).concat([
+      codeBox(code),
+      copyButton(t("join.copy"), code),
+      isPhone && code ? pill(t("join.open"), isAndroid ? joinIntent(code) : joinStore(code)) : null
+    ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("join.afterInstall") })] : laptop(here, "join.scanHint")));
+    if (!code || !isPhone) return;
+    location.replace(isAndroid ? joinIntent(code) : joinStore(code));
   }
 
   // Unsubscribe page for the email footer link (the function itself can not
