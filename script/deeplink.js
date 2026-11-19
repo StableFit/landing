@@ -79,6 +79,7 @@
       "join.afterInstall": "Кнопка відкриє StableFit, а якщо його ще немає - магазин. Після встановлення введи код.",
       "join.copy": "Скопіювати код",
       "join.scanHint": "Наведи камеру телефону на код - відкриється застосунок або магазин.",
+      "join.touchHint": "Відкриваєш на цьому ж пристрої? Натисни на QR-код або обери магазин, а після встановлення введи код.",
       "promo.scanHint": "Наведи камеру телефону на код - відкриється StableFit Pro або магазин.",
       "get.scanHint": "Наведи камеру телефону на код - відкриється магазин твого телефону.",
       "unsub.working": "Відписуємо…",
@@ -132,6 +133,7 @@
       "join.afterInstall": "Przycisk otworzy StableFit, a jeśli go jeszcze nie ma - sklep. Po instalacji wpisz kod.",
       "join.copy": "Skopiuj kod",
       "join.scanHint": "Skieruj aparat telefonu na kod - otworzy się aplikacja albo sklep.",
+      "join.touchHint": "Otwierasz na tym urządzeniu? Dotknij kodu QR albo wybierz sklep, a po instalacji wpisz kod.",
       "promo.scanHint": "Skieruj aparat telefonu na kod - otworzy się StableFit Pro albo sklep.",
       "get.scanHint": "Skieruj aparat telefonu na kod - otworzy się sklep twojego telefonu.",
       "unsub.working": "Wypisujemy…",
@@ -185,6 +187,7 @@
       "join.afterInstall": "The button opens StableFit, or the store if it is not installed yet. After installing, enter the code.",
       "join.copy": "Copy code",
       "join.scanHint": "Point your phone camera at the code - the app or the store opens.",
+      "join.touchHint": "On this same device? Tap the QR code or pick a store, then enter the code after installing.",
       "promo.scanHint": "Point your phone camera at the code - StableFit Pro or the store opens.",
       "get.scanHint": "Point your phone camera at the code - your phone's store opens.",
       "unsub.working": "Unsubscribing…",
@@ -221,6 +224,9 @@
   var isIOS = /iPhone|iPad|iPod/i.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
   var isAndroid = /Android/i.test(ua);
   var isPhone = isIOS || isAndroid;
+  // A touch screen not seen as a phone ("desktop site", some in-app browsers):
+  // it can not scan its own QR (owner 19.11, Trello #117).
+  var isTouchOnly = !isPhone && !!window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
 
   // Same choice as the site header (script/main.js sets <html data-sf-lang>):
   // ?lang=, else the language picked before, else the browser.
@@ -429,6 +435,21 @@
       "#Intent;scheme=stablefit;package=com.fit.stable.app;S.browser_fallback_url=" +
       encodeURIComponent(joinStore(code)) + ";end";
   }
+  // Touch screen, not a phone (#117): a tap on the QR does what the scan
+  // would (Android shows "desktop site" as Linux, so Play unless it says Mac),
+  // and both stores under it; Play keeps the install referrer c=<code>.
+  function touchJoin(code, here) {
+    var play = STORES.client.android + "&referrer=" + encodeURIComponent("c=" + code);
+    var guess = /Macintosh/i.test(ua) ? STORES.client.ios : play;
+    return [
+      el("a", { class: "dl-qr-link", href: guess, "aria-label": t("join.open") }, [qr(here)]),
+      el("div", { class: "dl-stores" }, [
+        el("a", { class: "dl-store", href: STORES.client.ios, text: t("stores.ios") }),
+        el("a", { class: "dl-store", href: play, text: t("stores.android") })
+      ]),
+      el("p", { class: "dl-hint", text: t("join.touchHint") })
+    ];
+  }
   function viewJoin(code) {
     code = (code || "").replace(/[^A-Za-z0-9]/g, "").slice(0, 12);
     var here = SITE + "/join/" + code;
@@ -437,7 +458,8 @@
       codeBox(code),
       copyButton(t("join.copy"), code),
       isPhone && code ? pill(t("join.open"), isAndroid ? joinIntent(code) : joinStore(code)) : null
-    ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("join.afterInstall") })] : laptop(here, "join.scanHint")));
+    ]).concat(isPhone ? [el("p", { class: "dl-hint", text: t("join.afterInstall") })]
+      : isTouchOnly && code ? touchJoin(code, here) : laptop(here, "join.scanHint")));
     if (!code || !isPhone) return;
     location.replace(isAndroid ? joinIntent(code) : joinStore(code));
   }

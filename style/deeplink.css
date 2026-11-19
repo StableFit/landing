@@ -39,6 +39,8 @@
 
 .dl-qr { background: #fff; border-radius: 14px; padding: 12px; width: 180px; height: 180px; }
 .dl-qr svg { display: block; width: 156px; height: 156px; }
+.dl-qr-link { display: block; border-radius: 14px; -webkit-tap-highlight-color: transparent; }
+.dl-qr-link:active .dl-qr { transform: scale(0.97); }
 
 .dl-stores { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .dl-store {
