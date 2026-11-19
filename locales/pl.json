@@ -566,7 +566,7 @@
       "twitterDescription": "Jak StableFit zbiera, wykorzystuje i chroni dane osobowe trenerów i klientów."
     },
     "title": "Polityka prywatności",
-    "lastUpdated": "Ostatnia aktualizacja: 9 września 2026",
+    "lastUpdated": "Ostatnia aktualizacja: 6 listopada 2026",
     "sections": {
       "introduction": {
         "title": "1. Wstęp",
@@ -586,6 +586,7 @@
         "items": {
           "account": "<strong>Dane konta:</strong> imię i nazwisko, adres e-mail, rola (Trener lub Klient), identyfikatory uwierzytelniania. Możesz logować się przez Apple lub Google; ci dostawcy udostępniają identyfikatory, na które wyrażasz zgodę.",
           "health": "<strong>Dane o zdrowiu i fitness (szczególna kategoria):</strong> jeśli zdecydujesz się je podać - pomiary ciała (na przykład waga i obwody), zdjęcia postępów, dzienniki treningów, dzienniki żywienia i wody oraz odpowiedzi z ankiet o treningu lub diecie. Przetwarzanie tych danych wymaga Twojej wyraźnej zgody. Niektóre funkcje nie będą działać, jeśli ich nie podasz.",
+          "healthSync": "<strong>Kroki i sen z Apple Health i Health Connect (szczególna kategoria):</strong> tylko za Twoją wyraźną zgodą odczytujemy kroki i sen, począwszy od 7 dni przed utworzeniem Twojego profilu, i przechowujemy dzienne podsumowania. Tylko odczytujemy te dane i niczego nie zapisujemy w Apple Health ani Health Connect. Na Androidzie dane mogą odświeżać się w tle mniej więcej raz na godzinę. Widzisz je Ty i Twój obecny Trener, wyłącznie po wyrażeniu zgody dla tego Trenera. Po zmianie Trenera dane pozostają, ale nowy Trener zobaczy je dopiero po ponownej zgodzie. Możesz wyłączyć dostęp w ustawieniach aplikacji: zapisane dane są usuwane natychmiast, a na telefonie nic się nie zmienia. Jeśli usuniesz wpis w Apple Health lub Health Connect, zaktualizujemy tylko ostatnie 7 dni, a starsze dane pozostaną do czasu wyłączenia dostępu. Nie używamy tych danych do reklamy ani marketingu, nie sprzedajemy ich, nie używamy ich do trenowania AI i nie przekazujemy ich nikomu innemu, poza podmiotami przetwarzającymi potrzebnymi do działania Usługi.",
           "communications": "<strong>Komunikacja:</strong> czat w aplikacji i podobne wiadomości między Trenerem a Klientem.",
           "device": "<strong>Dane urządzenia i użytkowania:</strong> logi aplikacji, typ urządzenia, wersja systemu, dane wydajności, raporty o awariach oraz przybliżone dane diagnostyczne potrzebne do działania Serwisu.",
           "push": "<strong>Powiadomienia push:</strong> token push urządzenia (Apple Push Notification service lub Firebase Cloud Messaging), jeśli zezwolisz na powiadomienia.",
@@ -647,7 +648,7 @@
           "rectify": "<strong>Sprostować</strong> nieprawidłowe dane.",
           "erase": "<strong>Usunąć</strong> swoje konto i powiązane dane (zdjęcia, pomiary i inne treści, które przechowujemy), z zastrzeżeniem prawnego obowiązku przechowywania.",
           "restrict": "<strong>Ograniczyć</strong> lub <strong>wnieść sprzeciw</strong> wobec określonego przetwarzania oraz zażądać <strong>przenoszenia</strong> danych, które podałeś.",
-          "withdraw": "<strong>Wycofać zgodę</strong> na dane o zdrowiu i zdjęcia, usuwając je lub nie przesyłając nowych, a na powiadomienia - w ustawieniach urządzenia."
+          "withdraw": "<strong>Wycofać zgodę</strong> na dane o zdrowiu i zdjęcia, usuwając je lub nie przesyłając nowych, na kroki i sen - wyłączając dostęp w ustawieniach aplikacji, a na powiadomienia - w ustawieniach urządzenia."
         },
         "exercise": "Aby skorzystać z tych praw, napisz na <a href=\"mailto:support@stable-fit.com\">support@stable-fit.com</a>. Odpowiemy bez zbędnej zwłoki i w każdym razie w ciągu jednego miesiąca (możliwe przedłużenie o dwa miesiące w przypadku złożonych wniosków, z powiadomieniem). Anulowanie subskrypcji Pro w Apple lub Google samo w sobie nie usuwa Twojego konta StableFit."
       },
